@@ -4,35 +4,37 @@
 <head>
   <meta charset="utf-8">
   <title>FR Dom Calc</title>
-  <link rel="stylesheet" href="Style.css">
+  <!-- <link rel="stylesheet" href="normalize.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-      <h1>FR Dom-Shop Calculator</h1>
-      <div class="order-total-container">
-        <span>Total:</span>
-        <span class="order-total">0</span>
-        <button class="calc-btn">Calculate</button>
-        <button class="clear-totals">Clear</button>
-      </div>
-      <div class="sorting-options">
-        Show only:
-        <select class="show-specific-select">
-          <option value="All">All</option>
-          <option value="Breed Primary Secondary Tertiary">Modern</option>
-          <option value="Gaoler Banescale">Ancient (all)</option>
-          <option value="Gaoler">Gaoler</option>
-          <option value="Banescale">Banescale</option>
-        </select>
-      </div>
-  </header>
-  <div class="outer-frame frame">
-    <div class="row justify-content-center">
-      <div class="col-sm-3">
-        <!-- <div class="container"> -->
-          <div class="row">
+    <h1>FR Dom-Shop Calculator</h1>
+    <div class="order-total-container">
+      <span>Total:</span>
+      <span class="order-total">0</span>
+      <button class="calc-btn">Calculate</button>
+      <button class="clear-totals">Clear</button>
+    </div>
+    <div class="sorting-options">
+      Show only:
+      <select class="show-specific-select">
+        <option value="All">All</option>
+        <option value="Breed Primary Secondary Tertiary">Modern</option>
+        <option value="Gaoler Banescale">Ancient (all)</option>
+        <option value="Gaoler">Gaoler</option>
+        <option value="Banescale">Banescale</option>
+      </select>
+    </div>
+</header>
+<div class="outer-container container">
+  <div class="row justify-content-center">
+    <div class="col-sm-3">
+      one
+      <!-- <div class="container">
+       <div class="row">
           <div class="col-12 item">
             <span>Breed: Guardian</span>
             <span class="item-price">42500</span>
@@ -88,489 +90,489 @@
             <span class="item-price">233750</span>
             <input class="quantity" type="text" maxlength="3"/>
           </div>
-        <!-- </div> -->
+        </div>
+      </div> -->
+    </div>
+    <div class="col-sm-3">
+      <div class="container">
+        <div class="row">
+        <div class=" col-12 item">
+          <span>Primary: Speckle</span>
+          <span class="item-price">106250</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Primary: Tiger</span>
+          <span class="item-price">114750</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Primary: Savannah</span>
+          <span class="item-price">119000</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Primary: Jaguar</span>
+          <span class="item-price">119000</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Primary: Falcon</span>
+          <span class="item-price">144500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Primary: Clown</span>
+          <span class="item-price">148750</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Primary: Cherub</span>
+          <span class="item-price">157250</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Primary: Tapir</span>
+          <span class="item-price">157250</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Primary: Giraffe</span>
+          <span class="item-price">191250</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Primary: Jupiter</span>
+          <span class="item-price">195500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Primary: Vipera</span>
+          <span class="item-price">199750</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Primary: Piebald</span>
+          <span class="item-price">199750</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Primary: Ripple</span>
+          <span class="item-price">212500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Primary: Bar</span>
+          <span class="item-price">212500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Primary: Lionfish</span>
+          <span class="item-price">212500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Gaoler: Bar</span>
+          <span class="item-price">106250</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class=" col-12 item">
+          <span>Gaoler: Falcon</span>
+          <span class="item-price">72250</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class=" col-12 item">
+          <span>Gaoler: Giraffe</span>
+          <span class="item-price">95625</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class=" col-12 item">
+          <span>Gaoler: Jaguar</span>
+          <span class="item-price">59000</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class=" col-12 item">
+          <span>Gaoler: Mosaic</span>
+          <span class="item-price">127500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class=" col-12 item">
+          <span>Gaoler: Piebald</span>
+          <span class="item-price">99875</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class=" col-12 item">
+          <span>Gaoler: Shaggy</span>
+          <span class="item-price">95625</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class=" col-12 item">
+          <span>Gaoler: Tapir</span>
+          <span class="item-price">78625</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Gaoler: Tiger</span>
+          <span class="item-price">57375</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+                <div class=" col-12 item">
+          <span>Banescale: Cherub</span>
+          <span class="item-price">78625</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Banescale: Chevron</span>
+          <span class="item-price">85000</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Banescale: Jaguar</span>
+          <span class="item-price">59500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Banescale: Laced</span>
+          <span class="item-price">59500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Banescale: Marble</span>
+          <span class="item-price">76500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Banescale: Ragged</span>
+          <span class="item-price">85000</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Banescale: Savannah</span>
+          <span class="item-price">59500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class=" col-12 item">
+          <span>Banescale: Tiger</span>
+          <span class="item-price">57375</span>
+          <input class="quantity" type="text" maxlength="3"/>
         </div>
       </div>
-      <div class="col-sm-3">
-        <div class="container">
-          <div class="row">
-          <div class=" col-12 item">
-            <span>Primary: Speckle</span>
-            <span class="item-price">106250</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Primary: Tiger</span>
-            <span class="item-price">114750</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Primary: Savannah</span>
-            <span class="item-price">119000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Primary: Jaguar</span>
-            <span class="item-price">119000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Primary: Falcon</span>
-            <span class="item-price">144500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Primary: Clown</span>
-            <span class="item-price">148750</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Primary: Cherub</span>
-            <span class="item-price">157250</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Primary: Tapir</span>
-            <span class="item-price">157250</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Primary: Giraffe</span>
-            <span class="item-price">191250</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Primary: Jupiter</span>
-            <span class="item-price">195500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Primary: Vipera</span>
-            <span class="item-price">199750</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Primary: Piebald</span>
-            <span class="item-price">199750</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Primary: Ripple</span>
-            <span class="item-price">212500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Primary: Bar</span>
-            <span class="item-price">212500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Primary: Lionfish</span>
-            <span class="item-price">212500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Gaoler: Bar</span>
-            <span class="item-price">106250</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class=" col-12 item">
-            <span>Gaoler: Falcon</span>
-            <span class="item-price">72250</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class=" col-12 item">
-            <span>Gaoler: Giraffe</span>
-            <span class="item-price">95625</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class=" col-12 item">
-            <span>Gaoler: Jaguar</span>
-            <span class="item-price">59000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class=" col-12 item">
-            <span>Gaoler: Mosaic</span>
-            <span class="item-price">127500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class=" col-12 item">
-            <span>Gaoler: Piebald</span>
-            <span class="item-price">99875</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class=" col-12 item">
-            <span>Gaoler: Shaggy</span>
-            <span class="item-price">95625</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class=" col-12 item">
-            <span>Gaoler: Tapir</span>
-            <span class="item-price">78625</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Gaoler: Tiger</span>
-            <span class="item-price">57375</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-                  <div class=" col-12 item">
-            <span>Banescale: Cherub</span>
-            <span class="item-price">78625</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Banescale: Chevron</span>
-            <span class="item-price">85000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Banescale: Jaguar</span>
-            <span class="item-price">59500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Banescale: Laced</span>
-            <span class="item-price">59500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Banescale: Marble</span>
-            <span class="item-price">76500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Banescale: Ragged</span>
-            <span class="item-price">85000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Banescale: Savannah</span>
-            <span class="item-price">59500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class=" col-12 item">
-            <span>Banescale: Tiger</span>
-            <span class="item-price">57375</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="container">
+        <div class="row">
+        <div class="col-12 item">
+          <span>Secondary: Stripes</span>
+          <span class="item-price">76500</span>
+          <input class="quantity" type="text" maxlength="3"/>
         </div>
+        <div class="col-12 item">
+          <span>Secondary: Freckle</span>
+          <span class="item-price">76500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Secondary: Safari</span>
+          <span class="item-price">83300</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Secondary: Rosette</span>
+          <span class="item-price">85000</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Secondary: Eye Spots</span>
+          <span class="item-price">93500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Secondary: Striation</span>
+          <span class="item-price">102000</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Secondary: Seraph</span>
+          <span class="item-price">106250</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Secondary: Peregrine</span>
+          <span class="item-price">119000</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Secondary: Hex</span>
+          <span class="item-price">136000</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Secondary: Saturn</span>
+          <span class="item-price">136000</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Secondary: Current</span>
+          <span class="item-price">140250</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Secondary: Daub</span>
+          <span class="item-price">140250</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Secondary: Paint</span>
+          <span class="item-price">140250</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Secondary: Noxtide</span>
+          <span class="item-price">144500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Secondary: Hypnotic</span>
+          <span class="item-price">157250</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class="col-12 item">
+          <span>Gaoler: Breakup</span>
+          <span class="item-price">85000</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class="col-12 item">
+          <span>Gaoler: Daub</span>
+          <span class="item-price">70125</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class="col-12 item">
+          <span>Gaoler: Hex</span>
+          <span class="item-price">68000</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class="col-12 item">
+          <span>Gaoler: Paint</span>
+          <span class="item-price">70125</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class="col-12 item">
+          <span>Gaoler: Peregrine</span>
+          <span class="item-price">59500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class="col-12 item">
+          <span>Gaoler: Rosette</span>
+          <span class="item-price">42500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class="col-12 item">
+          <span>Gaoler: Streak</span>
+          <span class="item-price">68000</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class="col-12 item">
+          <span>Gaoler: Striation</span>
+          <span class="item-price">51000</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class="col-12 item">
+          <span>Gaoler: Stripes</span>
+          <span class="item-price">38250</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Banescale: Arrow</span>
+          <span class="item-price">68000</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Banescale: Edged</span>
+          <span class="item-price">51000</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Banescale: Mottle</span>
+          <span class="item-price">51000</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Banescale: Rosette</span>
+          <span class="item-price">42500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Banescale: Safari</span>
+          <span class="item-price">41650</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Banescale: Seraph</span>
+          <span class="item-price">53125</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Banescale: Stripes</span>
+          <span class="item-price">38250</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Banescale: Tear</span>
+          <span class="item-price">68000</span>
+          <input class="quantity" type="text" maxlength="3"/>
         </div>
       </div>
-      <div class="col-sm-3">
-        <div class="container">
-          <div class="row">
-          <div class="col-12 item">
-            <span>Secondary: Stripes</span>
-            <span class="item-price">76500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Secondary: Freckle</span>
-            <span class="item-price">76500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Secondary: Safari</span>
-            <span class="item-price">83300</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Secondary: Rosette</span>
-            <span class="item-price">85000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Secondary: Eye Spots</span>
-            <span class="item-price">93500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Secondary: Striation</span>
-            <span class="item-price">102000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Secondary: Seraph</span>
-            <span class="item-price">106250</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Secondary: Peregrine</span>
-            <span class="item-price">119000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Secondary: Hex</span>
-            <span class="item-price">136000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Secondary: Saturn</span>
-            <span class="item-price">136000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Secondary: Current</span>
-            <span class="item-price">140250</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Secondary: Daub</span>
-            <span class="item-price">140250</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Secondary: Paint</span>
-            <span class="item-price">140250</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Secondary: Noxtide</span>
-            <span class="item-price">144500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Secondary: Hypnotic</span>
-            <span class="item-price">157250</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class="col-12 item">
-            <span>Gaoler: Breakup</span>
-            <span class="item-price">85000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class="col-12 item">
-            <span>Gaoler: Daub</span>
-            <span class="item-price">70125</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class="col-12 item">
-            <span>Gaoler: Hex</span>
-            <span class="item-price">68000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class="col-12 item">
-            <span>Gaoler: Paint</span>
-            <span class="item-price">70125</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class="col-12 item">
-            <span>Gaoler: Peregrine</span>
-            <span class="item-price">59500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class="col-12 item">
-            <span>Gaoler: Rosette</span>
-            <span class="item-price">42500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class="col-12 item">
-            <span>Gaoler: Streak</span>
-            <span class="item-price">68000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class="col-12 item">
-            <span>Gaoler: Striation</span>
-            <span class="item-price">51000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class="col-12 item">
-            <span>Gaoler: Stripes</span>
-            <span class="item-price">38250</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Banescale: Arrow</span>
-            <span class="item-price">68000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Banescale: Edged</span>
-            <span class="item-price">51000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Banescale: Mottle</span>
-            <span class="item-price">51000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Banescale: Rosette</span>
-            <span class="item-price">42500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Banescale: Safari</span>
-            <span class="item-price">41650</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Banescale: Seraph</span>
-            <span class="item-price">53125</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Banescale: Stripes</span>
-            <span class="item-price">38250</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Banescale: Tear</span>
-            <span class="item-price">68000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="container">
+        <div class="row">
+        <div class="col-12 item">
+          <span>Tertiary: Underbelly</span>
+          <span class="item-price">127500</span>
+          <input class="quantity" type="text" maxlength="3"/>
         </div>
+        <div class="col-12 item">
+          <span>Tertiary: Contour</span>
+          <span class="item-price">127500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Tertiary: Peacock</span>
+          <span class="item-price">127500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Tertiary: Thylacine</span>
+          <span class="item-price">131750</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Tertiary: Lace</span>
+          <span class="item-price">131750</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Tertiary: Ringlets</span>
+          <span class="item-price">131750</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Tertiary: Ghost</span>
+          <span class="item-price">136000</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Tertiary: Crackle</span>
+          <span class="item-price">161500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Tertiary: Smoke</span>
+          <span class="item-price">161500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Tertiary: Spines</span>
+          <span class="item-price">161500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Tertiary: Okapi</span>
+          <span class="item-price">161500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Tertiary: Runes</span>
+          <span class="item-price">161500</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Tertiary: Gembond</span>
+          <span class="item-price">170000</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class="col-12 item">
+          <span>Gaoler: Ghost</span>
+          <span class="item-price">68000</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class="col-12 item">
+          <span>Gaoler: Ringlets</span>
+          <span class="item-price">65875</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class="col-12 item">
+          <span>Gaoler: Runes</span>
+          <span class="item-price">80750</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class="col-12 item">
+          <span>Gaoler: Shardflank</span>
+          <span class="item-price">63750</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class="col-12 item">
+          <span>Gaoler: Smoke</span>
+          <span class="item-price">80750</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class="col-12 item">
+          <span>Gaoler: Thylacine</span>
+          <span class="item-price">65875</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+          <div class="col-12 item">
+          <span>Gaoler: Underbelly</span>
+          <span class="item-price">63750</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Gaoler: Wintercoat</span>
+          <span class="item-price">80750</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Banescale: Crackle</span>
+          <span class="item-price">80750</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Banescale: Contour</span>
+          <span class="item-price">63750</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Banescale: Ghost</span>
+          <span class="item-price">68000</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Banescale: Lace</span>
+          <span class="item-price">65875</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Banescale: Ringlets</span>
+          <span class="item-price">65875</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>
+        <div class="col-12 item">
+          <span>Banescale: Trimmings</span>
+          <span class="item-price">63750</span>
+          <input class="quantity" type="text" maxlength="3"/>
         </div>
       </div>
-      <div class="col-sm-3">
-        <div class="container">
-          <div class="row">
-          <div class="col-12 item">
-            <span>Tertiary: Underbelly</span>
-            <span class="item-price">127500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Tertiary: Contour</span>
-            <span class="item-price">127500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Tertiary: Peacock</span>
-            <span class="item-price">127500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Tertiary: Thylacine</span>
-            <span class="item-price">131750</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Tertiary: Lace</span>
-            <span class="item-price">131750</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Tertiary: Ringlets</span>
-            <span class="item-price">131750</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Tertiary: Ghost</span>
-            <span class="item-price">136000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Tertiary: Crackle</span>
-            <span class="item-price">161500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Tertiary: Smoke</span>
-            <span class="item-price">161500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Tertiary: Spines</span>
-            <span class="item-price">161500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Tertiary: Okapi</span>
-            <span class="item-price">161500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Tertiary: Runes</span>
-            <span class="item-price">161500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Tertiary: Gembond</span>
-            <span class="item-price">170000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class="col-12 item">
-            <span>Gaoler: Ghost</span>
-            <span class="item-price">68000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class="col-12 item">
-            <span>Gaoler: Ringlets</span>
-            <span class="item-price">65875</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class="col-12 item">
-            <span>Gaoler: Runes</span>
-            <span class="item-price">80750</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class="col-12 item">
-            <span>Gaoler: Shardflank</span>
-            <span class="item-price">63750</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class="col-12 item">
-            <span>Gaoler: Smoke</span>
-            <span class="item-price">80750</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class="col-12 item">
-            <span>Gaoler: Thylacine</span>
-            <span class="item-price">65875</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-            <div class="col-12 item">
-            <span>Gaoler: Underbelly</span>
-            <span class="item-price">63750</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Gaoler: Wintercoat</span>
-            <span class="item-price">80750</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Banescale: Crackle</span>
-            <span class="item-price">80750</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Banescale: Contour</span>
-            <span class="item-price">63750</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Banescale: Ghost</span>
-            <span class="item-price">68000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Banescale: Lace</span>
-            <span class="item-price">65875</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Banescale: Ringlets</span>
-            <span class="item-price">65875</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Banescale: Trimmings</span>
-            <span class="item-price">63750</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-        </div>
-        </div>
       </div>
     </div>
   </div>
-  <footer class="footer">
-    <span>version 2.1.0</span><br>
-    <span>Problems? Suggestions? Contact me on FR: Rowdy#277339</span>
-  </footer>
+</div>
+<footer class="footer">
+  <span>version 2.1.0</span><br>
+  <span>Problems? Suggestions? Contact me on FR: Rowdy#277339</span>
+</footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="Script.js"></script>
+<script src="script.js"></script>

@@ -3,7 +3,6 @@
   --quantity: #101014;
   --item-price: #9275d1;
 }
-
 body {
   background-color: var(--main-bg);
   color: white;
@@ -13,7 +12,7 @@ h1 {
   margin: auto;
   text-align: center;
 }
-/* .order-total-container {
+.order-total-container {
   width: 350px;
   margin: 10px auto;
 }
@@ -87,4 +86,4 @@ input[type=number]::-webkit-outer-spin-button {
   .order-total-container {
     width: 295px;
   }
-} */
+}

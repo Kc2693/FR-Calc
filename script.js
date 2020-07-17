@@ -28,7 +28,22 @@ $('.show-specific-select').change(function() {
   }
 });
 
-$('.sort-select').change(function(){
+$('.sort-select').change(function() {
+  console.log($('.sort-select').val())
+  switch($('.sort-select').val()) {
+    case 'alphabet':
+      sortAlphabetically();
+      break;
+    case 'price-low':
+      sortByPrice("low")
+      break;
+    case 'price-high':
+      sortByPrice("high")
+      break;
+  }
+});
+
+function sortAlphabetically() {
   let parentColumn;
   $('.col-md-3').each(function(index, elem) {
     parentColumn = "#" + elem.getAttribute('id')
@@ -42,9 +57,39 @@ $('.sort-select').change(function(){
         return 1;
       }
     }).appendTo(parentColumn)
-  })
-});
-  
+  });
+};
+
+function sortByPrice(type) {
+  let parentColumn;
+  $('.col-md-3').each(function(index, elem) {
+    parentColumn = "#" + elem.getAttribute('id')
+    itemSelector = parentColumn + " > .item"
+
+    $(itemSelector).sort(function(a,b) {
+      let = firstVal = parseInt(a.querySelector('.item-price').innerText);
+      let secondVal = parseInt(b.querySelector('.item-price').innerText);
+
+      if (type == 'low') {
+        if (firstVal < secondVal) {
+          return -1;
+        } else {
+          return 1;
+        }
+        return
+      } else if (type == 'high') {
+        if (firstVal < secondVal) {
+          return 1;
+        } else {
+          return -1;
+        }
+        return
+      }
+
+    }).appendTo(parentColumn)
+  });
+}
+
 function gatherItemTotals() {
   let calculated = $('.quantity').map((i, item) => {
 	  let quantity = $(item).val();
@@ -54,7 +99,7 @@ function gatherItemTotals() {
   })
    
 	return calculated.get();
-}
+};
 
 function reduceOrderTotal(itemTotals) {  
 	let orderTotal = itemTotals.reduce((currentTotal, item) => {
@@ -63,4 +108,4 @@ function reduceOrderTotal(itemTotals) {
     return newTotal;
   });
   return orderTotal;
-}
+};

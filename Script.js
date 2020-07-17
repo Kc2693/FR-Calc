@@ -4,23 +4,29 @@ $(".calc-btn").click(function() {
   
   $('.order-total').text(orderTotal)
   })
+
 $(".clear-totals").click(function() {
   $(".quantity").val('')
   $('.order-total').text('0')
 })
+
 $('.show-specific-select').change(function() {
   if ($('.show-specific-select').val() == 'All') {
     $(".quantity").val('')
     $('.order-total').text('0')
-    $('.item').css('display', 'inline-block');
+    // $('.item').css('display', 'inline-block');
+    $('.item').toggleClass('show-specific-select-hide-toggle', false)
+
   } else {
     let rawVal = $('.show-specific-select').val().split(" ")
     $(".quantity").val('')
     $('.order-total').text('0')
-    $('.item').css('display', 'none');
-  
+    // $('.item').css('display', 'none');
+    $('.item').toggleClass('show-specific-select-hide-toggle', true)
+
     rawVal.forEach(word => {
-      $(`span:contains("${word}")`).parent().css('display', 'inline');
+      // $(`span:contains("${word}")`).parent().css('display', 'inline-block');
+      $(`span:contains("${word}")`).parent().toggleClass('show-specific-select-hide-toggle', false)
     });
   }
 });

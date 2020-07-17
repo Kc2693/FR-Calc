@@ -4,14 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>FR Dom Calc</title>
-  <!-- <link rel="stylesheet" href="normalize.css"> -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <h1>FR Dom-Shop Calculator</h1>
+    <h1>FR Dom-Discount Calculator</h1>
     <div class="order-total-container">
       <span>Total:</span>
       <span class="order-total">0</span>
@@ -29,73 +28,68 @@
       </select>
     </div>
 </header>
-<div class="outer-container container">
+<div class="outer-container container-fluid">
   <div class="row justify-content-center">
-    <div class="col-sm-3">
-      one
-      <!-- <div class="container">
-       <div class="row">
-          <div class="col-12 item">
-            <span>Breed: Guardian</span>
-            <span class="item-price">42500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Breed: Tundra</span>
-            <span class="item-price">42500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Breed: Fae</span>
-            <span class="item-price">42500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Breed: Mirror</span>
-            <span class="item-price">42500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Breed: Pearlcatcher</span>
-            <span class="item-price">212500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Breed: Ridgeback</span>
-            <span class="item-price">212500</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Breed: Snapper</span>
-            <span class="item-price">276250</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Breed: Spiral</span>
-            <span class="item-price">276250</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Breed: Skydancer</span>
-            <span class="item-price">340000</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Ancient: Gaoler</span>
-            <span class="item-price">233750</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-          <div class="col-12 item">
-            <span>Ancient: Banescale</span>
-            <span class="item-price">233750</span>
-            <input class="quantity" type="text" maxlength="3"/>
-          </div>
-        </div>
-      </div> -->
+    <div class="col-md-3">
+      <div class="col-12 item">
+        <span>Breed: Guardian</span>
+        <span class="item-price">42500</span>
+        <input class="quantity" type="text" maxlength="3"/>
+      </div>
+      <div class="col-12 item">
+        <span>Breed: Tundra</span>
+        <span class="item-price">42500</span>
+        <input class="quantity" type="text" maxlength="3"/>
+      </div>
+      <div class="col-12 item">
+        <span>Breed: Fae</span>
+        <span class="item-price">42500</span>
+        <input class="quantity" type="text" maxlength="3"/>
+      </div>
+      <div class="col-12 item">
+        <span>Breed: Mirror</span>
+        <span class="item-price">42500</span>
+        <input class="quantity" type="text" maxlength="3"/>
+      </div>
+      <div class="col-12 item">
+        <span>Breed: Pearlcatcher</span>
+        <span class="item-price">212500</span>
+        <input class="quantity" type="text" maxlength="3"/>
+      </div>
+      <div class="col-12 item">
+        <span>Breed: Ridgeback</span>
+        <span class="item-price">212500</span>
+        <input class="quantity" type="text" maxlength="3"/>
+      </div>
+      <div class="col-12 item">
+        <span>Breed: Snapper</span>
+        <span class="item-price">276250</span>
+        <input class="quantity" type="text" maxlength="3"/>
+      </div>
+      <div class="col-12 item">
+        <span>Breed: Spiral</span>
+        <span class="item-price">276250</span>
+        <input class="quantity" type="text" maxlength="3"/>
+      </div>
+      <div class="col-12 item">
+        <span>Breed: Skydancer</span>
+        <span class="item-price">340000</span>
+        <input class="quantity" type="text" maxlength="3"/>
+      </div>
+      <div class="col-12 item">
+        <span>Ancient: Gaoler</span>
+        <span class="item-price">233750</span>
+        <input class="quantity" type="text" maxlength="3"/>
+      </div>
+      <div class="col-12 item">
+        <span>Ancient: Banescale</span>
+        <span class="item-price">233750</span>
+        <input class="quantity" type="text" maxlength="3"/>
+      </div>
     </div>
-    <div class="col-sm-3">
-      <div class="container">
-        <div class="row">
+    <div class="col-md-3">
+      <!-- <div class="container"> -->
+        <!-- <div class="row"> -->
         <div class=" col-12 item">
           <span>Primary: Speckle</span>
           <span class="item-price">106250</span>
@@ -256,12 +250,12 @@
           <span class="item-price">57375</span>
           <input class="quantity" type="text" maxlength="3"/>
         </div>
-      </div>
-      </div>
+      <!-- </div> -->
+      <!-- </div> -->
     </div>
-    <div class="col-sm-3">
-      <div class="container">
-        <div class="row">
+    <div class="col-md-3">
+      <!-- <div class="container"> -->
+        <!-- <div class="row"> -->
         <div class="col-12 item">
           <span>Secondary: Stripes</span>
           <span class="item-price">76500</span>
@@ -422,12 +416,12 @@
           <span class="item-price">68000</span>
           <input class="quantity" type="text" maxlength="3"/>
         </div>
-      </div>
-      </div>
+      <!-- </div> -->
+      <!-- </div> -->
     </div>
-    <div class="col-sm-3">
-      <div class="container">
-        <div class="row">
+    <div class="col-md-3">
+      <!-- <div class="container"> -->
+        <!-- <div class="row"> -->
         <div class="col-12 item">
           <span>Tertiary: Underbelly</span>
           <span class="item-price">127500</span>
@@ -563,8 +557,8 @@
           <span class="item-price">63750</span>
           <input class="quantity" type="text" maxlength="3"/>
         </div>
-      </div>
-      </div>
+      <!-- </div> -->
+      <!-- </div> -->
     </div>
   </div>
 </div>
@@ -574,5 +568,4 @@
 </footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="script.js"></script>

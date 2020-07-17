@@ -29,16 +29,17 @@ $('.show-specific-select').change(function() {
 });
 
 $('.sort-select').change(function() {
-  console.log($('.sort-select').val())
+
+
   switch($('.sort-select').val()) {
     case 'alphabet':
       sortAlphabetically();
       break;
     case 'price-low':
-      sortByPrice("low")
+      sortByPrice("low");
       break;
     case 'price-high':
-      sortByPrice("high")
+      sortByPrice("high");
       break;
   }
 });

@@ -76,10 +76,15 @@ h1 {
   text-align: center;
 }
 
-.footer * {
+.info {
+  height: 20px;
   margin-left: 10px;
-  position: sticky;
-  bottom: 0;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 0;
+}
+.info a {
+  color: #dac8ff;
 }
 
 input[type=number]::-webkit-inner-spin-button, 

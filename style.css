@@ -34,7 +34,7 @@ h1 {
   color: white;
 }
 .sorting-options, .new-sorting-options {
-  width: 200px;
+  width: 250px;
   margin: 10px auto;
 }
 .show-specific-select option {
@@ -75,8 +75,6 @@ h1 {
   max-height: 25px;
   text-align: center;
 }
-
-
 
 .footer * {
   margin-left: 10px;

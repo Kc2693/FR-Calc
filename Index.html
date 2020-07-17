@@ -17,6 +17,14 @@
       <button class="calc-btn">Calculate</button>
       <button class="clear-totals">Clear</button>
     </div>
+    <div class="new-sorting-options">
+      Sort By:
+      <select class="sort-select">
+        <option value="price-low">Price (low to high)</option>
+        <option value="price-high">Price (high to low)</option>
+        <option value="alphabet">Alphabetically</option>
+      </select>
+    </div>
     <div class="sorting-options">
       Show only:
       <select class="show-specific-select">
@@ -30,24 +38,24 @@
 </header>
 <div class="outer-container container-fluid">
   <div class="row justify-content-center">
-    <div class="col-md-3">
-      <div class="col-12 item">
-        <span>Breed: Guardian</span>
-        <span class="item-price">42500</span>
-        <input class="quantity" type="text" maxlength="3"/>
-      </div>
-      <div class="col-12 item">
-        <span>Breed: Tundra</span>
-        <span class="item-price">42500</span>
-        <input class="quantity" type="text" maxlength="3"/>
-      </div>
+    <div id="breed" class="col-md-3 breed">
       <div class="col-12 item">
         <span>Breed: Fae</span>
         <span class="item-price">42500</span>
         <input class="quantity" type="text" maxlength="3"/>
       </div>
       <div class="col-12 item">
+        <span>Breed: Guardian</span>
+        <span class="item-price">42500</span>
+        <input class="quantity" type="text" maxlength="3"/>
+      </div>
+      <div class="col-12 item">
         <span>Breed: Mirror</span>
+        <span class="item-price">42500</span>
+        <input class="quantity" type="text" maxlength="3"/>
+      </div>
+      <div class="col-12 item">
+        <span>Breed: Tundra</span>
         <span class="item-price">42500</span>
         <input class="quantity" type="text" maxlength="3"/>
       </div>
@@ -87,7 +95,7 @@
         <input class="quantity" type="text" maxlength="3"/>
       </div>
     </div>
-    <div class="col-md-3">
+    <div id="primary" class="col-md-3 primary">
       <!-- <div class="container"> -->
         <!-- <div class="row"> -->
         <div class=" col-12 item">
@@ -253,7 +261,7 @@
       <!-- </div> -->
       <!-- </div> -->
     </div>
-    <div class="col-md-3">
+    <div id="secondary" class="col-md-3 secondary">
       <!-- <div class="container"> -->
         <!-- <div class="row"> -->
         <div class="col-12 item">
@@ -419,7 +427,7 @@
       <!-- </div> -->
       <!-- </div> -->
     </div>
-    <div class="col-md-3">
+    <div id="tertiary" class="col-md-3 tertiary">
       <!-- <div class="container"> -->
         <!-- <div class="row"> -->
         <div class="col-12 item">

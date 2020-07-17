@@ -33,7 +33,7 @@ h1 {
   border-radius: 5px;
   color: white;
 }
-.sorting-options {
+.sorting-options, .new-sorting-options {
   width: 200px;
   margin: 10px auto;
 }

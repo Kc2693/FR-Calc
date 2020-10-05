@@ -29,8 +29,6 @@ $('.show-specific-select').change(function() {
 });
 
 $('.sort-select').change(function() {
-
-
   switch($('.sort-select').val()) {
     case 'alphabet':
       sortAlphabetically();
@@ -43,6 +41,15 @@ $('.sort-select').change(function() {
       break;
   }
 });
+
+$('#compact-switch').change(function () {
+  $('.inner-container').toggleClass('compact-container');
+  $('#breed').toggleClass('col-md-3').toggleClass('col-sm-7').toggleClass('compact');
+  $('#primary').toggleClass('col-md-3').toggleClass('col-sm-7').toggleClass('compact');
+  $('#secondary').toggleClass('col-md-3').toggleClass('col-sm-7').toggleClass('compact');
+  $('#tertiary').toggleClass('col-md-3').toggleClass('col-sm-7').toggleClass('compact');
+  replaceText();
+})
 
 function sortAlphabetically() {
   let parentColumn;
@@ -110,3 +117,20 @@ function reduceOrderTotal(itemTotals) {
   });
   return orderTotal;
 };
+
+function replaceText() {
+  var test = $('div#breed > div.item > span:first-of-type').html();
+  var str = test.split(" ");
+  var img = '<img src="https://www1.flightrising.com/static/icons/primary-gene.png">'
+  console.log(str)
+
+
+  $('div#breed > div.item > span:first-of-type').each(function(index, elem) {
+    let toChange = elem.innerText;
+    let strArr = toChange.split(" ");
+    let newString = toChange.replace(strArr[0], img)
+
+    elem.innerHTML = newString
+  })
+
+}

@@ -2,6 +2,10 @@
   --main-bg: #1e1f26;
   --quantity: #101014;
   --item-price: #9275d1;
+  --border: #696d86;
+  --primary: #8FC74F;
+  --secondary: #C270CE;
+  --tertiary: #69B0E8;
 }
 body {
   background-color: var(--main-bg);
@@ -28,7 +32,7 @@ h1 {
   width: 100px;
 }
 .calc-btn, .clear-totals {
-  background-color: #4a4c5e;
+  background-color: #878787;
   border-color: #696d86;
   border-radius: 5px;
   color: white;
@@ -106,4 +110,129 @@ input[type=number]::-webkit-outer-spin-button {
   .container {
       width: 1190px;
   }
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ff0066;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ff0066;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+.compact {
+  margin: 0 10px 5px 10px;
+  height: 400px;
+  max-width: 340px;
+  border-radius: 5px;
+  padding: 4px;
+  overflow-y: scroll;
+}
+.compact-container {
+  max-width: 1019px;
+  margin: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--item-price);
+  border-radius: 10px;
+}
+
+div.inner-container > *::-webkit-scrollbar {
+  width: 10px;
+}
+div.inner-container > *::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+}
+
+/* compact view mode for borders and scrollbar thumb colors */
+#breed.compact {
+  border: 1px solid var(--item-price);
+}
+#primary.compact {
+  border: 1px solid var(--primary);
+}
+#secondary.compact {
+  border: 1px solid var(--secondary);
+}
+#tertiary.compact {
+  border: 1px solid var(--tertiary);
+}
+#primary.compact::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+#secondary.compact::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+}
+#tertiary.compact::-webkit-scrollbar-thumb {
+  background: var(--tertiary);
 }

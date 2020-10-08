@@ -120,19 +120,29 @@ function reduceOrderTotal(itemTotals) {
 };
 
 function replaceText(classNameText) {
-  var test = $('div#primary > div.item > span:first-of-type').html();
+  let scrollNames = ["Breed:", "Primary:", "Secondary:", "Tertiary:", "Banescale:", "Gaoler:"]
+  var test = $('div.item > span:first-of-type').html();
   var str = test.split(" ");
   let img;
   var text = "Hello:";
 
-  $('div#primary > div.item > span:first-of-type').each(function(index, elem) {
+  $('div.item > span:first-of-type').each(function(index, elem) {
     let toChange = elem.innerText;
     let strArr = toChange.split(" ");
     
 
     switch(strArr[0]) {
+      case 'Breed:':
+        img = '<img src="./assets/breed.png">';
+        break;
       case 'Primary:':
         img = '<img src="./assets/pri.png">'
+        break;
+      case 'Secondary:':
+        img = '<img src="./assets/sec.png">'
+        break;
+      case 'Tertiary:':
+        img = '<img src="./assets/tert.png">'
         break;
       case 'Gaoler:':
         img = '<img src="./assets/gaoler.png">'
@@ -141,9 +151,10 @@ function replaceText(classNameText) {
         img = '<img src="./assets/banescale.png">'
         break;
     }
+    console.log(typeof strArr[0])
 
     let newString = toChange.replace(strArr[0], img)
-    if (strArr[0] == 'Primary:' || strArr[0] == 'Banescale:' || strArr[0] == 'Gaoler:') {
+    if (scrollNames.includes(strArr[0])) {
       elem.innerHTML = newString
       
     } else {

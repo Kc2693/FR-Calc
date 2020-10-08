@@ -48,7 +48,8 @@ $('#compact-switch').change(function () {
   $('#primary').toggleClass('col-md-3').toggleClass('col-sm-7').toggleClass('compact');
   $('#secondary').toggleClass('col-md-3').toggleClass('col-sm-7').toggleClass('compact');
   $('#tertiary').toggleClass('col-md-3').toggleClass('col-sm-7').toggleClass('compact');
-  replaceText();
+  var className = $( "div:contains('Fae')" ).attr("id");
+  replaceText(className);
 })
 
 function sortAlphabetically() {
@@ -118,19 +119,37 @@ function reduceOrderTotal(itemTotals) {
   return orderTotal;
 };
 
-function replaceText() {
-  var test = $('div#breed > div.item > span:first-of-type').html();
+function replaceText(classNameText) {
+  var test = $('div#primary > div.item > span:first-of-type').html();
   var str = test.split(" ");
-  var img = '<img src="https://www1.flightrising.com/static/icons/primary-gene.png">'
-  console.log(str)
+  let img;
+  var text = "Hello:";
 
-
-  $('div#breed > div.item > span:first-of-type').each(function(index, elem) {
+  $('div#primary > div.item > span:first-of-type').each(function(index, elem) {
     let toChange = elem.innerText;
     let strArr = toChange.split(" ");
-    let newString = toChange.replace(strArr[0], img)
+    
 
-    elem.innerHTML = newString
+    switch(strArr[0]) {
+      case 'Primary:':
+        img = '<img src="./assets/pri.png">'
+        break;
+      case 'Gaoler:':
+        img = '<img src="./assets/gaoler.png">'
+        break;
+      case 'Banescale:':
+        img = '<img src="./assets/banescale.png">'
+        break;
+    }
+
+    let newString = toChange.replace(strArr[0], img)
+    if (strArr[0] == 'Primary:' || strArr[0] == 'Banescale:' || strArr[0] == 'Gaoler:') {
+      elem.innerHTML = newString
+      
+    } else {
+      newString = toChange.replace(strArr[0], text)
+      elem.innerHTML = newString
+    }
   })
 
 }

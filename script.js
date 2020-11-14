@@ -29,8 +29,6 @@ $('.show-specific-select').change(function() {
 });
 
 $('.sort-select').change(function() {
-
-
   switch($('.sort-select').val()) {
     case 'alphabet':
       sortAlphabetically();

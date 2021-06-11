@@ -65,6 +65,13 @@ $('.sort-select').change(function() {
   }
 });
 
+$('.col-md-3 ').on('focusin','.quantity', function() {
+  $(this).parent().addClass('highlight')
+})
+$('.col-md-3 ').on('focusout','.quantity', function() {
+  $(this).parent().removeClass('highlight')
+})
+
 function sortAlphabetically() {
   let parentColumn;
   $('.col-md-3').each(function(index, elem) {

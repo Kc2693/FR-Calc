@@ -49,8 +49,10 @@ function sortAlphabetically() {
     itemSelector = parentColumn + " > .item"
 
     $(itemSelector).sort(function(a,b) {
+      let textA = alphabetHelper(a.textContent)
+      let textB = alphabetHelper(b.textContent)
 
-      if (a.textContent < b.textContent) {
+      if (textA < textB) {
         return -1;
       } else {
         return 1;
@@ -58,6 +60,13 @@ function sortAlphabetically() {
     }).appendTo(parentColumn)
   });
 };
+
+function alphabetHelper(text) {
+  const regex = /[^:]*$/
+  const found = text.match(regex).join().trim();
+
+  return found
+}
 
 function sortByPrice(type) {
   let parentColumn;

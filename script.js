@@ -1,9 +1,32 @@
+function fillPage() {
+  let itemObj = window.marketplaceItems;
+  let categories = Object.keys(itemObj);
+
+  categories.forEach((category) => {
+    let itemArray = []
+    itemObj[category].forEach((item) => {
+      let template = 
+      `<div class="col-12 item">
+        <span>${item.name}</span>
+        <span class="item-price">${item.price}</span>
+        <input class="quantity" type="text" maxlength="3"/>
+      </div>`
+      
+      itemArray.push(template)
+    })
+
+    itemArray.forEach((filledTemplate) => {
+      $(`#${category}`).append(filledTemplate)
+    })
+  })
+}
+
 $(".calc-btn").click(function() {
 	let itemTotals = gatherItemTotals()
   let orderTotal = reduceOrderTotal(itemTotals)
   
   $('.order-total').text(orderTotal)
-  })
+})
 
 $(".clear-totals").click(function() {
   $(".quantity").val('')

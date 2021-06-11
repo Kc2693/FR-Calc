@@ -49,8 +49,9 @@ h1 {
 .item {
   border: 1px solid #4f5164;
   border-radius: 5px;
+  box-sizing: border-box;
   display: flex;
-  padding: 10px 5px 5px 5px;
+  padding: 7px 5px 5px 5px;
   margin: 5px auto;
   font-size: 16px;
   align-self: center;
@@ -85,6 +86,11 @@ h1 {
 }
 .info a {
   color: #dac8ff;
+}
+
+.highlight {
+  box-shadow: inset 0px 0px 2px 1px rgba(120, 255, 71, 0.3);
+  border: 1px solid rgb(105, 223, 62);
 }
 
 input[type=number]::-webkit-inner-spin-button, 

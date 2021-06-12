@@ -24,9 +24,14 @@ function fillPage() {
 $(".calc-btn").click(function() {
 	let itemTotals = gatherItemTotals()
   let orderTotal = reduceOrderTotal(itemTotals)
-  
-  $('.order-total').text(orderTotal)
+  let formattedTotal = numberWithCommas(orderTotal)
+
+  $('.order-total').text(formattedTotal)
 })
+
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
 $(".clear-totals").click(function() {
   $(".quantity").val('')
@@ -71,6 +76,30 @@ $('.col-md-3 ').on('focusin','.quantity', function() {
 $('.col-md-3 ').on('focusout','.quantity', function() {
   $(this).parent().removeClass('highlight')
 })
+
+
+$('.order-total').click(function() {
+  if (parseInt($(this).text()) > 0) {
+    var text = $(this).get(0); 
+    var selection = window.getSelection(); 
+    var range = document.createRange(); 
+    range.selectNodeContents(text); 
+    selection.removeAllRanges(); 
+    selection.addRange(range); 
+    document.execCommand('copy'); 
+    selection.removeAllRanges();
+  
+    $('.tooltiptext').show();
+    hideAlert();
+  }
+})
+
+function hideAlert() {
+  setTimeout(function(){ 
+    $('.tooltiptext').fadeOut(500);
+   }, 800);
+}
+
 
 function sortAlphabetically() {
   let parentColumn;

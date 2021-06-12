@@ -2,6 +2,7 @@
   --main-bg: #1e1f26;
   --quantity: #101014;
   --item-price: #9275d1;
+  --green-hi: rgb(105, 223, 62);
 }
 body {
   background-color: var(--main-bg);
@@ -16,6 +17,7 @@ h1 {
 .order-total-container {
   width: 350px;
   margin: 10px auto;
+  position: relative;
 }
 .order-total-container>span {
   vertical-align: middle;
@@ -27,6 +29,32 @@ h1 {
   text-align: center;
   width: 100px;
 }
+
+.tooltiptext {
+  display:none;
+  width: 70px;
+  background-color: rgb(82, 172, 53);
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 102%;
+  margin-left: 56px;
+}
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(82, 172, 53) transparent transparent transparent;
+}
+
 .calc-btn, .clear-totals {
   background-color: #4a4c5e;
   border-color: #696d86;

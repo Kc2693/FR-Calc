@@ -37,6 +37,10 @@ window.marketplaceItems = {
             "price": 340000           
         },
         {
+            "name": "Breed: Obelisk",
+            "price": 340000           
+        },
+        {
             "name": "Ancient: Gaoler",
             "price": 233750          
         },

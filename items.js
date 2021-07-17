@@ -344,6 +344,10 @@ window.marketplaceItems = {
             "price": 136000
         },
         {
+            "name": "Secondary: Seraph",
+            "price": 106250
+        },
+        {
             "name": "Secondary: Striation",
             "price": 102000
         },

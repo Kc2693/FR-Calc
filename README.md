@@ -15,3 +15,10 @@ Switching between these views [b]will clear quantities and calc totals[/b]. In t
 You can now sort by several options: Price (low to high), Price (high to low), or Alphabetically. 
 Switching between these sort options [b]will clear quantities and calc totals[/b]. I am currently debating which would be better or whether to implement a toggle! 
 
+
+![selection-and-copy](https://i.imgur.com/EfLSQ0d.gif)
+### Selection Highlighting
+Now when you click on a gene input to add quantity, the box will highlight green to show you exactly which one you clicked on
+
+### Automatic Copy-to-Clipboard
+Clicking on the 'total' after calculating will now automatically copy your price total to your clipboard. Added a small 'copied!' popup to show that.

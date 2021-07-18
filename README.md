@@ -1,8 +1,9 @@
 # FR-Calc
+A simple calculator for online browser-based game FlightRising. Users looking for a changelog and feature to-do list should check my thread in the Guides forum. 
 
 ![selection-and-copy](https://i.imgur.com/EfLSQ0d.gif)
 
-A simple calculator for online browser-based game FlightRising. Users looking for a changelog and feature to-do list should check my thread in the Guides forum. 
+
 
 
 ## Current Features

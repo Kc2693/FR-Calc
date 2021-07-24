@@ -71,6 +71,10 @@ window.marketplaceItems = {
             "price": 144500
         },
         {
+            "name": "Primary: Flaunt",
+            "price": 170000
+        },
+        {
             "name": "Primary: Giraffe",
             "price": 191250
         },
@@ -302,6 +306,10 @@ window.marketplaceItems = {
         {
             "name": "Secondary: Eye Spots",
             "price": 93500
+        },
+        {
+            "name": "Secondary: Flare",
+            "price": 140250
         },
         {
             "name": "Secondary: Freckle",

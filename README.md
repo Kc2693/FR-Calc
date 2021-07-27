@@ -23,3 +23,6 @@ Now when you click on a gene input to add quantity, the box will highlight green
 
 ### Automatic Copy-to-Clipboard
 Clicking on the 'total' after calculating will now automatically copy your price total to your clipboard. Added a small 'copied!' popup to show that.
+
+### Light Mode
+![light-mode](https://user-images.githubusercontent.com/28677397/127203387-f4464837-8756-4a22-8c9e-0ec8340185e5.png)

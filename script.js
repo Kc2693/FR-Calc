@@ -1,3 +1,5 @@
+// let lightMode = false;
+
 function fillPage() {
   let itemObj = window.marketplaceItems;
   let categories = Object.keys(itemObj);
@@ -20,6 +22,26 @@ function fillPage() {
     })
   })
 }
+
+(function() {
+  let toggled = false;
+  let localPreference = localStorage.getItem('lightModeToggle') 
+  var htmlElement = document.querySelector("html");
+
+  if (localPreference === "true") {
+    toggled = true;
+    $(htmlElement).attr("data-light-mode", true);
+    $('#lightmode-switch').prop('checked', true);
+  }
+
+  $("#lightmode-switch").click(function() {
+    toggled = !toggled;
+    $(htmlElement).attr("data-light-mode", toggled ? "true" : "false");
+    localStorage.setItem('lightModeToggle', toggled)
+  });
+
+})();
+
 
 $(".calc-btn").click(function() {
 	let itemTotals = gatherItemTotals()
@@ -143,14 +165,12 @@ function sortByPrice(type) {
         } else {
           return 1;
         }
-        return
       } else if (type == 'high') {
         if (firstVal < secondVal) {
           return 1;
         } else {
           return -1;
         }
-        return
       }
 
     }).appendTo(parentColumn)
@@ -176,3 +196,4 @@ function reduceOrderTotal(itemTotals) {
   });
   return orderTotal;
 };
+

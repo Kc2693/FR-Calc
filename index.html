@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="en" data-light-mode="false">
 <head>
   <meta charset="utf-8">
   <title>FR Dom Calc</title>
@@ -10,13 +10,25 @@
 
 <body onload="fillPage()">
   <header>
-    <h1>FR Dom-Discount Calculator</h1>
+    <h1>DOM-Discount Calc</h1>
+    <div class="info">
+      <span>version 4.4 | <a href="https://www1.flightrising.com/forums/gde/2639390/1#post_2639390">Rowdy#277339</a></span><br>
+      <div class="card" style="width: 12rem;">
+        <div class="card-body">
+          <h6 class="card-title">User Options:</h6>
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="lightmode-switch">
+            <label class="custom-control-label" for="lightmode-switch">light mode</label>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="order-total-container">
       <span class="tooltiptext">Copied!</span>
       <span>Total:</span>
       <span class="order-total">0</span>
-      <button class="calc-btn">Calculate</button>
-      <button class="clear-totals">Clear</button>
+      <button class="calc-btn"><a href="#">Calculate</a></button>
+      <button class="clear-totals"><a href="#">Clear</a></button>
     </div>
     <div class="new-sorting-options">
       Sort by:
@@ -46,9 +58,6 @@
     <div id="secondary" class="col-md-3 secondary"></div>
     <div id="tertiary" class="col-md-3 tertiary"></div>
   </div>
-</div>
-<div class="info">
-  <span>version 4.4 | <a href="https://www1.flightrising.com/forums/gde/2639390/1#post_2639390">Rowdy#277339</a></span><br>
 </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

@@ -308,7 +308,7 @@ window.marketplaceItems = {
             "price": 93500
         },
         {
-            "name": "Secondary: Flare",
+            "name": "Secondary: Flair",
             "price": 140250
         },
         {

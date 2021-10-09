@@ -130,6 +130,10 @@ window.marketplaceItems = {
             "name": "Primary: Vipera",
             "price": 199750     
         },
+        {
+            "name": "Primary: Ribbon",
+            "price": 161500      
+        },
 
         // GAOLER
         {
@@ -302,6 +306,10 @@ window.marketplaceItems = {
         {
             "name": "Secondary: Edged",
             "price": 102000
+        },
+        {
+            "name": "Secondary: Eel",
+            "price": 131750
         },
         {
             "name": "Secondary: Eye Spots",

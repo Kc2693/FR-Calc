@@ -103,6 +103,10 @@ window.marketplaceItems = {
             "price": 199750
         },
         {
+            "name": "Primary: Ribbon",
+            "price": 161500      
+        },
+        {
             "name": "Primary: Ripple",
             "price": 212500
         },
@@ -130,10 +134,7 @@ window.marketplaceItems = {
             "name": "Primary: Vipera",
             "price": 199750     
         },
-        {
-            "name": "Primary: Ribbon",
-            "price": 161500      
-        },
+
 
         // GAOLER
         {

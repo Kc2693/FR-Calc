@@ -91,6 +91,10 @@ window.marketplaceItems = {
             "price": 119000
         },
         {
+            "name": "Primary: Leopard",
+            "price": 119000
+        },
+        {
             "name": "Primary: Lionfish",
             "price": 212500
         },

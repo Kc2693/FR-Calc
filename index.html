@@ -11,18 +11,22 @@
 <body onload="fillPage()">
   <header>
     <h1>DOM-Discount Calc</h1>
-    <div class="info">
+    <aside class="info">
       <span>version 4.8 | <a href="https://www1.flightrising.com/forums/gde/2639390/1#post_2639390">Rowdy#277339</a></span><br>
       <div class="card" style="width: 12rem;">
         <div class="card-body">
-          <h6 class="card-title">User Options:</h6>
+          <h6 class="card-title">Display Options:</h6>
           <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="lightmode-switch">
             <label class="custom-control-label" for="lightmode-switch">light mode</label>
           </div>
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="comma-switch">
+            <label class="custom-control-label" for="comma-switch">commas in total</label>
+          </div>
         </div>
       </div>
-    </div>
+    </aside>
     <div class="order-total-container">
       <span class="tooltiptext">Copied!</span>
       <span>Total:</span>

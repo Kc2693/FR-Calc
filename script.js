@@ -1,4 +1,4 @@
-// let lightMode = false;
+let commasTotal;
 
 function fillPage() {
   let itemObj = window.marketplaceItems;
@@ -42,11 +42,38 @@ function fillPage() {
 
 })();
 
+(function() {
+  let toggled = false;
+  let localPreference = localStorage.getItem('commaToggle') 
+
+  console.log('what the fuck ' + localPreference)
+  if (localPreference === "true") {
+    toggled = true;
+    $('#comma-switch').prop('checked', true);
+    commasTotal = true;
+  }
+
+  $("#comma-switch").click(function() {
+    toggled = !toggled;
+    commasTotal = toggled;
+
+    localStorage.setItem('commaToggle', toggled)
+  });
+
+})();
+
 
 $(".calc-btn").click(function() {
 	let itemTotals = gatherItemTotals()
   let orderTotal = reduceOrderTotal(itemTotals)
-  let formattedTotal = numberWithCommas(orderTotal)
+  let formattedTotal;
+  
+  if (commasTotal) {
+    formattedTotal = numberWithCommas(orderTotal)
+  } else {
+    formattedTotal = orderTotal
+  }
+
 
   $('.order-total').text(formattedTotal)
 })

@@ -166,6 +166,36 @@ button:focus {
   background-color:#9ad175;
 }
 
+#autocomplete {
+  width: 250px;
+}
+
+.autocomplete-container {
+  width: 500px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.autocomplete-input-container {
+  width: 300px;
+  margin: auto;
+}
+
+#eac-container-autocomplete {
+  width: 250px;
+}
+
+#eac-container-autocomplete ul {
+  color: black;
+}
+
+.entry-item-list {
+  border: 1px solid var(--item-border);
+  margin-top: 20px;
+  padding: 10px;
+}
+
+
 /*  light mode classes  */
 .light-mode {
   background-color: var(--main-bg-light);

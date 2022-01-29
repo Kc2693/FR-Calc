@@ -6,6 +6,7 @@
   <title>FR Dom Calc</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.css" integrity="sha512-PZ83szWxZ41zcHUPd7NSgLfQ3Plzd7YmN0CHwYMmbR7puc6V/ac5Mm0t8QcXLD7sV/0AuKXectoLvjkQUdIz9g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body onload="fillPage()">
@@ -23,6 +24,13 @@
           <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="comma-switch">
             <label class="custom-control-label" for="comma-switch">commas in total</label>
+          </div>
+          <div class="custom-control custom-switch">
+            Calc Mode:
+            <select name="view-mode" id="view-mode">
+              <option value="Sheet Style">Sheet</option>
+              <option value="Entry Style">Entry</option>
+            </select>
           </div>
         </div>
       </div>
@@ -56,7 +64,7 @@
     </div>
 </header>
 <div class="outer-container container-fluid">
-  <div class="row justify-content-center">
+  <div class="row justify-content-center" id="columns-container">
     <div id="breed" class="col-md-3 breed"></div>
     <div id="primary" class="col-md-3 primary"></div>
     <div id="secondary" class="col-md-3 secondary"></div>
@@ -65,5 +73,6 @@
 </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js"></script>
 <script src="items.js"></script>
 <script src="script.js"></script>

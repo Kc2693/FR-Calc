@@ -2,25 +2,81 @@ let commasTotal;
 
 function fillPage() {
   let itemObj = window.marketplaceItems;
-  let categories = Object.keys(itemObj);
+  let modePreference = localStorage.getItem('viewModeToggle');
 
-  categories.forEach((category) => {
-    let itemArray = []
-    itemObj[category].forEach((item) => {
-      let template = 
-      `<div class="col-12 item">
-        <span>${item.name}</span>
-        <span class="item-price">${item.price}</span>
-        <input class="quantity" type="text" maxlength="3"/>
-      </div>`
+  if (!modePreference) {
+    modePreference = localStorage.setItem('viewModeToggle', 'sheet-style')
+  }
+
+  if (modePreference == 'sheet-sty3le') {
+    let categories = Object.keys(itemObj);
+
+    categories.forEach((category) => {
+      let itemArray = []
+      itemObj[category].forEach((item) => {
+        let template = 
+        `<div class="col-12 item">
+          <span>${item.name}</span>
+          <span class="item-price">${item.price}</span>
+          <input class="quantity" type="text" maxlength="3"/>
+        </div>`
+        
+        itemArray.push(template)
+      })
+
+      itemArray.forEach((filledTemplate) => {
+        $(`#${category}`).append(filledTemplate)
+      })
+    })
+  } else {
+    // if (modePrefrence == 'entry-style')
+
+    let template = `
+    <div class="autocomplete-container">
+      <div class="autocomplete-input-container">
+        <span>Enter an item:</span>
+        <input id="autocomplete" onclick="this.value=''" onblur=this.value=''></input>
+      </div>
+      <div class="entry-item-list row">
+        <h2>Items:</h2>
+      </div>
+    </div>`
+
+    $('#columns-container').children().css('display', 'none');
+
+    $('#columns-container').append(template);
+
+    var options = {
+      data: Object.values(itemObj).flat(),
+      getValue: "name",
       
-      itemArray.push(template)
-    })
+      list: {
+        maxNumberOfElements: 10,
+        match: {
+          enabled: true
+        },
+        onChooseEvent: function() {
+          let chosen = $("#autocomplete").getSelectedItemData();
+          let chosenItem = `<div class="col-12 item">
+          <span>${chosen.name}</span>
+          <span class="item-price">${chosen.price}</span>
+          <input class="quantity" type="text" maxlength="3" value=1 />
+        </div>`
+          $('.entry-item-list').append(chosenItem);
+          $("#autocomplete").select()
+        }
+      },
+      template: {
+        type: "description",
+        fields: {
+          description: "price"
+        }
+      }
+    }
 
-    itemArray.forEach((filledTemplate) => {
-      $(`#${category}`).append(filledTemplate)
-    })
-  })
+    $("#autocomplete").easyAutocomplete(options);
+  }
+
 }
 
 (function() {
@@ -83,8 +139,13 @@ function numberWithCommas(x) {
 }
 
 $(".clear-totals").click(function() {
-  $(".quantity").val('')
-  $('.order-total').text('0')
+  $(".quantity").val('');
+  $('.order-total').text('0');
+
+  if ($('.entry-item-list')) {
+    $('.entry-item-list').html(`<h2>Items:</h2>`);
+    $('#autocomplete').val('');
+  }
 })
 
 $('.show-specific-select').change(function() {

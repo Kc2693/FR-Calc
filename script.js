@@ -18,7 +18,7 @@ function fillPage() {
         `<div class="col-12 item">
           <span>${item.name}</span>
           <span class="item-price">${item.price}</span>
-          <input class="quantity" type="text" maxlength="3"/>
+          <input class="quantity" type="text" maxlength="3" onfocusin="highlight(this)" onfocusout="unlight(this)"/>
         </div>`
         
         itemArray.push(template)
@@ -60,7 +60,7 @@ function fillPage() {
           let chosenItem = `<div class="col-12 item">
           <span>${chosen.name}</span>
           <span class="item-price">${chosen.price}</span>
-          <input class="quantity" type="text" maxlength="3" value=1 />
+          <input class="quantity" type="text" maxlength="3" value=1 onfocusin="highlight(this)" onfocusout="unlight(this)"/>
         </div>`
           $('.entry-item-list').append(chosenItem);
           $("#autocomplete").select()
@@ -180,13 +180,19 @@ $('.sort-select').change(function() {
   }
 });
 
-$('.col-md-3 ').on('focusin','.quantity', function() {
-  $(this).parent().addClass('highlight')
-})
-$('.col-md-3 ').on('focusout','.quantity', function() {
-  $(this).parent().removeClass('highlight')
-})
+// $('.quantity ').on('focusin','.quantity', function() {
+//   $(this).parent().addClass('highlight')
+// })
+// $('.quantity ').on('focusout','.quantity', function() {
+//   $(this).parent().removeClass('highlight')
+// })
 
+function highlight(e) {
+  $(e).parent().addClass('highlight');
+}
+function unlight(e) {
+  $(e).parent().removeClass('highlight');
+}
 
 $('.order-total').click(function() {
   if (parseInt($(this).text()) > 0) {

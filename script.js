@@ -35,7 +35,7 @@ function fillPage() {
     <div class="autocomplete-container">
       <div class="autocomplete-input-container">
         <span>Enter an item:</span>
-        <input id="autocomplete" onclick="this.value=''" onblur=this.value=''></input>
+        <input id="autocomplete" onclick="this.value=''" onblur="this.value=''"></input>
       </div>
       <div class="entry-item-list row">
         <h2>Items:</h2>
@@ -57,13 +57,29 @@ function fillPage() {
         },
         onChooseEvent: function() {
           let chosen = $("#autocomplete").getSelectedItemData();
-          let chosenItem = `<div class="col-12 item">
-          <button type="button" class="btn btn-sm btn-danger entry-item-cancel" onclick="deleteEntry(this)">X</button>
-          <span class="item-name">${chosen.name}</span>
-          <span class="item-price">${chosen.price}</span>
-          <input class="quantity" type="text" maxlength="3" value=1 onfocusin="highlight(this)" onfocusout="unlight(this)"/>
-        </div>`
-          $('.entry-item-list').append(chosenItem);
+          let chosenItem = 
+          `<div class="col-12 item">
+            <button type="button" class="btn btn-sm btn-danger entry-item-cancel" onclick="deleteEntry(this)">X</button>
+            <span class="item-name">${chosen.name}</span>
+            <span class="item-price">${chosen.price}</span>
+            <input class="quantity" type="text" maxlength="3" value=1 onfocusin="highlight(this)" onfocusout="unlight(this)"/>
+          </div>`
+
+          let existing = $(".item span.item-name:contains(" + `${chosen.name}` + ")")
+
+          if (existing.length !== 0) {
+            let existingEntry = existing.parent()
+            let entryQuantityVal = parseInt(existingEntry.find("input").val()) + 1
+            
+            existingEntry.addClass('flash');
+            setTimeout(function() {
+              existingEntry.removeClass('flash');
+            }, 500);
+            existingEntry.find("input").val(entryQuantityVal)
+          } else {
+            $('.entry-item-list').append(chosenItem);
+          }
+
           $("#autocomplete").select()
         }
       },
@@ -211,6 +227,10 @@ $('.order-total').click(function() {
   }
 })
 
+function selectEntry() {
+  
+}
+
 function deleteEntry(button) {
   $(button).parent().remove();
 }
@@ -220,7 +240,6 @@ function hideAlert() {
     $('.tooltiptext').fadeOut(500);
    }, 800);
 }
-
 
 function sortAlphabetically() {
   let parentColumn;

@@ -4,6 +4,7 @@
   --quantity: #101014;
   --item-price: #9275d1;
   --item-highlight-border: 1px solid rgb(105, 223, 62);
+  --item-quantity-flash: rgb(105, 223, 62);
   --item-hi-box-shadow:inset 0px 0px 2px 1px rgba(120, 255, 71, 0.3);
   --item-border: #4f5164;
   --calc-btn-bg: #4a4c5e;
@@ -189,6 +190,14 @@ button:focus {
   color: black;
 }
 
+#eac-container-autocomplete li {
+  padding: 0;
+}
+
+.eac-item {
+  padding: 4px 12px;
+}
+
 .entry-item-list {
   border: 1px solid var(--item-border);
   margin-top: 20px;
@@ -219,6 +228,30 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none; 
   margin: 0; 
 }
+
+
+
+.flash {
+  border: var(--item-highlight-border);
+  -webkit-animation-name: flash-animation;
+  -webkit-animation-duration: 1.3s;
+
+  animation-name: flash-animation;
+  animation-duration: 1.3s;
+}
+
+@-webkit-keyframes flash-animation {  
+  from { background: var(--item-quantity-flash); }
+  to   { background: default; }
+}
+
+@keyframes flash-animation {  
+  from { background: var(--item-quantity-flash); }
+  to   { background: default; }
+}
+
+
+
 
 @media only screen and (max-width: 400px) {
   h1 {

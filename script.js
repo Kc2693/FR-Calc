@@ -147,7 +147,7 @@ $(".calc-btn").click(function() {
     formattedTotal = orderTotal
   }
 
-
+  // $('.order-total').text(12)
   $('.order-total').text(formattedTotal)
 })
 
@@ -306,7 +306,9 @@ function gatherItemTotals() {
 	return calculated.get();
 };
 
-function reduceOrderTotal(itemTotals) {  
+function reduceOrderTotal(itemTotals) { 
+  if (itemTotals.length == 0) {return 0}
+  
 	let orderTotal = itemTotals.reduce((currentTotal, item) => {
   	let newTotal = currentTotal + item;
 

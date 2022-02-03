@@ -16,7 +16,7 @@ function fillPage() {
       itemObj[category].forEach((item) => {
         let template = 
         `<div class="col-12 item">
-          <span>${item.name}</span>
+          <spanclass="item-name">${item.name}</span>
           <span class="item-price">${item.price}</span>
           <input class="quantity" type="text" maxlength="3" onfocusin="highlight(this)" onfocusout="unlight(this)"/>
         </div>`
@@ -58,7 +58,8 @@ function fillPage() {
         onChooseEvent: function() {
           let chosen = $("#autocomplete").getSelectedItemData();
           let chosenItem = `<div class="col-12 item">
-          <span>${chosen.name}</span>
+          <button type="button" class="btn btn-sm btn-danger entry-item-cancel" onclick="deleteEntry(this)">X</button>
+          <span class="item-name">${chosen.name}</span>
           <span class="item-price">${chosen.price}</span>
           <input class="quantity" type="text" maxlength="3" value=1 onfocusin="highlight(this)" onfocusout="unlight(this)"/>
         </div>`
@@ -209,6 +210,10 @@ $('.order-total').click(function() {
     hideAlert();
   }
 })
+
+function deleteEntry(button) {
+  $(button).parent().remove();
+}
 
 function hideAlert() {
   setTimeout(function(){ 

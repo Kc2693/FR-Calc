@@ -46,7 +46,6 @@ function fillPage() {
   let toggled = false;
   let localPreference = localStorage.getItem('commaToggle') 
 
-  console.log('what the fuck ' + localPreference)
   if (localPreference === "true") {
     toggled = true;
     $('#comma-switch').prop('checked', true);

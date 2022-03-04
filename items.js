@@ -154,6 +154,10 @@ window.marketplaceItems = {
             "price": 74375    
         },
         {
+            "name": "Gaoler: Fade",
+            "price": 53125  
+        },
+        {
             "name": "Gaoler: Falcon",
             "price": 72250  
         },
@@ -206,6 +210,10 @@ window.marketplaceItems = {
         {
             "name": "Banescale: Clown",
             "price": 74375     
+        },
+        {
+            "name": "Banescale: Fade",
+            "price": 53125
         },
         {
             "name": "Banescale: Falcon",
@@ -435,6 +443,10 @@ window.marketplaceItems = {
 
         // GAOLER
         {
+            "name": "Gaoler: Blend",
+            "price": 42500
+        },
+        {
             "name": "Gaoler: Breakup",
             "price": 85000
         },
@@ -484,6 +496,10 @@ window.marketplaceItems = {
         {
             "name": "Banescale: Arrow",
             "price": 68000
+        },
+        {
+            "name": "Banescale: Blend",
+            "price": 42500
         },
         {
             "name": "Banescale: Current",

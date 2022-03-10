@@ -48,6 +48,10 @@ window.marketplaceItems = {
             "name": "Ancient: Banescale",
             "price": 233750          
         },
+        {
+            "name": "Ancient: Aberration",
+            "price": 233750          
+        },
     ],
     "primary": [
         {
@@ -150,6 +154,10 @@ window.marketplaceItems = {
             "price": 74375    
         },
         {
+            "name": "Gaoler: Fade",
+            "price": 53125  
+        },
+        {
             "name": "Gaoler: Falcon",
             "price": 72250  
         },
@@ -202,6 +210,10 @@ window.marketplaceItems = {
         {
             "name": "Banescale: Clown",
             "price": 74375     
+        },
+        {
+            "name": "Banescale: Fade",
+            "price": 53125
         },
         {
             "name": "Banescale: Falcon",
@@ -286,6 +298,57 @@ window.marketplaceItems = {
             "name": "Veilspun: Vipera",
             "price": 99875
         },
+
+        // ABERRATION
+        {
+            "name": "Aberration: Bar",
+            "price": 106250
+        },
+        {
+            "name": "Aberration: Fade",
+            "price": 53125
+        },
+        {
+            "name": "Aberration: Falcon",
+            "price": 72250
+        },
+        {
+            "name": "Aberration: Giraffe",
+            "price": 95625
+        },
+        {
+            "name": "Aberration: Jaguar",
+            "price": 59500
+        },
+        {
+            "name": "Aberration: Lionfish",
+            "price": 106250
+        },
+        {
+            "name": "Aberration: Ribbon",
+            "price": 80750
+        },
+        {
+            "name": "Aberration: Savannah",
+            "price": 59500
+        },
+        {
+            "name": "Aberration: Speckle",
+            "price": 53125
+        },
+        {
+            "name": "Aberration: Swirl",
+            "price": 63750
+        },
+        {
+            "name": "Aberration: Tapir",
+            "price": 78625
+        },
+        {
+            "name": "Aberration: Vipera",
+            "price": 99875
+        },
+
     ],
     "secondary": [
         {
@@ -380,6 +443,10 @@ window.marketplaceItems = {
 
         // GAOLER
         {
+            "name": "Gaoler: Blend",
+            "price": 42500
+        },
+        {
             "name": "Gaoler: Breakup",
             "price": 85000
         },
@@ -429,6 +496,10 @@ window.marketplaceItems = {
         {
             "name": "Banescale: Arrow",
             "price": 68000
+        },
+        {
+            "name": "Banescale: Blend",
+            "price": 42500
         },
         {
             "name": "Banescale: Current",
@@ -516,6 +587,56 @@ window.marketplaceItems = {
         {
             "name": "Veilspun: Web",
             "price": 76500
+        },
+
+        // ABERRATION
+        {
+            "name": "Aberration: Blend",
+            "price": 42500
+        },
+        {
+            "name": "Aberration: Daub",
+            "price": 70125
+        },
+        {
+            "name": "Aberration: Eel",
+            "price": 65875
+        },
+        {
+            "name": "Aberration: Freckle",
+            "price": 38250
+        },
+        {
+            "name": "Aberration: Hex",
+            "price": 68000
+        },
+        {
+            "name": "Aberration: Hypnotic",
+            "price": 78625
+        },
+        {
+            "name": "Aberration: Marbled",
+            "price": 55250
+        },
+        {
+            "name": "Aberration: Noxtide",
+            "price": 72250
+        },
+        {
+            "name": "Aberration: Peregrine",
+            "price": 59500
+        },
+        {
+            "name": "Aberration: Rosette",
+            "price": 42500
+        },
+        {
+            "name": "Aberration: Safari",
+            "price": 41650
+        },
+        {
+            "name": "Aberration: Striation",
+            "price": 51000
         },
     ],
     "tertiary": [
@@ -662,6 +783,28 @@ window.marketplaceItems = {
         {
             "name": "Veilspun: Underbelly",
             "price": 63750           
+        },
+
+        // ABERRRATION
+        {
+            "name": "Aberration: Fangs",
+            "price": 63750           
+        },
+        {
+            "name": "Aberration: Ghost",
+            "price": 68000       
+        },
+        {
+            "name": "Aberration: Kumo",
+            "price": 59500      
+        },
+        {
+            "name": "Aberration: Peacock",
+            "price": 63750     
+        },
+        {
+            "name": "Aberration: Thylacine",
+            "price": 65875     
         },
     ]
 }

@@ -232,6 +232,10 @@ window.marketplaceItems = {
             "price": 59500
         },
         {
+            "name": "Banescale: Leopard",
+            "price": 59500
+        },
+        {
             "name": "Banescale: Marble",
             "price": 76500
         },
@@ -502,6 +506,10 @@ window.marketplaceItems = {
             "price": 42500
         },
         {
+            "name": "Banescale: Clouded",
+            "price": 51000
+        },
+        {
             "name": "Banescale: Current",
             "price": 70125
         },
@@ -681,6 +689,10 @@ window.marketplaceItems = {
             "price": 161500
         },
         {
+            "name": "Tertiary: Sparkle",
+            "price": 127500
+        },
+        {
             "name": "Tertiary: Spines",
             "price": 161500
         },
@@ -719,6 +731,10 @@ window.marketplaceItems = {
             "price": 80750
         },
         {
+            "name": "Gaoler: Sparkle",
+            "price": 63750
+        },
+        {
             "name": "Gaoler: Thylacine",
             "price": 65875
         },
@@ -754,6 +770,10 @@ window.marketplaceItems = {
             "price": 65875
         },
         {
+            "name": "Banescale: Sparkle",
+            "price": 63750
+        },
+        {
             "name": "Banescale: Trimmings",
             "price": 63750
         },
@@ -775,6 +795,10 @@ window.marketplaceItems = {
         {
             "name": "Veilspun: Runes",
             "price": 80750            
+        },
+        {
+            "name": "Veilspun: Sparkle",
+            "price": 63750
         },
         {
             "name": "Veilspun: Thorns",
@@ -801,6 +825,10 @@ window.marketplaceItems = {
         {
             "name": "Aberration: Peacock",
             "price": 63750     
+        },
+        {
+            "name": "Abberation: Sparkle",
+            "price": 63750
         },
         {
             "name": "Aberration: Thylacine",

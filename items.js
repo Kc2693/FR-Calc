@@ -162,6 +162,10 @@ window.marketplaceItems = {
             "price": 72250  
         },
         {
+            "name": "Gaoler: Flaunt",
+            "price": 85000
+        },
+        {
             "name": "Gaoler: Giraffe",
             "price": 95625 
         },
@@ -317,6 +321,10 @@ window.marketplaceItems = {
             "price": 72250
         },
         {
+            "name": "Aberration: Flaunt",
+            "price": 85000
+        },
+        {
             "name": "Aberration: Giraffe",
             "price": 95625
         },
@@ -467,6 +475,10 @@ window.marketplaceItems = {
             "price": 46750
         },
         {
+            "name": "Gaoler: Flair",
+            "price": 68213
+        },
+        {
             "name": "Gaoler: Hex",
             "price": 68000
         },
@@ -611,6 +623,10 @@ window.marketplaceItems = {
             "price": 65875
         },
         {
+            "name": "Aberration: Flair",
+            "price": 68213
+        },
+        {
             "name": "Aberration: Freckle",
             "price": 38250
         },
@@ -675,6 +691,10 @@ window.marketplaceItems = {
         {
             "name": "Tertiary: Peacock",
             "price": 127500
+        },
+        {
+            "name": "Tertiary: Points",
+            "price": 110500
         },
         {
             "name": "Tertiary: Ringlets",
@@ -766,6 +786,10 @@ window.marketplaceItems = {
             "price": 65875
         },
         {
+            "name": "Banescale: Peacock",
+            "price": 63750
+        },
+        {
             "name": "Banescale: Ringlets",
             "price": 65875
         },
@@ -775,6 +799,10 @@ window.marketplaceItems = {
         },
         {
             "name": "Banescale: Trimmings",
+            "price": 63750
+        },
+        {
+            "name": "Banescale: Underbelly",
             "price": 63750
         },
 

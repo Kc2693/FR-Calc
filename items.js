@@ -361,6 +361,57 @@ window.marketplaceItems = {
             "price": 99875
         },
 
+        // UNDERTIDE
+
+        {
+            "name": "Undertide: Bar",
+            "price": 106250
+        },
+        {
+            "name": "Undertide: Boa",
+            "price": 72250
+        },
+        {
+            "name": "Undertide: Checkers",
+            "price": 68000
+        },
+        {
+            "name": "Undertide: Cherub",
+            "price": 78625
+        },
+        {
+            "name": "Undertide: Fade",
+            "price": 53125
+        },
+        {
+            "name": "Undertide: Falcon",
+            "price": 72250
+        },
+        {
+            "name": "Undertide: Giraffe",
+            "price": 95625
+        },
+        {
+            "name": "Undertide: Ribbon",
+            "price": 80750
+        },
+        {
+            "name": "Undertide: Ripple",
+            "price": 106250
+        },
+        {
+            "name": "Undertide: Speckle",
+            "price": 53125
+        },
+        {
+            "name": "Undertide: Swirl",
+            "price": 63750
+        },
+        {
+            "name": "Undertide: Wolf",
+            "price": 68000
+        },
+
     ],
     "secondary": [
         {
@@ -662,6 +713,54 @@ window.marketplaceItems = {
             "name": "Aberration: Striation",
             "price": 51000
         },
+
+
+        // UNDERTIDE
+        {
+            "name": "Undertide: Blend",
+            "price": 42500 
+        },
+        {
+            "name": "Undertide: Chess",
+            "price": 68000
+        },
+        {
+            "name": "Undertide: Current",
+            "price": 70125
+        },
+        {
+            "name": "Undertide: Daub",
+            "price": 70125
+        },
+        {
+            "name": "Undertide: Eel",
+            "price": 65875
+        },
+        {
+            "name": "Undertide: Freckle",
+            "price": 38250 
+        },
+        {
+            "name": "Undertide: Hex",
+            "price": 68000
+        },
+        {
+            "name": "Undertide: Marbled",
+            "price": 55250
+        },
+        {
+            "name": "Undertide: Saddle",
+            "price": 63750
+        },
+        {
+            "name": "Undertide: Safari",
+            "price": 41650
+        },
+        {
+            "name": "Undertide: Seraph",
+            "price": 53125
+        }
+
     ],
     "tertiary": [
         {
@@ -862,5 +961,48 @@ window.marketplaceItems = {
             "name": "Aberration: Thylacine",
             "price": 65875     
         },
+
+        // UNDERTIDE
+        {
+            "name": "Undertide: Crackle",
+            "price": 80750          
+        },
+        {
+            "name": "Undertide: Gembond",
+            "price": 85000         
+        },
+        {
+            "name": "Undertide: Ghost",
+            "price": 68000         
+        },
+        {
+            "name": "Undertide: Okapi",
+            "price": 80750          
+        },
+        {
+            "name": "Undertide: Plating",
+            "price": 76500          
+        },
+        {
+            "name": "Undertide: Pufferfish",
+            "price": 68000         
+        },
+        {
+            "name": "Undertide: Ringlets",
+            "price": 65875          
+        },
+        {
+            "name": "Undertide: Runes",
+            "price": 80750         
+        },
+        {
+            "name": "Undertide: Sparkle",
+            "price": 63750          
+        },
+        {
+            "name": "Undertide: Underbelly",
+            "price": 63750         
+        },
+
     ]
 }

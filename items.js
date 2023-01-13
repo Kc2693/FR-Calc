@@ -271,12 +271,20 @@ window.marketplaceItems = {
             "price": 85000
         },
         {
+            "name": "Veilspun: Bar",
+            "price": 106250
+        },
+        {
             "name": "Veilspun: Clown",
             "price": 74375
         },
         {
             "name": "Veilspun: Fade",
             "price": 53125
+        },
+        {
+            "name": "Veilspun: Falcon",
+            "price": 72250
         },
         {
             "name": "Veilspun: Giraffe",
@@ -291,8 +299,16 @@ window.marketplaceItems = {
             "price": 59500
         },
         {
+            "name": "Veilspun: Leopard",
+            "price": 59500
+        },
+        {
             "name": "Veilspun: Shell",
             "price": 89250
+        },
+        {
+            "name": "Veilspun: Speckle",
+            "price": 53125
         },
         {
             "name": "Veilspun: Sphinxmoth",
@@ -624,6 +640,18 @@ window.marketplaceItems = {
             "price": 42500
         },
         {
+            "name": "Veilspun: Clouded",
+            "price": 51000
+        },
+        {
+            "name": "Veilspun: Daub",
+            "price": 70125
+        },
+        {
+            "name": "Veilspun: Freckle",
+            "price": 38250
+        },
+        {
             "name": "Veilspun: Edged",
             "price": 51000
         },
@@ -642,6 +670,10 @@ window.marketplaceItems = {
         {
             "name": "Veilspun: Hypnotic",
             "price": 78625
+        },
+        {
+            "name": "Secondary: Peregrine",
+            "price": 59500
         },
         {
             "name": "Veilspun: Saturn",
@@ -910,6 +942,10 @@ window.marketplaceItems = {
         {
             "name": "Veilspun: Crackle",
             "price": 80750
+        },
+        {
+            "name": "Veilspun: Ghost",
+            "price": 68000          
         },
         {
             "name": "Veilspun: Okapi",

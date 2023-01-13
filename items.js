@@ -672,7 +672,7 @@ window.marketplaceItems = {
             "price": 78625
         },
         {
-            "name": "Secondary: Peregrine",
+            "name": "Veilspun: Peregrine",
             "price": 59500
         },
         {

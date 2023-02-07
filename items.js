@@ -256,6 +256,10 @@ window.marketplaceItems = {
             "price": 59500
         },
         {
+            "name": "Banescale: Speckle",
+            "price": 53125
+        },
+        {
             "name": "Banescale: Tapir",
             "price": 78625
         },
@@ -538,6 +542,10 @@ window.marketplaceItems = {
             "price": 70125
         },
         {
+            "name": "Gaoler: Edged",
+            "price": 51000
+        },
+        {
             "name": "Gaoler: Eye Spots",
             "price": 46750
         },
@@ -601,6 +609,10 @@ window.marketplaceItems = {
             "price": 46750
         },
         {
+            "name": "Banescale: Freckle",
+            "price": 38250
+        },
+        {
             "name": "Banescale: Hex",
             "price": 68000
         },
@@ -623,6 +635,10 @@ window.marketplaceItems = {
         {
             "name": "Banescale: Seraph",
             "price": 53125
+        },
+        {
+            "name": "Banescale: Striation",
+            "price": 51000
         },
         {
             "name": "Banescale: Stripes",
@@ -779,6 +795,10 @@ window.marketplaceItems = {
         {
             "name": "Undertide: Marbled",
             "price": 55250
+        },
+        {
+            "name": "Undertide: Peregrine",
+            "price": 59500
         },
         {
             "name": "Undertide: Saddle",
@@ -996,6 +1016,10 @@ window.marketplaceItems = {
         {
             "name": "Aberration: Thylacine",
             "price": 65875     
+        },
+        {
+            "name": "Aberration: Underbelly",
+            "price": 63750     
         },
 
         // UNDERTIDE

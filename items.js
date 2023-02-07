@@ -1010,7 +1010,7 @@ window.marketplaceItems = {
             "price": 63750     
         },
         {
-            "name": "Abberation: Sparkle",
+            "name": "Aberration: Sparkle",
             "price": 63750
         },
         {

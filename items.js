@@ -52,6 +52,10 @@ window.marketplaceItems = {
             "name": "Ancient: Aberration",
             "price": 233750          
         },
+        {
+            "name": "Ancient: Aether",
+            "price": 233750          
+        },
     ],
     "primary": [
         {
@@ -430,6 +434,57 @@ window.marketplaceItems = {
         {
             "name": "Undertide: Wolf",
             "price": 68000
+        },
+
+        // AETHER PRIMARY
+
+        {
+            "name": "Aether: Bar",
+            "price": 106250
+        },
+        {
+            "name": "Aether: Cinder",
+            "price": 85000
+        },
+        {
+            "name": "Aether: Clown",
+            "price": 74375
+        },
+        {
+            "name": "Aether: Fade",
+            "price": 53125
+        },
+        {
+            "name": "Aether: Flaunt",
+            "price": 85000
+        },
+        {
+            "name": "Aether: Jaguar",
+            "price": 59500
+        },
+        {
+            "name": "Aether: Jupiter",
+            "price": 97750
+        },
+        {
+            "name": "Aether: Laced",
+            "price": 59500
+        },
+        {
+            "name": "Aether: Lionfish",
+            "price": 106250
+        },
+        {
+            "name": "Aether: Mosaic",
+            "price": 127500
+        },
+        {
+            "name": "Aether: Piebald",
+            "price": 99875
+        },
+        {
+            "name": "Aether: Spool",
+            "price": 85000
         },
 
     ],
@@ -811,8 +866,57 @@ window.marketplaceItems = {
         {
             "name": "Undertide: Seraph",
             "price": 53125
-        }
+        },
 
+        // AETHER SECONDARY
+        {
+            "name": "Aether: Blaze",
+            "price": 68000
+        },
+        {
+            "name": "Aether: Blend",
+            "price": 42500
+        },
+        {
+            "name": "Aether: Breakup",
+            "price": 85000
+        },
+        {
+            "name": "Aether: Daub",
+            "price": 70125
+        },
+        {
+            "name": "Aether: Edged",
+            "price": 51000
+        },
+        {
+            "name": "Aether: Eye Spots",
+            "price": 46750
+        },
+        {
+            "name": "Aether: Flair",
+            "price": 68213
+        },
+        {
+            "name": "Aether: Noxtide",
+            "price": 72250
+        },
+        {
+            "name": "Aether: Paint",
+            "price": 70125
+        },
+        {
+            "name": "Aether: Rosette",
+            "price": 42500
+        },
+        {
+            "name": "Aether: Saturn",
+            "price": 68000
+        },
+        {
+            "name": "Aether: Thread",
+            "price": 68000
+        },
     ],
     "tertiary": [
         {
@@ -1064,5 +1168,47 @@ window.marketplaceItems = {
             "price": 63750         
         },
 
+        // AETHER TERTIARY
+
+        {
+            "name": "Aether: Contour",
+            "price": 63750
+        },
+        {
+            "name": "Aether: Gembond",
+            "price": 85000
+        },
+        {
+            "name": "Aether: Lace",
+            "price": 65875
+        },
+        {
+            "name": "Aether: Points",
+            "price": 55250
+        },
+        {
+            "name": "Aether: Smoke",
+            "price": 80750
+        },
+        {
+            "name": "Aether: Sparkle",
+            "price": 63750
+        },
+        {
+            "name": "Aether: Spines",
+            "price": 80750
+        },
+        {
+            "name": "Aether: Stinger",
+            "price": 93500
+        },
+        {
+            "name": "Aether: Underbelly",
+            "price": 63750
+        },
+        {
+            "name": "Aether: Whiskers",
+            "price": 93500
+        },
     ]
 }

@@ -436,7 +436,7 @@ window.marketplaceItems = {
             "price": 68000
         },
 
-        // AETHER
+        // AETHER PRIMARY
 
         {
             "name": "Aether: Bar",
@@ -868,7 +868,7 @@ window.marketplaceItems = {
             "price": 53125
         },
 
-        // AETHER
+        // AETHER SECONDARY
         {
             "name": "Aether: Blaze",
             "price": 68000
@@ -1168,7 +1168,7 @@ window.marketplaceItems = {
             "price": 63750         
         },
 
-        // AETHER TERT
+        // AETHER TERTIARY
 
         {
             "name": "Aether: Contour",

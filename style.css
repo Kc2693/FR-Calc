@@ -211,6 +211,10 @@ button:focus {
   padding: 0 0 0 0.25em;
 }
 
+.custom-control {
+  margin: 2px 0 2px 0;
+}
+
 .custom-control-input:checked~.custom-control-label::before {
   border-color:#a6d175;
   background-color:#9ad175;
@@ -331,6 +335,16 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 @media only screen and (max-width: 400px) {

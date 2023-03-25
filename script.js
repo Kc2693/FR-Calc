@@ -156,7 +156,7 @@ $('.show-specific-select').change(function() {
     $('.order-total').text('0')
     $('.item').toggleClass('show-specific-select-hide-toggle', true)
 
-    // vial exception for show-only lives here for now. think of a better method later.
+    // vial / specialty exception for show-only lives here for now. think of a better method later.
     rawVal.forEach(word => {
       console.log(word)
       $(`span:contains("${word}"), span:contains("Vial")`).parent().toggleClass('show-specific-select-hide-toggle', false)

@@ -82,6 +82,9 @@ function fillPage() {
 })();
 
 function toggleFestivalBox(bool) {
+  $('.festival-quantity').val(0)
+
+  console.log( $('.festival-quantity').val(''))
   if (bool) {
     $('.festival-skin-box').show();
   } else {
@@ -141,6 +144,7 @@ function numberWithCommas(x) {
 
 $(".clear-totals").click(function() {
   $(".quantity").val('')
+  $(".festival-quantity").val('')
   $('.order-total').text('0')
 })
 

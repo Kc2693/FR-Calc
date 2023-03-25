@@ -38,6 +38,10 @@
             <label class="custom-control-label" for="comma-switch">commas in total</label>
           </div>
           <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="gotop-switch">
+            <label class="custom-control-label" for="gotop-switch">go to top button</label>
+          </div>
+          <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="festival-switch">
             <label class="custom-control-label" for="festival-switch">festival skins</label>
           </div>
@@ -88,13 +92,16 @@
     <div id="secondary" class="secondary item-boxes"></div>
     <div id="tertiary" class="tertiary item-boxes"></div>
     <div id="specialty" class="specialty item-boxes">
-      <h6 class="rainbow-text" style="text-align: center;">
-        <span class="block-line"><span><span style="color:#78dfff;">N</span><span style="color:#4ebdfd;">E</span><span style="color:#91c3f1;">W</span><span style="color:#c2e9f8;">!&nbsp;</span></span>
-        Sight Vials:
-      </h6>
+      <div class="rainbow-text-container">
+        <h6 class="rainbow-text alert-new-text">
+          <span class="block-line"><span><span style="color:#789cff;">N</span><span style="color:#4ebdfd;">E</span><span style="color:#91a3f1;">W</span><span style="color:#06b8ff;">!&nbsp;</span></span>
+        </h6>
+        <h6 class="alert-new-text">Sight Vials:</h6>
+      </div>
     </div>
   </div>
 </div>
+<button id="go-top-btn" title="Go to top">Go To Top</button>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="items.js"></script>

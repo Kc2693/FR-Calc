@@ -37,6 +37,10 @@
             <input type="checkbox" class="custom-control-input" id="comma-switch">
             <label class="custom-control-label" for="comma-switch">commas in total</label>
           </div>
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="festival-switch">
+            <label class="custom-control-label" for="festival-switch">Festival skins</label>
+          </div>
         </div>
       </div>
     </aside>
@@ -70,13 +74,25 @@
         <option value="Aether">Aether</option>
       </select>
     </div>
+    <div class="festival-skin-box rainbow-box">
+      <span class="fest-title">Festival Skin(s):</span>
+      <span class="item-price">29750</span>
+      <input class="festival-quantity" type="number" maxlength="3"/>
+      <!-- <br><span>OR</span>
+      <br>Full Set:
+      <span class="item-price">357000</span>
+      <label class="checkb-container">
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label> -->
+    </div>
 </header>
 <div class="outer-container">
   <div class="row">
-    <div id="breed" class="breed"></div>
-    <div id="primary" class="primary"></div>
-    <div id="secondary" class="secondary"></div>
-    <div id="tertiary" class="tertiary"></div>
+    <div id="breed" class="breed item-boxes"></div>
+    <div id="primary" class="primary item-boxes"></div>
+    <div id="secondary" class="secondary item-boxes"></div>
+    <div id="tertiary" class="tertiary item-boxes"></div>
     <div id="specialty" class="specialty">
       <h6 class="rainbow-text" style="text-align: center;">
         <span class="block-line"><span><span style="color:#78dfff;">N</span><span style="color:#4ebdfd;">E</span><span style="color:#91c3f1;">W</span><span style="color:#c2e9f8;">!&nbsp;</span></span>

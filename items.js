@@ -1225,7 +1225,7 @@ window.marketplaceItems = {
             "price": 63750
         },
         {
-            "name": "Vial of Rare Sighter",
+            "name": "Vial of Rare Sight",
             "price": 85000
         },
         {

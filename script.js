@@ -11,7 +11,7 @@ function fillPage() {
       `<div class="col-12 item">
         <span>${item.name}</span>
         <span class="item-price">${item.price}</span>
-        <input class="quantity" type="text" maxlength="3"/>
+        <input class="quantity" type="number" maxlength="3"/>
       </div>`
       
       itemArray.push(template)
@@ -61,10 +61,61 @@ function fillPage() {
 
 })();
 
+(function() {
+  let toggled = false;
+  let localPreference = localStorage.getItem('festivalToggle') 
+
+  if (localPreference === "true") {
+    toggled = true;
+    $('#festival-switch').prop('checked', true);
+  }
+
+  toggleDisplayOptionBox(toggled, '.festival-skin-box')
+
+  $("#festival-switch").click(function() {
+    toggled = !toggled;
+
+    localStorage.setItem('festivalToggle', toggled);
+    $('.festival-quantity').val(0);
+    toggleDisplayOptionBox(toggled, '.festival-skin-box');
+  });
+
+})();
+
+(function() {
+  let toggled = false;
+  let localPreference = localStorage.getItem('gotopToggle') 
+
+  if (localPreference === "true") {
+    toggled = true;
+    $('#gotop-switch').prop('checked', true);
+  }
+
+  toggleDisplayOptionBox(toggled, '#go-top-btn')
+
+  $("#gotop-switch").click(function() {
+    toggled = !toggled;
+
+    localStorage.setItem('gotopToggle', toggled)
+    toggleDisplayOptionBox(toggled, '#go-top-btn')
+  });
+})();
+
+
+function toggleDisplayOptionBox(bool, boxName) {
+  console.log(boxName)
+  if (bool) {
+    $(`${boxName}`).show();
+  } else {
+    $(`${boxName}`).hide();
+  }
+};
+
 
 $(".calc-btn").click(function() {
 	let itemTotals = gatherItemTotals()
-  let orderTotal = reduceOrderTotal(itemTotals)
+  let orderTotal = reduceOrderTotal(itemTotals) + addFestivalSkins();
+
   let formattedTotal;
   
   if (commasTotal) {
@@ -75,7 +126,37 @@ $(".calc-btn").click(function() {
 
 
   $('.order-total').text(formattedTotal)
-})
+});
+
+function gatherItemTotals() {
+  let calculated = $('.quantity').map((i, item) => {
+	  let quantity = $(item).val();
+    let itemPrice = parseInt($(item).siblings(".item-price").text()); 
+
+    return quantity * itemPrice;
+  })
+   
+	return calculated.get();
+};
+
+function reduceOrderTotal(itemTotals) {  
+	let orderTotal = itemTotals.reduce((currentTotal, item) => {
+  	let newTotal = currentTotal + item;
+
+    return newTotal;
+  });
+  return orderTotal;
+};
+
+function addFestivalSkins() {
+  if ($('.festival-skin-box').is(":hidden")) {
+    return 0;
+  } else {
+    let quantity = $('.festival-quantity').val();
+
+    return quantity * 29750;
+  }
+}
 
 function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -83,6 +164,7 @@ function numberWithCommas(x) {
 
 $(".clear-totals").click(function() {
   $(".quantity").val('')
+  $(".festival-quantity").val('')
   $('.order-total').text('0')
 })
 
@@ -98,8 +180,10 @@ $('.show-specific-select').change(function() {
     $('.order-total').text('0')
     $('.item').toggleClass('show-specific-select-hide-toggle', true)
 
+    // vial / specialty exception for show-only lives here for now. think of a better method later.
     rawVal.forEach(word => {
-      $(`span:contains("${word}")`).parent().toggleClass('show-specific-select-hide-toggle', false)
+      console.log(word)
+      $(`span:contains("${word}"), span:contains("Vial")`).parent().toggleClass('show-specific-select-hide-toggle', false)
     });
   }
 });
@@ -118,13 +202,12 @@ $('.sort-select').change(function() {
   }
 });
 
-$('.col-md-3 ').on('focusin','.quantity', function() {
+$('.item-boxes').on('focusin','.quantity', function() {
   $(this).parent().addClass('highlight')
 })
-$('.col-md-3 ').on('focusout','.quantity', function() {
+$('.item-boxes').on('focusout','.quantity', function() {
   $(this).parent().removeClass('highlight')
 })
-
 
 $('.order-total').click(function() {
   if (parseInt($(this).text()) > 0) {
@@ -146,12 +229,11 @@ function hideAlert() {
   setTimeout(function(){ 
     $('.tooltiptext').fadeOut(500);
    }, 800);
-}
-
+};
 
 function sortAlphabetically() {
   let parentColumn;
-  $('.col-md-3').each(function(index, elem) {
+  $('.item-boxes').each(function(index, elem) {
     parentColumn = "#" + elem.getAttribute('id')
     itemSelector = parentColumn + " > .item"
 
@@ -173,11 +255,11 @@ function alphabetHelper(text) {
   const found = text.match(regex).join().trim();
 
   return found
-}
+};
 
 function sortByPrice(type) {
   let parentColumn;
-  $('.col-md-3').each(function(index, elem) {
+  $('.item-boxes').each(function(index, elem) {
     parentColumn = "#" + elem.getAttribute('id')
     itemSelector = parentColumn + " > .item"
 
@@ -201,25 +283,8 @@ function sortByPrice(type) {
 
     }).appendTo(parentColumn)
   });
-}
-
-function gatherItemTotals() {
-  let calculated = $('.quantity').map((i, item) => {
-	  let quantity = $(item).val();
-    let itemPrice = parseInt($(item).siblings(".item-price").text()); 
-
-    return quantity * itemPrice;
-  })
-   
-	return calculated.get();
 };
 
-function reduceOrderTotal(itemTotals) {  
-	let orderTotal = itemTotals.reduce((currentTotal, item) => {
-  	let newTotal = currentTotal + item;
-
-    return newTotal;
-  });
-  return orderTotal;
-};
-
+$('#go-top-btn').click(function() {
+  $("html, body").animate({ scrollTop: "0" }, 700);
+})

@@ -8,6 +8,7 @@
   --item-border: #4f5164;
   --calc-btn-bg: #4a4c5e;
   --calc-btn-border: #696d86;
+  --rainbow-shadow: #000;
 }
 
 :root[data-light-mode="true"] {
@@ -20,11 +21,62 @@
   --item-border: #222022;
   --calc-btn-bg: #e7beb8;
   --calc-btn-border: #e4a38f;
+  --rainbow-shadow: #fff;
 }
 
 body {
   background-color: var(--main-bg);
   color: var(--font-color);
+}
+
+.row {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 15px 0 15px;
+}
+
+.row {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 0.6fr 2fr;
+  grid-auto-rows: 1fr;
+  gap: 7px 30px;
+  grid-auto-flow: row dense;
+  justify-content: center;
+  align-content: start;
+  grid-template-areas:
+    "breed primary secondary tertiary"
+    "specialty primary secondary tertiary"
+    ". primary secondary tertiary";
+}
+
+.breed { grid-area: breed; }
+
+.specialty { 
+  grid-area: specialty; 
+}
+
+.primary { grid-area: primary; }
+
+.secondary { grid-area: secondary; }
+
+.tertiary { grid-area: tertiary; }
+
+.rainbow-text-container {
+  text-align: center;
+}
+
+.rainbow-text {
+	text-shadow: #000 1px 1px 1px;
+}
+.rainbow-text .block-line > span {
+	display: inline-block;
+}
+.alert-new-text {
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 20px;
+  display: inline-block;
 }
 
 h1 {
@@ -74,7 +126,7 @@ h1 {
   border-color: rgb(82, 172, 53) transparent transparent transparent;
 }
 
-.calc-btn, .clear-totals {
+.calc-btn, .clear-totals, #go-top-btn {
   background-color: var(--calc-btn-bg);
   border-color: var(--calc-btn-border);
   border-radius: 5px;
@@ -99,9 +151,6 @@ button:focus {
 .show-specific-select-hide-toggle {
   display: none !important;
 }
-.outer-container {
-  max-width: 1400px;
-}
 .item {
   border: 1px solid var(--item-border);
   border-radius: 5px;
@@ -120,6 +169,7 @@ button:focus {
   color: var(--item-price);
   font-family: arial;
   margin: 0 5px 0 5px;
+  padding-top: 2px;
 } 
 .quantity {
   background-color: var(--quantity);
@@ -161,10 +211,112 @@ button:focus {
   padding: 0 0 0 0.25em;
 }
 
+.custom-control {
+  margin: 2px 0 2px 0;
+}
+
 .custom-control-input:checked~.custom-control-label::before {
   border-color:#a6d175;
   background-color:#9ad175;
 }
+
+.festival-skin-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto 20px auto;
+  width: 320px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.festival-quantity {
+  background-color: var(--quantity);
+  border-radius: 5px;
+  border: none;
+  color: var(--font-color);
+  display: inline-block;
+  width: 40px;
+  margin-left: auto;
+  max-height: 25px;
+  text-align: center;
+}
+
+.rainbow-box {
+  border: 2px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+  margin: 20px auto;
+}
+
+.fest-title {
+  display: inline-block;
+  width: 60%;
+}
+
+.checkb-container {
+  position: relative;
+}
+
+.checkb-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: -11px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.checkb-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkb-container input:checked ~ .checkmark {
+  background-color: #a6d175;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkb-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkb-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#go-top-btn {
+  display: none;
+  position: sticky;
+  left: 93%;
+  bottom: 1%;
+  width: 100px;
+}
+
 
 /*  light mode classes  */
 .light-mode {
@@ -183,6 +335,16 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 @media only screen and (max-width: 400px) {

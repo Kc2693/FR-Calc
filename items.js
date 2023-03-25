@@ -1210,5 +1210,47 @@ window.marketplaceItems = {
             "name": "Aether: Whiskers",
             "price": 93500
         },
+    ],
+    "specialty" : [
+        {
+            "name": "Vial of Tempered Sight",
+            "price": 2125
+        },
+        {
+            "name": "Vial of Uncommon Sight",
+            "price": 42500
+        },
+        {
+            "name": "Vial of Unusual Sight",
+            "price": 63750
+        },
+        {
+            "name": "Vial of Rare Sight",
+            "price": 85000
+        },
+        {
+            "name": "Vial of Soft Sight",
+            "price": 127500
+        },
+        {
+            "name": "Vial of Brilliant Sight",
+            "price": 127500
+        },
+        {
+            "name": "Vial of Fractal Sight",
+            "price": 212500
+        },
+        {
+            "name": "Vial of Horizontal Sight",
+            "price": 212500
+        },
+        {
+            "name": "Vial of Disjointed Sight",
+            "price": 425000
+        },
+        {
+            "name": "Vial of Elemental Sight",
+            "price": 425000
+        },
     ]
 }

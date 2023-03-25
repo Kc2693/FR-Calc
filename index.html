@@ -25,17 +25,25 @@
   <header>
     <h1>DOM-Discount Calc</h1>
     <aside class="info">
-      <span>version 4.9.6 | <a href="https://www1.flightrising.com/forums/gde/2639390/1#post_2639390">Rowdy#277339</a></span><br>
+      <span>version 5.0.0 | <a href="https://www1.flightrising.com/forums/gde/2639390/1#post_2639390">Rowdy#277339</a></span><br>
       <div class="card" style="width: 12rem;">
         <div class="card-body">
           <h6 class="card-title">Display Options:</h6>
           <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="lightmode-switch">
-            <label class="custom-control-label" for="lightmode-switch">light mode</label>
+            <label class="custom-control-label noselect" for="lightmode-switch">light mode</label>
           </div>
           <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="comma-switch">
-            <label class="custom-control-label" for="comma-switch">commas in total</label>
+            <label class="custom-control-label noselect" for="comma-switch">commas in total</label>
+          </div>
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="gotop-switch">
+            <label class="custom-control-label noselect" for="gotop-switch">go to top button</label>
+          </div>
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="festival-switch">
+            <label class="custom-control-label noselect" for="festival-switch">festival skins</label>
           </div>
         </div>
       </div>
@@ -70,15 +78,30 @@
         <option value="Aether">Aether</option>
       </select>
     </div>
+    <div class="festival-skin-box rainbow-box">
+      <span class="fest-title">Festival Skin(s):</span>
+      <span class="item-price">29750</span>
+      <input class="festival-quantity" type="number" maxlength="3"/>
+      <div style="font-size: 14px"><i>hint: a full set is 12 skins</i></div>
+    </div>
 </header>
-<div class="outer-container container-fluid">
-  <div class="row justify-content-center">
-    <div id="breed" class="col-md-3 breed"></div>
-    <div id="primary" class="col-md-3 primary"></div>
-    <div id="secondary" class="col-md-3 secondary"></div>
-    <div id="tertiary" class="col-md-3 tertiary"></div>
+<div class="outer-container">
+  <div class="row">
+    <div id="breed" class="breed item-boxes"></div>
+    <div id="primary" class="primary item-boxes"></div>
+    <div id="secondary" class="secondary item-boxes"></div>
+    <div id="tertiary" class="tertiary item-boxes"></div>
+    <div id="specialty" class="specialty item-boxes">
+      <div class="rainbow-text-container">
+        <h6 class="rainbow-text alert-new-text">
+          <span class="block-line"><span><span style="color:#789cff;">N</span><span style="color:#4ebdfd;">E</span><span style="color:#91a3f1;">W</span><span style="color:#06b8ff;">!&nbsp;</span></span>
+        </h6>
+        <h6 class="alert-new-text">Sight Vials:</h6>
+      </div>
+    </div>
   </div>
 </div>
+<button id="go-top-btn" title="Go to top">Go To Top</button>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="items.js"></script>

@@ -70,22 +70,22 @@ function fillPage() {
     $('#festival-switch').prop('checked', true);
   }
 
-  toggleFestivalBox(toggled, 0)
+  toggleFestivalBox(toggled)
 
   $("#festival-switch").click(function() {
     toggled = !toggled;
 
     localStorage.setItem('festivalToggle', toggled)
-    toggleFestivalBox(toggled, 1000)
+    toggleFestivalBox(toggled)
   });
 
 })();
 
-function toggleFestivalBox(bool, timer) {
+function toggleFestivalBox(bool) {
   if (bool) {
-    $('.festival-skin-box').show(timer);
+    $('.festival-skin-box').show();
   } else {
-    $('.festival-skin-box').hide(timer);
+    $('.festival-skin-box').hide();
   }
 };
 

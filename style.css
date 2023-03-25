@@ -215,6 +215,7 @@ button:focus {
 
 .festival-skin-box {
   display: flex;
+  flex-wrap: wrap;
   margin: 20px auto 20px auto;
   width: 320px;
   box-sizing: border-box;

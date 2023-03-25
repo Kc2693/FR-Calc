@@ -27,6 +27,55 @@ body {
   color: var(--font-color);
 }
 
+.row {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 15px 0 15px;
+}
+
+.row {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 0.6fr 2fr;
+  grid-auto-rows: 1fr;
+  gap: 7px 30px;
+  grid-auto-flow: row dense;
+  justify-content: center;
+  align-content: start;
+  grid-template-areas:
+    "breed primary secondary tertiary"
+    "specialty primary secondary tertiary"
+    ". primary secondary tertiary";
+}
+
+.breed { grid-area: breed; }
+
+.specialty { 
+  grid-area: specialty; 
+  /* border: 1px solid salmon; */
+}
+
+.primary { grid-area: primary; }
+
+.secondary { grid-area: secondary; }
+
+.tertiary { grid-area: tertiary; }
+
+
+/* .outer-container {
+  max-width: 1400px;
+} */
+.rainbow-text {
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 20px;
+	text-shadow: #080808 1px 1px 1px;
+}
+.rainbow-text .block-line > span {
+	display: inline-block;
+}
+
+
 h1 {
   width: 33%;
   margin: auto;
@@ -98,9 +147,6 @@ button:focus {
 }
 .show-specific-select-hide-toggle {
   display: none !important;
-}
-.outer-container {
-  max-width: 1400px;
 }
 .item {
   border: 1px solid var(--item-border);

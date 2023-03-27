@@ -385,7 +385,7 @@ window.marketplaceItems = {
             "price": 99875
         },
 
-        // UNDERTIDE
+        // UNDERTIDE PRIMARY
 
         {
             "name": "Undertide: Bar",
@@ -416,12 +416,20 @@ window.marketplaceItems = {
             "price": 95625
         },
         {
+            "name": "Undertide: Lionfish",
+            "price": 106250
+        },
+        {
             "name": "Undertide: Ribbon",
             "price": 80750
         },
         {
             "name": "Undertide: Ripple",
             "price": 106250
+        },
+        {
+            "name": "Undertide: Savannah",
+            "price": 59500
         },
         {
             "name": "Undertide: Speckle",
@@ -818,7 +826,7 @@ window.marketplaceItems = {
         },
 
 
-        // UNDERTIDE
+        // UNDERTIDE SECONDARY
         {
             "name": "Undertide: Blend",
             "price": 42500 
@@ -850,6 +858,14 @@ window.marketplaceItems = {
         {
             "name": "Undertide: Marbled",
             "price": 55250
+        },
+        {
+            "name": "Undertide: Noxtide",
+            "price": 72250
+        },
+        {
+            "name": "Undertide: Pack",
+            "price": 59500
         },
         {
             "name": "Undertide: Peregrine",

@@ -208,6 +208,10 @@ window.marketplaceItems = {
 
         // BANESCALE
         {
+            "name": "Banescale: Bar",
+            "price": 106250
+        },
+        {
             "name": "Banescale: Cherub",
             "price": 78625     
         },
@@ -250,6 +254,10 @@ window.marketplaceItems = {
         {
             "name": "Banescale: Ragged",
             "price": 85000
+        },
+        {
+            "name": "Banescale: Ribbon",
+            "price": 80750
         },
         {
             "name": "Banescale: Ripple",
@@ -646,7 +654,7 @@ window.marketplaceItems = {
         },
 
 
-        // BANESCALE
+        // BANESCALE SECONDARY
         {
             "name": "Banescale: Arrow",
             "price": 68000
@@ -664,8 +672,16 @@ window.marketplaceItems = {
             "price": 70125
         },
         {
+            "name": "Banescale: Daub",
+            "price": 70125
+        },
+        {
             "name": "Banescale: Edged",
             "price": 51000
+        },
+        {
+            "name": "Banescale: Eel",
+            "price": 65875
         },
         {
             "name": "Banescale: Eye Spots",
@@ -713,7 +729,7 @@ window.marketplaceItems = {
         },
 
 
-        // VEILSPUN
+        // VEILSPUN SECONDARY
         {
             "name": "Veilspun: Blend",
             "price": 42500
@@ -771,7 +787,7 @@ window.marketplaceItems = {
             "price": 76500
         },
 
-        // ABERRATION
+        // ABERRATION SECONDARY
         {
             "name": "Aberration: Blend",
             "price": 42500
@@ -996,7 +1012,7 @@ window.marketplaceItems = {
             "price": 127500
         },
 
-        // GAOLER
+        // GAOLER TERTIARY
         {
             "name": "Gaoler: Braids",
             "price": 72250
@@ -1039,7 +1055,7 @@ window.marketplaceItems = {
         },
 
         
-        // BANESCALE
+        // BANESCALE TERTIARY
         {
             "name": "Banescale: Contour",
             "price": 63750
@@ -1069,6 +1085,10 @@ window.marketplaceItems = {
             "price": 63750
         },
         {
+            "name": "Banescale: Spines",
+            "price": 80750
+        },
+        {
             "name": "Banescale: Trimmings",
             "price": 63750
         },
@@ -1078,7 +1098,7 @@ window.marketplaceItems = {
         },
 
 
-        // VEILSPUN
+        // VEILSPUN TERTIARY
         {
             "name": "Veilspun: Crackle",
             "price": 80750
@@ -1112,7 +1132,7 @@ window.marketplaceItems = {
             "price": 63750           
         },
 
-        // ABERRRATION
+        // ABERRRATION TERTIARY
         {
             "name": "Aberration: Fangs",
             "price": 63750           
@@ -1142,7 +1162,7 @@ window.marketplaceItems = {
             "price": 63750     
         },
 
-        // UNDERTIDE
+        // UNDERTIDE TERTIARY
         {
             "name": "Undertide: Crackle",
             "price": 80750          

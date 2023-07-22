@@ -281,7 +281,7 @@ window.marketplaceItems = {
         },
 
 
-        // VEILSPUN
+        // VEILSPUN PRIMARY
         {
             "name": "Veilspun: Bright",
             "price": 85000
@@ -339,7 +339,7 @@ window.marketplaceItems = {
             "price": 99875
         },
 
-        // ABERRATION
+        // ABERRATION PRIMARY
         {
             "name": "Aberration: Bar",
             "price": 106250
@@ -501,6 +501,76 @@ window.marketplaceItems = {
         {
             "name": "Aether: Spool",
             "price": 85000
+        },
+
+        // SANDSURGE PRIMARY
+        {
+            "name": "Sandsurge: Arapaima",
+            "price": 78625
+        },
+        {
+            "name": "Sandsurge: Boa",
+            "price": 72250
+        },
+        {
+            "name": "Sandsurge: Cherub",
+            "price": 78625
+        },
+        {
+            "name": "Sandsurge: Clown",
+            "price": 74375 
+        },
+        {
+            "name": "Sandsurge: Fade",
+            "price": 53125
+        },
+        {
+            "name": "Sandsurge: Flaunt",
+            "price": 85000
+        },
+        {
+            "name": "Sandsurge: Jaguar",
+            "price": 59500
+        },
+        {
+            "name": "Sandsurge: Jupiter",
+            "price": 97750
+        },
+        {
+            "name": "Sandsurge: Lionfish",
+            "price": 106250
+        },
+        {
+            "name": "Sandsurge: Mosaic",
+            "price": 127500
+        },
+        {
+            "name": "Sandsurge: Piebald",
+            "price": 99875
+        },
+        {
+            "name": "Sandsurge: Rattlesnake",
+            "price": 102000
+        },
+        {
+            "name": "Sandsurge: Savannah",
+            "price": 59500
+        },
+        {
+            "name": "Sandsurge: Swirl",
+            "price": 63750
+        },
+        {
+            "name": "Sandsurge: Tapir",
+            "price": 57375
+        },
+        {
+            "name": "Sandsurge: Tiger",
+            "price": 57375
+        },
+        {
+            "name": "Sandsurge: Wrought",
+            "price": 59500
         },
 
     ],
@@ -949,6 +1019,77 @@ window.marketplaceItems = {
             "name": "Aether: Thread",
             "price": 68000
         },
+
+        // SANDSURGE SECONDARY
+        {
+            "name": "Sandsurge: Arowana",
+            "price": 59500
+        },
+        {
+            "name": "Sandsurge: Blend",
+            "price": 42500
+        },
+        {
+            "name": "Sandsurge: Breakup",
+            "price": 85000
+        },
+        {
+            "name": "Sandsurge: Diamondback",
+            "price": 80750
+        },
+        {
+            "name": "Sandsurge: Eye Spots",
+            "price": 46750
+        },
+        {
+            "name": "Sandsurge: Flair",
+            "price": 70125
+        },
+        {
+            "name": "Sandsurge: Marbled",
+            "price": 55250
+        },
+        {
+            "name": "Sandsurge: Noxtide",
+            "price": 72250
+        },
+        {
+            "name": "Sandsurge: Paint",
+            "price": 70125
+        },
+        {
+            "name": "Sandsurge: Rosette",
+            "price": 42500
+        },
+        {
+            "name": "Sandsurge: Saddle",
+            "price": 63750
+        },
+        {
+            "name": "Sandsurge: Safari",
+            "price": 41650
+        },
+        {
+            "name": "Sandsurge: Saturn",
+            "price": 68000
+        },
+        {
+            "name": "Sandsurge: Seraph",
+            "price": 53125
+        },
+        {
+            "name": "Sandsurge: Spire",
+            "price": 46750
+        },
+        {
+            "name": "Sandsurge: Striation",
+            "price": 51000
+        },
+        {
+            "name": "Sandsurge: Stripes",
+            "price": 38250
+        },
+    
     ],
     "tertiary": [
         {
@@ -1246,6 +1387,69 @@ window.marketplaceItems = {
             "name": "Aether: Whiskers",
             "price": 93500
         },
+
+        // SANDSURGE TERTIARY
+        {
+            "name": "Sandsurge: Beard",
+            "price": 80750
+        },
+        {
+            "name": "Sandsurge: Chitin",
+            "price": 76500
+        },
+        {
+            "name": "Sandsurge: Crest",
+            "price": 80750
+        },
+        {
+            "name": "Sandsurge: Darts",
+            "price": 72250
+        },
+        {
+            "name": "Sandsurge: Fishbone",
+            "price": 80750
+        },
+        {
+            "name": "Sandsurge: Gembond",
+            "price": 85000
+        },
+        {
+            "name": "Sandsurge: Kumo",
+            "price": 59500
+        },
+        {
+            "name": "Sandsurge: Lace",
+            "price": 65875
+        },
+        {
+            "name": "Sandsurge: Okapi",
+            "price": 80750
+        },
+        {
+            "name": "Sandsurge: Peacock",
+            "price": 63750
+        },
+        {
+            "name": "Sandsurge: Runes",
+            "price": 80750
+        },
+        {
+            "name": "Sandsurge: Sparkle",
+            "price": 63750
+        },
+        {
+            "name": "Sandsurge: Spines",
+            "price": 80750
+        },
+        {
+            "name": "Sandsurge: Thylacine",
+            "price": 65875
+        },
+        {
+            "name": "Sandsurge: Underbelly",
+            "price": 63750
+        },
+
     ],
     "specialty" : [
         {

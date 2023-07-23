@@ -148,10 +148,14 @@ window.marketplaceItems = {
         },
 
 
-        // GAOLER
+        // GAOLER PRIMARY
         {
             "name": "Gaoler: Bar",
             "price": 106250    
+        },
+        {
+            "name": "Gaoler: Boa",
+            "price": 72250    
         },
         {
             "name": "Gaoler: Clown",
@@ -182,6 +186,10 @@ window.marketplaceItems = {
             "price": 59500
         },
         {
+            "name": "Gaoler: Leopard",
+            "price": 59500   
+        },
+        {
             "name": "Gaoler: Mosaic",
             "price": 127500
         },
@@ -190,12 +198,24 @@ window.marketplaceItems = {
             "price": 99875            
         },
         {
+            "name": "Gaoler: Ribbon",
+            "price": 80750  
+        },
+        {
             "name": "Gaoler: Ripple",
             "price": 106250           
         },
         {
+            "name": "Gaoler: Savannah",
+            "price": 59500           
+        },
+        {
             "name": "Gaoler: Shaggy",
             "price": 95625       
+        },
+        {
+            "name": "Gaoler: Swirl",
+            "price": 63750           
         },
         {
             "name": "Gaoler: Tapir",
@@ -206,7 +226,7 @@ window.marketplaceItems = {
             "price": 57375     
         },
 
-        // BANESCALE
+        // BANESCALE PRIMARY
         {
             "name": "Banescale: Bar",
             "price": 106250
@@ -665,7 +685,7 @@ window.marketplaceItems = {
         },
 
 
-        // GAOLER
+        // GAOLER  SECONDARY
         {
             "name": "Gaoler: Blend",
             "price": 42500
@@ -673,6 +693,10 @@ window.marketplaceItems = {
         {
             "name": "Gaoler: Breakup",
             "price": 85000
+        },
+        {
+            "name": "Gaoler: Clouded",
+            "price": 59500
         },
         {
             "name": "Gaoler: Current",
@@ -687,6 +711,10 @@ window.marketplaceItems = {
             "price": 51000
         },
         {
+            "name": "Gaoler: Eel",
+            "price": 65875
+        },
+        {
             "name": "Gaoler: Eye Spots",
             "price": 46750
         },
@@ -699,6 +727,10 @@ window.marketplaceItems = {
             "price": 68000
         },
         {
+            "name": "Gaoler: Marbled",
+            "price": 55250
+        },
+        {
             "name": "Gaoler: Paint",
             "price": 70125
         },
@@ -709,6 +741,14 @@ window.marketplaceItems = {
         {
             "name": "Gaoler: Rosette",
             "price": 42500
+        },
+        {
+            "name": "Gaoler: Saddle",
+            "price": 63750
+        },
+        {
+            "name": "Gaoler: Safari",
+            "price": 41650
         },
         {
             "name": "Gaoler: Streak",
@@ -1157,6 +1197,10 @@ window.marketplaceItems = {
         {
             "name": "Gaoler: Braids",
             "price": 72250
+        },
+        {
+            "name": "Gaoler: Contour",
+            "price": 63750
         },
         {
             "name": "Gaoler: Ghost",

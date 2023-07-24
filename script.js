@@ -174,6 +174,8 @@ $(".clear-totals").click(function() {
 })
 
 $('.show-specific-select').change(function() {
+  trackedOrder = []
+  $('.trackedOrderBox').html('')
 
   if ($('.show-specific-select').val() == 'All') {
     $(".quantity").val('')
@@ -220,16 +222,15 @@ $('.item-boxes').on('input','.quantity', function() {
   let trackItemTitle = $(this).siblings('span:first').text()
   let trackItemPrice = $(this).siblings('.item-price').text()
   let currentItemVal = $(this).val()
+  let currentItemKeyword = $(this).siblings('span:first').data('keyword')
 
   let indexExists = trackedOrder.findIndex(item => item.title === trackItemTitle)
 
   if (indexExists != -1) {
     trackedOrder[indexExists].orderQuant = currentItemVal
   } else {
-    trackedOrder.push({categ: trackItemCategory, title: trackItemTitle, itemPrice: trackItemPrice, orderQuant: currentItemVal})
+    trackedOrder.push({categ: trackItemCategory, keyword: currentItemKeyword,title: trackItemTitle, itemPrice: trackItemPrice, orderQuant: currentItemVal})
   }
-
-  console.log(trackedOrder)
 })
 
 $('.order-total').click(function() {
@@ -316,21 +317,30 @@ function formatTrackedOrder() {
   let itemArray = [];
   let formattedTotal = numberWithCommas($('.order-total').text());
   const textAfterColon = /:(.*)/;
-  const textBeforeColon = /^(.*?):/;
+  // const textBeforeColon = /^(.*?):/;
 
   trackedOrder.forEach((order) => {
-    let trimmedGeneName = order.title.match(textAfterColon);
-    let geneType = checkForModern(order.title) ? 'Modern' : (order.title.match(textBeforeColon))[1].trim();
+
+    let matchedGeneName = order.title.match(textAfterColon) || order.title;
+    
+    if (typeof matchedGeneName === 'object') {
+      matchedGeneName = matchedGeneName[1].trim()
+    }
+
+    // let geneType = checkForModern(order.title) ? 'Modern' : (order.title.match(textBeforeColon))[1].trim();
+    let geneType = order.keyword
     let formattedCategoryName = order.categ.charAt(0).toUpperCase() + order.categ.slice(1);
 
     let template =
     `<div class="col-12 item-special-tracked">
       <span class="stuff2">${order.orderQuant}x</span>
-      <span>${formattedCategoryName}: ${trimmedGeneName[1].trim()} (${geneType})</span>
+      <span>${formattedCategoryName}: ${matchedGeneName} (${geneType})</span>
     </div>`
 
     itemArray.push(template)
+
   })
+  // console.log(sortTrackedOrder(trackedOrder))
 
   $('.trackedOrderBox').html(itemArray).append( `<span>Total: ${formattedTotal}</span>`);
 }
@@ -339,3 +349,12 @@ function checkForModern(str) {
   let arr = ['primary', 'secondary', 'tertiary']
   return arr.some(word => new RegExp(`\\b${word}\\b`, 'i').test(str));
 }
+
+// function sortTrackedOrder(order) {
+//   let sorted = [];
+//   const desiredOrder = ["Specialty", "Breed", "Primary", "Secondary", "Tertiary"];
+  
+//   sorted = order.toSorted();
+
+//   return sorted
+// }

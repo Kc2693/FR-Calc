@@ -8,9 +8,12 @@ function fillPage() {
   categories.forEach((category) => {
     let itemArray = []
     itemObj[category].forEach((item) => {
+      let data = 0;
+      typeof item.keyword !== "undefined" ? data = `<span data-keyword="${item.keyword}">` : data = `<span>`
+
       let template = 
       `<div class="col-12 item">
-        <span>${item.name}</span>
+        ${data}${item.name}</span>
         <span class="item-price">${item.price}</span>
         <input class="quantity" type="number" maxlength="3"/>
       </div>`
@@ -226,6 +229,7 @@ $('.item-boxes').on('input','.quantity', function() {
     trackedOrder.push({categ: trackItemCategory, title: trackItemTitle, itemPrice: trackItemPrice, orderQuant: currentItemVal})
   }
 
+  console.log(trackedOrder)
 })
 
 $('.order-total').click(function() {

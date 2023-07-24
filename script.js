@@ -108,6 +108,7 @@ function fillPage() {
 
 function toggleDisplayOptionBox(bool, boxName) {
   if (bool) {
+    console.log(boxName)
     $(`${boxName}`).show();
   } else {
     $(`${boxName}`).hide();
@@ -249,6 +250,27 @@ $('.order-total').click(function() {
   }
 })
 
+$('.btn-copy-order-to-clipboard').click(function() {
+  let toCopy = $(this).siblings('.trackedOrderBox')
+
+  if (parseInt(toCopy.text()) > 0) {
+    var text = $(this).siblings('.trackedOrderBox').get(0); 
+    var selection = window.getSelection(); 
+    var range = document.createRange(); 
+    range.selectNodeContents(text); 
+    
+    selection.removeAllRanges(); 
+    selection.addRange(range); 
+    document.execCommand('copy'); 
+    selection.removeAllRanges();
+  
+    $('.tooltiptext').show();
+    hideAlert();
+  }
+
+  console.log($(this).siblings('.trackedOrderBox').text())
+})
+
 function hideAlert() {
   setTimeout(function(){ 
     $('.tooltiptext').fadeOut(500);
@@ -342,13 +364,14 @@ function formatTrackedOrder() {
   })
   // console.log(sortTrackedOrder(trackedOrder))
 
-  $('.trackedOrderBox').html(itemArray).append( `<span>Total: ${formattedTotal}</span>`);
+  $('.trackedOrderBox').html(itemArray).append( `<span><b>Total:</b> ${formattedTotal}</span>`);
+  toggleDisplayOptionBox(true, '.shop-order-container')
 }
 
-function checkForModern(str) {
-  let arr = ['primary', 'secondary', 'tertiary']
-  return arr.some(word => new RegExp(`\\b${word}\\b`, 'i').test(str));
-}
+// function checkForModern(str) {
+//   let arr = ['primary', 'secondary', 'tertiary']
+//   return arr.some(word => new RegExp(`\\b${word}\\b`, 'i').test(str));
+// }
 
 // function sortTrackedOrder(order) {
 //   let sorted = [];

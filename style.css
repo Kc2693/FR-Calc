@@ -126,19 +126,24 @@ h1 {
   border-color: rgb(82, 172, 53) transparent transparent transparent;
 }
 
-.calc-btn, .clear-totals, #go-top-btn {
+.btn-styling {
   background-color: var(--calc-btn-bg);
   border-color: var(--calc-btn-border);
   border-radius: 5px;
   color: var(--font-color);
 }
 
-.calc-btn a, .clear-totals a {
- color: var(--font-color);
- text-decoration:none;
+.btn-styling a {
+  color: var(--font-color);
+  text-decoration:none;
 }
+
 button:focus {
   outline: 0;
+}
+
+.btn-copy-order-to-clipboard {
+  width: 100%;
 }
 
 .sorting-options, .new-sorting-options {
@@ -317,6 +322,14 @@ button:focus {
   width: 100px;
 }
 
+.trackedOrderBox {
+  background-color: var(--quantity);
+  padding: 10px;
+}
+
+.shop-order-container {
+  display: none;
+}
 
 /*  light mode classes  */
 .light-mode {

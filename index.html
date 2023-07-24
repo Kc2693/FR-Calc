@@ -52,8 +52,13 @@
       <span class="tooltiptext">Copied!</span>
       <span>Total:</span>
       <span class="order-total">0</span>
-      <button class="calc-btn"><a href="#">Calculate</a></button>
-      <button class="clear-totals"><a href="#">Clear</a></button>
+      <button class="btn-styling calc-btn"><a href="#">Calculate</a></button>
+      <button class="btn-styling clear-totals"><a href="#">Clear</a></button>
+    </div>
+    <div class="order-total-container shop-order-container">
+      <!-- <button class="print-shop-order"><a href="#">Print Order Form</a></button> -->
+      <div class="trackedOrderBox" style="max-width: 500px"></div>
+      <button class="btn-styling btn-copy-order-to-clipboard"><a href="#">Copy Order Form</a></button>
     </div>
     <div class="new-sorting-options">
       Sort by:
@@ -85,9 +90,6 @@
       <input class="festival-quantity" type="number" maxlength="3"/>
       <div style="font-size: 14px"><i>hint: a full set is 14 skins</i></div>
     </div>
-    <div class="trackedOrderBox rainbow-box">
-      
-    </div>
 </header>
 <div class="outer-container">
   <div class="row">
@@ -102,7 +104,7 @@
     </div>
   </div>
 </div>
-<button id="go-top-btn" title="Go to top">Go To Top</button>
+<button class="btn-styling" id="go-top-btn" title="Go to top">Go To Top</button>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="items.js"></script>

@@ -2,59 +2,77 @@ window.marketplaceItems = {
     "breed": [
         {
             "name": "Breed: Fae",
-            "price": 42500
+            "price": 42500,
+            "item-type": "Breed Change"
         },
         {
             "name": "Breed: Guardian",
-            "price": 42500
+            "price": 42500,
+            "item-type": "Breed Change"
         },
         {
             "name": "Breed: Mirror",
-            "price": 42500
+            "price": 42500,
+            "item-type": "Breed Change"
         },
         {
             "name": "Breed: Tundra",
-            "price": 42500
+            "price": 42500,
+            "item-type": "Breed Change"
         },
         {
             "name": "Breed: Pearlcatcher",
-            "price": 212500
+            "price": 212500,
+            "item-type": "Breed Change"
         },
         {
             "name": "Breed: Ridgeback",
-            "price": 212500
+            "price": 212500,
+            "item-type": "Breed Change"
         },
         {
             "name": "Breed: Snapper",
-            "price": 276250            
+            "price": 276250,
+            "item-type": "Breed Change"           
         },
         {
             "name": "Breed: Spiral",
-            "price": 276250            
+            "price": 276250,
+            "item-type": "Breed Change"           
         },
         {
             "name": "Breed: Skydancer",
-            "price": 340000           
+            "price": 340000,
+            "item-type": "Breed Change"           
         },
         {
             "name": "Breed: Obelisk",
-            "price": 340000           
+            "price": 340000,
+            "item-type": "Breed Change"           
         },
         {
             "name": "Ancient: Gaoler",
-            "price": 233750          
+            "price": 233750,
+            "item-type": "Breed Change",
+            "keyword:": "Ancient"        
         },
         {
             "name": "Ancient: Banescale",
-            "price": 233750          
+            "price": 233750 ,
+            "item-type": "Breed Change",
+            "keyword:": "Ancient" 
         },
         {
             "name": "Ancient: Aberration",
-            "price": 233750          
+            "price": 233750,
+            "item-type": "Breed Change"  ,
+            "keyword:": "Ancient"       
         },
         {
             "name": "Ancient: Aether",
-            "price": 233750          
+            "price": 233750 ,
+            "item-type": "Breed Change",
+            "keyword:": "Ancient"        
         },
     ],
     "primary": [
@@ -1498,43 +1516,53 @@ window.marketplaceItems = {
     "specialty" : [
         {
             "name": "Vial of Tempered Sight",
-            "price": 2125
+            "price": 2125,
+            "item-type": "Eye Vial"
         },
         {
             "name": "Vial of Uncommon Sight",
-            "price": 42500
+            "price": 42500,
+            "item-type": "Eye Vial"
         },
         {
             "name": "Vial of Unusual Sight",
-            "price": 63750
+            "price": 63750,
+            "item-type": "Eye Vial"
         },
         {
             "name": "Vial of Rare Sight",
-            "price": 85000
+            "price": 85000,
+            "item-type": "Eye Vial"
         },
         {
             "name": "Vial of Soft Sight",
-            "price": 127500
+            "price": 127500,
+            "item-type": "Eye Vial"
         },
         {
             "name": "Vial of Brilliant Sight",
-            "price": 127500
+            "price": 127500,
+            "item-type": "Eye Vial"
         },
         {
             "name": "Vial of Fractal Sight",
-            "price": 212500
+            "price": 212500,
+            "item-type": "Eye Vial"
         },
         {
             "name": "Vial of Horizontal Sight",
-            "price": 212500
+            "price": 212500,
+            "item-type": "Eye Vial"
         },
         {
             "name": "Vial of Disjointed Sight",
-            "price": 425000
+            "price": 425000,
+            "item-type": "Eye Vial"
         },
         {
             "name": "Vial of Elemental Sight",
-            "price": 425000
+            "price": 425000,
+            "item-type": "Eye Vial"
         },
     ]
 }

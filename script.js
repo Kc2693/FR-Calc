@@ -1,4 +1,5 @@
 let commasTotal;
+let trackedOrder = [];
 
 function fillPage() {
   let itemObj = window.marketplaceItems;
@@ -103,7 +104,6 @@ function fillPage() {
 
 
 function toggleDisplayOptionBox(bool, boxName) {
-  console.log(boxName)
   if (bool) {
     $(`${boxName}`).show();
   } else {
@@ -125,11 +125,13 @@ $(".calc-btn").click(function() {
   }
 
 
-  $('.order-total').text(formattedTotal)
+  $('.order-total').text(formattedTotal);
+  formatTrackedOrder();
 });
 
 function gatherItemTotals() {
   let calculated = $('.quantity').map((i, item) => {
+
 	  let quantity = $(item).val();
     let itemPrice = parseInt($(item).siblings(".item-price").text()); 
 
@@ -169,6 +171,7 @@ $(".clear-totals").click(function() {
 })
 
 $('.show-specific-select').change(function() {
+
   if ($('.show-specific-select').val() == 'All') {
     $(".quantity").val('')
     $('.order-total').text('0')
@@ -182,7 +185,6 @@ $('.show-specific-select').change(function() {
 
     // vial / specialty exception for show-only lives here for now. think of a better method later.
     rawVal.forEach(word => {
-      console.log(word)
       $(`span:contains("${word}"), span:contains("Vial")`).parent().toggleClass('show-specific-select-hide-toggle', false)
     });
   }
@@ -205,8 +207,25 @@ $('.sort-select').change(function() {
 $('.item-boxes').on('focusin','.quantity', function() {
   $(this).parent().addClass('highlight')
 })
+
 $('.item-boxes').on('focusout','.quantity', function() {
   $(this).parent().removeClass('highlight')
+})
+
+$('.item-boxes').on('input','.quantity', function() {
+  let trackItemCategory = $(this).parent().parent().attr('id')
+  let trackItemTitle = $(this).siblings('span:first').text()
+  let trackItemPrice = $(this).siblings('.item-price').text()
+  let currentItemVal = $(this).val()
+
+  let indexExists = trackedOrder.findIndex(item => item.title === trackItemTitle)
+
+  if (indexExists != -1) {
+    trackedOrder[indexExists].orderQuant = currentItemVal
+  } else {
+    trackedOrder.push({categ: trackItemCategory, title: trackItemTitle, itemPrice: trackItemPrice, orderQuant: currentItemVal})
+  }
+
 })
 
 $('.order-total').click(function() {
@@ -288,3 +307,31 @@ function sortByPrice(type) {
 $('#go-top-btn').click(function() {
   $("html, body").animate({ scrollTop: "0" }, 700);
 })
+
+function formatTrackedOrder() {
+  let itemArray = [];
+  let formattedTotal = numberWithCommas($('.order-total').text());
+  const textAfterColon = /:(.*)/;
+  const textBeforeColon = /^(.*?):/;
+
+  trackedOrder.forEach((order) => {
+    let trimmedGeneName = order.title.match(textAfterColon);
+    let geneType = checkForModern(order.title) ? 'Modern' : (order.title.match(textBeforeColon))[1].trim();
+    let formattedCategoryName = order.categ.charAt(0).toUpperCase() + order.categ.slice(1);
+
+    let template =
+    `<div class="col-12 item-special-tracked">
+      <span class="stuff2">${order.orderQuant}x</span>
+      <span>${formattedCategoryName}: ${trimmedGeneName[1].trim()} (${geneType})</span>
+    </div>`
+
+    itemArray.push(template)
+  })
+
+  $('.trackedOrderBox').html(itemArray).append( `<span>Total: ${formattedTotal}</span>`);
+}
+
+function checkForModern(str) {
+  let arr = ['primary', 'secondary', 'tertiary']
+  return arr.some(word => new RegExp(`\\b${word}\\b`, 'i').test(str));
+}

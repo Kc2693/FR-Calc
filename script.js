@@ -227,7 +227,12 @@ $('.item-boxes').on('input','.quantity', function() {
   let indexExists = trackedOrder[trackItemCategory].findIndex(item => item.title === trackItemTitle)
 
   if (indexExists != -1) {
-    trackedOrder[trackItemCategory][indexExists].orderQuant = currentItemVal
+    let quantityUpdate = trackedOrder[trackItemCategory][indexExists].orderQuant
+    if (currentItemVal > 0) {
+      trackedOrder[trackItemCategory][indexExists].orderQuant = currentItemVal
+    } else {
+      trackedOrder[trackItemCategory].splice(indexExists, 1)
+    }
   } else {
     trackedOrder[trackItemCategory].push({
       categ: trackItemCategory, 
@@ -237,6 +242,8 @@ $('.item-boxes').on('input','.quantity', function() {
       orderQuant: currentItemVal
     })
   }
+
+  console.log(trackedOrder)
 })
 
 $('.order-total').click(function() {

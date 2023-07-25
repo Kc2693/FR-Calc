@@ -338,6 +338,10 @@ button:focus {
   width: 100%;
 }
 
+[aria-disabled="true"] {
+  opacity: 0.5;
+}
+
 /*  light mode classes  */
 .light-mode {
   background-color: var(--main-bg-light);

@@ -1,5 +1,6 @@
 let commasTotal;
-let trackedOrder = {specialty: [], breed: [], primary: [], secondary: [], tertiary: []};
+let trackedOrderDefault = {specialty: [], breed: [], primary: [], secondary: [], tertiary: []};
+let trackedOrder = {};
 
 function fillPage() {
   let itemObj = window.marketplaceItems;
@@ -24,6 +25,10 @@ function fillPage() {
     itemArray.forEach((filledTemplate) => {
       $(`#${category}`).append(filledTemplate)
     })
+
+    trackedOrder = Object.assign({}, JSON.parse(JSON.stringify(trackedOrderDefault)))
+    // structuedClone also works but is not as widely supported for now
+    // trackedOrder = structuredClone(trackedOrderDefault)
   })
 }
 
@@ -137,7 +142,14 @@ $(".calc-btn").click(function() {
 
 
   $('.order-total').text(formattedTotal);
-  formatTrackedOrder();
+
+  if (orderTotal > 0) {
+    formatTrackedOrder()
+    toggleDisableOnCopyBtn(false)
+  } else {
+    $('.trackedOrderBox').html(resetOrderFormInstructions())
+    toggleDisableOnCopyBtn(true)
+  }
 });
 
 function gatherItemTotals() {
@@ -180,16 +192,18 @@ $('.btn-order-form-toggle').click(function(){
 });
 
 $(".clear-totals").click(function() {
-  $(".quantity").val('')
-  $(".festival-quantity").val('')
-  $('.order-total').text('0')
-  trackedOrder = []
-  $('.trackedOrderBox').html('')
+  $(".quantity").val('');
+  $(".festival-quantity").val('');
+  $('.order-total').text('0');
+  resetTrackedOrder();
+  $('.trackedOrderBox').html(resetOrderFormInstructions());
+  toggleDisableOnCopyBtn(true);
 })
 
 $('.show-specific-select').change(function() {
-  trackedOrder = []
-  $('.trackedOrderBox').html('')
+  resetTrackedOrder();
+  toggleDisableOnCopyBtn(true);
+  $('.trackedOrderBox').html(resetOrderFormInstructions());
 
   if ($('.show-specific-select').val() == 'All') {
     $(".quantity").val('')
@@ -228,13 +242,6 @@ $('.item-boxes').on('focusin','.quantity', function() {
 
   orderFormHelper()
 })
-
-function orderFormHelper() {
-  if (!$('.trackedOrderBox').is(':has(span.instructions)')){
-    let warningTemplate = `<span>Recalculate total to get updated form`
-    $('.trackedOrderBox').html(warningTemplate)
-  }
-}
 
 $('.item-boxes').on('focusout','.quantity', function() {
   $(this).parent().removeClass('highlight')
@@ -373,6 +380,13 @@ $('#go-top-btn').click(function() {
   $("html, body").animate({ scrollTop: "0" }, 700);
 })
 
+function orderFormHelper() {
+  if (!$('.trackedOrderBox').is(':has(span.instructions)')){
+    let warningTemplate = `<span>Recalculate total to get updated form`
+    $('.trackedOrderBox').html(warningTemplate)
+  }
+}
+
 function formatTrackedOrder() {
   let itemArray = [];
   let formattedTotal = numberWithCommas($('.order-total').text());
@@ -404,7 +418,6 @@ function formatTrackedOrder() {
   })
 
   if (festivalSkinsAddon > 0) {
-
     let skinsAddonTemplate = 
     `<div class="col-12 item-special-tracked">
       <span class="stuff2">${$('.festival-quantity').val()}x</span>
@@ -417,3 +430,31 @@ function formatTrackedOrder() {
   $('.trackedOrderBox').html(itemArray).append( `<span><b>Total:</b> ${formattedTotal}</span>`);
   toggleDisplayOptionBox(true, '.shop-order-container');
 };
+
+function resetTrackedOrder() {
+  for (const key in trackedOrder) {
+    if (Array.isArray(trackedOrder[key])) {
+      if (trackedOrder[key].length > 0) {
+        trackedOrder = Object.assign({}, JSON.parse(JSON.stringify(trackedOrderDefault)))
+      }
+    }
+  }
+}
+
+function resetOrderFormInstructions() {
+  const instructions = 
+  `<span class="instructions">The calculator is empty. Add items then press calculate to receive an order form.</span>`
+
+  return instructions
+}
+
+function toggleDisableOnCopyBtn(toggle) {
+  copyBtn = $('.btn-copy-order-to-clipboard')
+  if (toggle) {
+    copyBtn.prop('disabled', true);
+    copyBtn.attr('aria-disabled', true)
+  } else {
+    copyBtn.prop('disabled', false);
+    copyBtn.attr('aria-disabled', false);
+  }
+}

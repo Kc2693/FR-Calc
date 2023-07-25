@@ -15,7 +15,7 @@ function fillPage() {
       `<div class="col-12 item">
         ${data}${item.name}</span>
         <span class="item-price">${item.price}</span>
-        <input class="quantity" type="number" maxlength="3"/>
+        <input class="quantity" type="number" inputMode="numeric" maxlength="3"/>
       </div>`
       
       itemArray.push(template)
@@ -113,6 +113,14 @@ function toggleDisplayOptionBox(bool, boxName) {
     $(`${boxName}`).hide();
   }
 };
+
+// listeners for all maxlength inputs
+$('body').on('input', 'input[maxlength]', function() {
+  inputMaxLengthHelper($(this))
+});
+$('body').on("click", 'input[maxlength]', function () {
+  $(this).select();
+});
 
 
 $(".calc-btn").click(function() {
@@ -257,6 +265,14 @@ $('.item-boxes').on('input','.quantity', function() {
     })
   }
 })
+
+function inputMaxLengthHelper(input) {
+  if (input.val().length > 3) {
+    input.val(function(_, value){
+      return value.slice(0,3)
+    })
+  }
+}
 
 $('.order-total').click(function() {
   if (parseInt($(this).text()) > 0) {

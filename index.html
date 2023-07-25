@@ -55,11 +55,15 @@
       <button class="btn-styling calc-btn"><a href="#">Calculate</a></button>
       <button class="btn-styling clear-totals"><a href="#">Clear</a></button>
     </div>
-    <div class="order-total-container shop-order-container">
-      <!-- <button class="print-shop-order"><a href="#">Print Order Form</a></button> -->
-      <div class="trackedOrderBox" style="max-width: 500px"></div>
-      <button class="btn-styling btn-copy-order-to-clipboard"><a href="#">Copy Order Form</a></button>
-    </div>
+      <div class="shop-order-container">
+        <button class="btn-styling btn-order-form-toggle"><a href="#">Toggle Order Form</a></button>
+        <div class="form-toggle-box">
+          <div class="trackedOrderBox">
+            <span class="instructions">The calculator is empty. Add items then press calculate to receive an order form.</span>
+          </div>
+          <button class="btn-styling btn-copy-order-to-clipboard"><a href="#">Copy Order Form</a></button>
+        </div>
+      </div>
     <div class="new-sorting-options">
       Sort by:
       <select class="sort-select">
@@ -84,10 +88,10 @@
         <option value="Sandsurge">Sandsurge</option>
       </select>
     </div>
-    <div class="festival-skin-box rainbow-box">
+    <div class="festival-skin-box rainbow-box item-boxes">
       <span class="fest-title">Festival Skin(s):</span>
       <span class="item-price">29750</span>
-      <input class="festival-quantity" type="number" maxlength="3"/>
+      <input class="festival-quantity" type="number" inputMode="numeric" pattern="[0-9]*" min="1" max="999"/>
       <div style="font-size: 14px"><i>hint: a full set is 14 skins</i></div>
     </div>
 </header>

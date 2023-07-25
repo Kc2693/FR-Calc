@@ -167,10 +167,16 @@ function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
+$('.btn-order-form-toggle').click(function(){
+  $('.form-toggle-box').slideToggle('slow');
+});
+
 $(".clear-totals").click(function() {
   $(".quantity").val('')
   $(".festival-quantity").val('')
   $('.order-total').text('0')
+  trackedOrder = []
+  $('.trackedOrderBox').html('')
 })
 
 $('.show-specific-select').change(function() {
@@ -211,7 +217,16 @@ $('.sort-select').change(function() {
 
 $('.item-boxes').on('focusin','.quantity', function() {
   $(this).parent().addClass('highlight')
+
+  orderFormHelper()
 })
+
+function orderFormHelper() {
+  if (!$('.trackedOrderBox').is(':has(span.instructions)')){
+    let warningTemplate = `<span>Recalculate total to get updated form`
+    $('.trackedOrderBox').html(warningTemplate)
+  }
+}
 
 $('.item-boxes').on('focusout','.quantity', function() {
   $(this).parent().removeClass('highlight')
@@ -227,7 +242,6 @@ $('.item-boxes').on('input','.quantity', function() {
   let indexExists = trackedOrder[trackItemCategory].findIndex(item => item.title === trackItemTitle)
 
   if (indexExists != -1) {
-    let quantityUpdate = trackedOrder[trackItemCategory][indexExists].orderQuant
     if (currentItemVal > 0) {
       trackedOrder[trackItemCategory][indexExists].orderQuant = currentItemVal
     } else {
@@ -242,8 +256,6 @@ $('.item-boxes').on('input','.quantity', function() {
       orderQuant: currentItemVal
     })
   }
-
-  console.log(trackedOrder)
 })
 
 $('.order-total').click(function() {
@@ -350,6 +362,7 @@ function formatTrackedOrder() {
   let formattedTotal = numberWithCommas($('.order-total').text());
   const textAfterColon = /:(.*)/;
   let orderKeys = Object.keys(trackedOrder)
+  let festivalSkinsAddon = addFestivalSkins()
 
   orderKeys.forEach((key) => {
     trackedOrder[key].forEach((order) => {
@@ -374,6 +387,17 @@ function formatTrackedOrder() {
     })
   })
 
+  if (festivalSkinsAddon > 0) {
+
+    let skinsAddonTemplate = 
+    `<div class="col-12 item-special-tracked">
+      <span class="stuff2">${$('.festival-quantity').val()}x</span>
+      <span>Festival Skins</span>
+    </div>`
+
+    itemArray.push(skinsAddonTemplate)
+  }
+
   $('.trackedOrderBox').html(itemArray).append( `<span><b>Total:</b> ${formattedTotal}</span>`);
-  toggleDisplayOptionBox(true, '.shop-order-container')
+  toggleDisplayOptionBox(true, '.shop-order-container');
 };

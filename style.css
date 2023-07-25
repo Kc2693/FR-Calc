@@ -142,10 +142,6 @@ button:focus {
   outline: 0;
 }
 
-.btn-copy-order-to-clipboard {
-  width: 100%;
-}
-
 .sorting-options, .new-sorting-options {
   width: 250px;
   margin: 10px auto;
@@ -328,7 +324,18 @@ button:focus {
 }
 
 .shop-order-container {
+  /* display: none; */
+  max-width: 385px;
+  margin: 10px auto;
+  position: relative;
+}
+
+.form-toggle-box {
   display: none;
+}
+
+.btn-copy-order-to-clipboard, .btn-order-form-toggle {
+  width: 100%;
 }
 
 /*  light mode classes  */

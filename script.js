@@ -188,6 +188,7 @@ function numberWithCommas(x) {
 }
 
 $('.btn-order-form-toggle').click(function(){
+  $(this).toggleClass('order-form-close');
   $('.form-toggle-box').slideToggle('slow');
 });
 
@@ -311,10 +312,23 @@ $('.btn-copy-order-to-clipboard').click(function() {
     document.execCommand('copy'); 
     selection.removeAllRanges();
   
+    showTooltip($(this))
     $('.tooltiptext').show();
-    hideAlert();
+    // hideAlert();
   }
 })
+
+function showTooltip(btn) {
+  let btnPressedLoc = btn.position()
+  const tooltipTemplate = $('.tooltiptext');
+  const tooltipClone = tooltipTemplate.clone().show();
+
+  // Position the tooltip at (x, y) coordinates
+  tooltipClone.css({ top: btnPressedLoc.top + 'px', left: btnPressedLoc.left + 'px', position: 'absolute', 'z-index': 60 })
+
+  // Append the tooltip to the body or a specific container
+  $('.form-toggle-box').append(tooltipClone);
+}
 
 function hideAlert() {
   setTimeout(function(){ 

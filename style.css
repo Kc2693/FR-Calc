@@ -101,6 +101,10 @@ h1 {
   width: 100px;
 }
 
+.calc-btn {
+  width: 100px;
+}
+
 .tooltiptext {
   display:none;
   width: 70px;
@@ -141,9 +145,16 @@ button:focus {
   outline: 0;
 }
 
-.sorting-options, .new-sorting-options {
+.sort-and-show {
+  max-width: 390px;
+  margin: auto;
+  text-align: center;
+}
+
+.sorting-options, .show-options {
   width: 250px;
   margin: 10px auto;
+  display: inline-block
 }
 .show-specific-select option {
   color: black;

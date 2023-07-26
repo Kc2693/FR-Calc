@@ -112,9 +112,8 @@ h1 {
   padding: 2px 0;
   position: absolute;
   z-index: 10;
-  bottom: 102%;
-  margin-left: 56px;
 }
+
 .tooltiptext::after {
   content: "";
   position: absolute;

@@ -217,7 +217,7 @@ $('.show-specific-select').change(function() {
     $('.order-total').text('0')
     $('.item').toggleClass('show-specific-select-hide-toggle', true)
 
-    // vial / specialty exception for show-only lives here for now. think of a better method later.
+    // specialty exception for show-only lives here for now. think of a better method later.
     rawVal.forEach(word => {
       $(`span:contains("${word}"), span:contains("Vial")`).parent().toggleClass('show-specific-select-hide-toggle', false)
     });
@@ -293,8 +293,7 @@ $('.order-total').click(function() {
     document.execCommand('copy'); 
     selection.removeAllRanges();
   
-    $('.tooltiptext').show();
-    hideAlert();
+    showTooltip($(this), 2)
   }
 })
 
@@ -312,27 +311,33 @@ $('.btn-copy-order-to-clipboard').click(function() {
     document.execCommand('copy'); 
     selection.removeAllRanges();
   
-    showTooltip($(this))
-    $('.tooltiptext').show();
-    // hideAlert();
+    showTooltip($(this), -8)
   }
 })
 
-function showTooltip(btn) {
-  let btnPressedLoc = btn.position()
+function showTooltip(element, marginPrct) {
+  let elementClass = element.attr('class').split(' ')[0] || 'fallback'
+  let width = element.width() / 2
   const tooltipTemplate = $('.tooltiptext');
-  const tooltipClone = tooltipTemplate.clone().show();
+  const tooltipClone = tooltipTemplate.clone().addClass(`${elementClass}-tooltip`);
 
-  // Position the tooltip at (x, y) coordinates
-  tooltipClone.css({ top: btnPressedLoc.top + 'px', left: btnPressedLoc.left + 'px', position: 'absolute', 'z-index': 60 })
+  tooltipClone.css({ 
+    top: element.position().top - 28 + 'px', 
+    left: width + 'px', 
+    position: 'absolute', 
+    'margin-left': marginPrct + '%'
+  })
 
-  // Append the tooltip to the body or a specific container
-  $('.form-toggle-box').append(tooltipClone);
+  $(element).append(tooltipClone);
+  $(tooltipClone).show();
+  hideAlert(tooltipClone);
 }
 
-function hideAlert() {
+function hideAlert(currentTooltip) {
   setTimeout(function(){ 
-    $('.tooltiptext').fadeOut(500);
+    $(currentTooltip).fadeOut(500, function() {
+      $(this).remove()
+    });
    }, 800);
 };
 

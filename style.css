@@ -320,11 +320,14 @@ button:focus {
 .trackedOrderBox {
   background-color: var(--quantity);
   padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  width: 99%;
 }
 
 .shop-order-container {
   /* display: none; */
-  max-width: 385px;
+  max-width: 391px;
   margin: 10px auto;
   position: relative;
 }
@@ -340,13 +343,34 @@ button:focus {
 [aria-disabled="true"] {
   opacity: 0.5;
 }
+.btn-order-form-toggle::before {
+  content: 'Show ';
+  /* font-size: 20px; */
+}
 .btn-order-form-toggle::after {
   content: '	⤡';
   /* font-size: 20px; */
 }
 
+.btn-order-form-toggle.order-form-close:before {
+  content:'Hide ';
+}
 .btn-order-form-toggle.order-form-close:after {
   content:" -";
+}
+
+/* scrollbar for shop order overflow */
+.trackedOrderBox::-webkit-scrollbar {
+  position: absolute;
+  width: 5px;
+  height: 8px;
+  background-color: #aaa; 
+  border-radius: 5px;
+}
+
+.trackedOrderBox::-webkit-scrollbar-thumb {
+  background-color: var(--item-price);
+  border-radius: 5px;
 }
 
 /*  light mode classes  */

@@ -427,7 +427,7 @@ function formatTrackedOrder() {
   
       let template =
       `<div class="col-12 item-special-tracked">
-        <span class="stuff2">${order.orderQuant}x</span>
+        <span class="order-form-quant">${order.orderQuant}x</span>
         <span>${formattedCategoryName}: ${matchedGeneName} (${geneType})</span>
       </div>`
   

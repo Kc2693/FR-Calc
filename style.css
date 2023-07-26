@@ -101,6 +101,10 @@ h1 {
   width: 100px;
 }
 
+.calc-btn {
+  width: 100px;
+}
+
 .tooltiptext {
   display:none;
   width: 70px;
@@ -111,10 +115,9 @@ h1 {
   border-radius: 6px;
   padding: 2px 0;
   position: absolute;
-  z-index: 1;
-  bottom: 102%;
-  margin-left: 56px;
+  z-index: 10;
 }
+
 .tooltiptext::after {
   content: "";
   position: absolute;
@@ -126,24 +129,32 @@ h1 {
   border-color: rgb(82, 172, 53) transparent transparent transparent;
 }
 
-.calc-btn, .clear-totals, #go-top-btn {
+.btn-styling {
   background-color: var(--calc-btn-bg);
   border-color: var(--calc-btn-border);
   border-radius: 5px;
   color: var(--font-color);
 }
 
-.calc-btn a, .clear-totals a {
- color: var(--font-color);
- text-decoration:none;
+.btn-styling a {
+  color: var(--font-color);
+  text-decoration:none;
 }
+
 button:focus {
   outline: 0;
 }
 
-.sorting-options, .new-sorting-options {
+.sort-and-show {
+  max-width: 390px;
+  margin: auto;
+  text-align: center;
+}
+
+.sorting-options, .show-options {
   width: 250px;
   margin: 10px auto;
+  display: inline-block
 }
 .show-specific-select option {
   color: black;
@@ -317,6 +328,61 @@ button:focus {
   width: 100px;
 }
 
+.trackedOrderBox {
+  background-color: var(--quantity);
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  width: 99%;
+}
+
+.shop-order-container {
+  /* display: none; */
+  max-width: 391px;
+  margin: 10px auto;
+  position: relative;
+}
+
+.form-toggle-box {
+  display: none;
+}
+
+.btn-copy-order-to-clipboard, .btn-order-form-toggle {
+  width: 100%;
+}
+
+[aria-disabled="true"] {
+  opacity: 0.5;
+}
+.btn-order-form-toggle::before {
+  content: 'Show ';
+  /* font-size: 20px; */
+}
+.btn-order-form-toggle::after {
+  content: '	⤡';
+  /* font-size: 20px; */
+}
+
+.btn-order-form-toggle.order-form-close:before {
+  content:'Hide ';
+}
+.btn-order-form-toggle.order-form-close:after {
+  content:" -";
+}
+
+/* scrollbar for shop order overflow */
+.trackedOrderBox::-webkit-scrollbar {
+  position: absolute;
+  width: 5px;
+  height: 8px;
+  background-color: #aaa; 
+  border-radius: 5px;
+}
+
+.trackedOrderBox::-webkit-scrollbar-thumb {
+  background-color: var(--item-price);
+  border-radius: 5px;
+}
 
 /*  light mode classes  */
 .light-mode {

@@ -52,37 +52,48 @@
       <span class="tooltiptext">Copied!</span>
       <span>Total:</span>
       <span class="order-total">0</span>
-      <button class="calc-btn"><a href="#">Calculate</a></button>
-      <button class="clear-totals"><a href="#">Clear</a></button>
+      <button class="btn-styling calc-btn"><a href="#">Calculate</a></button>
+      <button class="btn-styling clear-totals"><a href="#">Clear</a></button>
     </div>
-    <div class="new-sorting-options">
-      Sort by:
-      <select class="sort-select">
-        <option disabled selected value> - select an option - </option>
-        <option value="price-low">Price (low to high)</option>
-        <option value="price-high">Price (high to low)</option>
-        <option value="alphabet">Alphabetically</option>
-      </select>
-    </div>
-    <div class="sorting-options">
-      Show only:
-      <select class="show-specific-select">
-        <option value="All">All</option>
-        <option value="Breed Primary Secondary Tertiary">Modern</option>
-        <option value="Gaoler Banescale Veilspun Undertide Aether Sandsurge">Ancient (all)</option>
-        <option value="Gaoler">Gaoler</option>
-        <option value="Banescale">Banescale</option>
-        <option value="Veilspun">Veilspun</option>
-        <option value="Aberration">Aberration</option>
-        <option value="Undertide">Undertide</option>
-        <option value="Aether">Aether</option>
-        <option value="Sandsurge">Sandsurge</option>
-      </select>
-    </div>
-    <div class="festival-skin-box rainbow-box">
+      <div class="shop-order-container">
+        <button class="btn-styling btn-order-form-toggle"><a href="#">Order Form</a></button>
+        <div class="form-toggle-box">
+          <section class="trackedOrderBox">
+            <span class="instructions">The calculator is empty. Add items then press calculate to receive an order form.</span>
+          </section>
+          <button class="btn-styling btn-copy-order-to-clipboard" disabled aria-disabled="true"><a href="#">Copy Order Form</a></button>
+        </div>
+      </div>
+    <section class="sort-and-show">
+      <div class="sorting-options">
+        Sort by:
+        <select class="sort-select">
+          <option disabled selected value> - select an option - </option>
+          <option value="price-low">Price (low to high)</option>
+          <option value="price-high">Price (high to low)</option>
+          <option value="alphabet">Alphabetically</option>
+        </select>
+      </div>
+      <div class="show-options">
+        Show only:
+        <select class="show-specific-select">
+          <option value="All">All</option>
+          <option value="Breed Primary Secondary Tertiary">Modern</option>
+          <option value="Gaoler Banescale Veilspun Undertide Aether Sandsurge">Ancient (all)</option>
+          <option value="Gaoler">Gaoler</option>
+          <option value="Banescale">Banescale</option>
+          <option value="Veilspun">Veilspun</option>
+          <option value="Aberration">Aberration</option>
+          <option value="Undertide">Undertide</option>
+          <option value="Aether">Aether</option>
+          <option value="Sandsurge">Sandsurge</option>
+        </select>
+      </div>
+    </section>
+    <div class="festival-skin-box rainbow-box item-boxes">
       <span class="fest-title">Festival Skin(s):</span>
       <span class="item-price">29750</span>
-      <input class="festival-quantity" type="number" maxlength="3"/>
+      <input class="festival-quantity" type="number" inputMode="numeric" pattern="[0-9]*" maxlength="3"/>
       <div style="font-size: 14px"><i>hint: a full set is 14 skins</i></div>
     </div>
 </header>
@@ -99,7 +110,7 @@
     </div>
   </div>
 </div>
-<button id="go-top-btn" title="Go to top">Go To Top</button>
+<button class="btn-styling" id="go-top-btn" title="Go to top">Go To Top</button>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="items.js"></script>

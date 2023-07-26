@@ -907,7 +907,7 @@ window.marketplaceItems = {
         },
         {
             "name": "Gaoler: Flair",
-            "price": 68213,
+            "price": 70125,
             "keyword": "Gaoler"
         },
         {
@@ -1145,7 +1145,7 @@ window.marketplaceItems = {
         },
         {
             "name": "Aberration: Flair",
-            "price": 68213,
+            "price": 70125,
             "keyword": "Aberration"
         },
         {
@@ -1300,7 +1300,7 @@ window.marketplaceItems = {
         },
         {
             "name": "Aether: Flair",
-            "price": 68213,
+            "price": 70125,
             "keyword": "Aether"
         },
         {

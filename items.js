@@ -97,6 +97,11 @@ window.marketplaceItems = {
             "keyword": "Modern"
         },
         {
+            "name": "Primary: Cinder",
+            "price": 170000,
+            "keyword": "Modern"
+        },
+        {
             "name": "Primary: Clown",
             "price": 148750,
             "keyword": "Modern"
@@ -210,6 +215,11 @@ window.marketplaceItems = {
             "keyword": "Gaoler"
         },
         {
+            "name": "Gaoler: Cinder",
+            "price": 85000,
+            "keyword": "Gaoler"
+        },
+        {
             "name": "Gaoler: Clown",
             "price": 74375,
             "keyword": "Gaoler"
@@ -313,6 +323,11 @@ window.marketplaceItems = {
             "keyword": "Banescale"
         },
         {
+            "name": "Banescale: Cinder",
+            "price": 85000,
+            "keyword": "Banescale"
+        },
+        {
             "name": "Banescale: Clown",
             "price": 74375,
             "keyword": "Banescale"
@@ -400,6 +415,11 @@ window.marketplaceItems = {
             "keyword": "Veilspun"
         },
         {
+            "name": "Veilspun: Cinder",
+            "price": 85000,
+            "keyword": "Veilspun"
+        },
+        {
             "name": "Veilspun: Clown",
             "price": 74375,
             "keyword": "Veilspun"
@@ -464,6 +484,11 @@ window.marketplaceItems = {
         {
             "name": "Aberration: Bar",
             "price": 106250,
+            "keyword": "Aberration"
+        },
+        {
+            "name": "Aberration: Cinder",
+            "price": 85000,
             "keyword": "Aberration"
         },
         {
@@ -548,6 +573,11 @@ window.marketplaceItems = {
         {
             "name": "Undertide: Cherub",
             "price": 78625,
+            "keyword": "Undertide"
+        },
+        {
+            "name": "Undertide: Cinder",
+            "price": 85000,
             "keyword": "Undertide"
         },
         {
@@ -680,6 +710,11 @@ window.marketplaceItems = {
             "keyword": "Sandsurge"
         },
         {
+            "name": "Sandsurge: Cinder",
+            "price": 85000,
+            "keyword": "Sandsurge"
+        },
+        {
             "name": "Sandsurge: Clown",
             "price": 74375,
             "keyword": "Sandsurge"
@@ -752,6 +787,11 @@ window.marketplaceItems = {
 
     ],
     "secondary": [
+        {
+            "name": "Secondary: Blaze",
+            "price": 136000,
+            "keyword": "Modern"
+        },
         {
             "name": "Secondary: Blend",
             "price": 85000,
@@ -864,7 +904,12 @@ window.marketplaceItems = {
         },          
 
 
-        // GAOLER  SECONDARY
+        // GAOLER SECONDARY
+        {
+            "name": "Gaoler: Blaze",
+            "price": 68000,
+            "keyword": "Gaoler"
+        },
         {
             "name": "Gaoler: Blend",
             "price": 42500,
@@ -969,6 +1014,11 @@ window.marketplaceItems = {
             "keyword": "Banescale"
         },
         {
+            "name": "Banescale: Blaze",
+            "price": 68000,
+            "keyword": "Banescale"
+        },
+        {
             "name": "Banescale: Blend",
             "price": 42500,
             "keyword": "Banescale"
@@ -1057,6 +1107,11 @@ window.marketplaceItems = {
 
         // VEILSPUN SECONDARY
         {
+            "name": "Veilspun: Blaze",
+            "price": 68000,
+            "keyword": "Veilspun"
+        },
+        {
             "name": "Veilspun: Blend",
             "price": 42500,
             "keyword": "Veilspun"
@@ -1129,6 +1184,11 @@ window.marketplaceItems = {
 
         // ABERRATION SECONDARY
         {
+            "name": "Aberration: Blaze",
+            "price": 68000,
+            "keyword": "Aberration"
+        },
+        {
             "name": "Aberration: Blend",
             "price": 42500,
             "keyword": "Aberration"
@@ -1196,6 +1256,11 @@ window.marketplaceItems = {
 
 
         // UNDERTIDE SECONDARY
+        {
+            "name": "Undertide: Blaze",
+            "price": 68000,
+            "keyword": "Undertide"
+        },
         {
             "name": "Undertide: Blend",
             "price": 42500,
@@ -1333,6 +1398,11 @@ window.marketplaceItems = {
         {
             "name": "Sandsurge: Arowana",
             "price": 59500,
+            "keyword": "Sandsurge"
+        },
+        {
+            "name": "Sandsurge: Blaze",
+            "price": 68000,
             "keyword": "Sandsurge"
         },
         {

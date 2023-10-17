@@ -507,8 +507,18 @@ window.marketplaceItems = {
             "keyword": "Aberration"
         },
         {
+            "name": "Aberration: Cherub",
+            "price": 78625,
+            "keyword": "Aberration"
+        },
+        {
             "name": "Aberration: Cinder",
             "price": 85000,
+            "keyword": "Aberration"
+        },
+        {
+            "name": "Aberration: Clown",
+            "price": 74375,
             "keyword": "Aberration"
         },
         {
@@ -537,6 +547,11 @@ window.marketplaceItems = {
             "keyword": "Aberration"
         },
         {
+            "name": "Aberration: Leopard",
+            "price": 59500,
+            "keyword": "Aberration"
+        },
+        {
             "name": "Aberration: Lionfish",
             "price": 106250,
             "keyword": "Aberration"
@@ -544,6 +559,11 @@ window.marketplaceItems = {
         {
             "name": "Aberration: Ribbon",
             "price": 80750,
+            "keyword": "Aberration"
+        },
+        {
+            "name": "Aberration: Ripple",
+            "price": 106250,
             "keyword": "Aberration"
         },
         {
@@ -1234,6 +1254,16 @@ window.marketplaceItems = {
             "keyword": "Aberration"
         },
         {
+            "name": "Aberration: Clouded",
+            "price": 59500,
+            "keyword": "Aberration"
+        },
+        {
+            "name": "Aberration: Current",
+            "price": 70125,
+            "keyword": "Aberration"
+        },
+        {
             "name": "Aberration: Daub",
             "price": 70125,
             "keyword": "Aberration"
@@ -1241,6 +1271,11 @@ window.marketplaceItems = {
         {
             "name": "Aberration: Eel",
             "price": 65875,
+            "keyword": "Aberration"
+        },
+        {
+            "name": "Aberration: Eye Spots",
+            "price": 70125,
             "keyword": "Aberration"
         },
         {
@@ -1291,6 +1326,11 @@ window.marketplaceItems = {
         {
             "name": "Aberration: Safari",
             "price": 41650,
+            "keyword": "Aberration"
+        },
+        {
+            "name": "Aberration: Eye Spots",
+            "price": 53125,
             "keyword": "Aberration"
         },
         {
@@ -1767,7 +1807,17 @@ window.marketplaceItems = {
             "keyword": "Veilspun"
         },          
 
-        // ABERRRATION TERTIARY
+        // ABERRATION TERTIARY
+        {
+            "name": "Aberration: Braids",
+            "price": 72250,
+            "keyword": "Aberration"
+        },
+        {
+            "name": "Aberration: Contour",
+            "price": 63750,
+            "keyword": "Aberration"
+        },
         {
             "name": "Aberration: Fangs",
             "price": 63750,
@@ -1791,6 +1841,16 @@ window.marketplaceItems = {
         {
             "name": "Aberration: Sparkle",
             "price": 63750,
+            "keyword": "Aberration"
+        },
+        {
+            "name": "Aberration: Spines",
+            "price": 80750,
+            "keyword": "Aberration"
+        },
+        {
+            "name": "Aberration: Thorns",
+            "price": 76500,
             "keyword": "Aberration"
         },
         {

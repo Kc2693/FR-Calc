@@ -92,6 +92,11 @@ window.marketplaceItems = {
             "keyword": "Modern"
         },
         {
+            "name": "Primary: Boa",
+            "price": 144500,
+            "keyword": "Modern"
+        },
+        {
             "name": "Primary: Cherub",
             "price": 157250,
             "keyword": "Modern"
@@ -313,6 +318,11 @@ window.marketplaceItems = {
             "keyword": "Banescale"
         },
         {
+            "name": "Banescale: Boa",
+            "price": 72250,
+            "keyword": "Banescale"
+        },
+        {
             "name": "Banescale: Cherub",
             "price": 78625,
             "keyword": "Banescale"
@@ -405,13 +415,18 @@ window.marketplaceItems = {
 
         // VEILSPUN PRIMARY
         {
-            "name": "Veilspun: Bright",
-            "price": 85000,
+            "name": "Veilspun: Bar",
+            "price": 106250,
             "keyword": "Veilspun"
         },
         {
-            "name": "Veilspun: Bar",
-            "price": 106250,
+            "name": "Veilspun: Boa",
+            "price": 72250,
+            "keyword": "Veilspun"
+        },
+        {
+            "name": "Veilspun: Bright",
+            "price": 85000,
             "keyword": "Veilspun"
         },
         {
@@ -484,6 +499,11 @@ window.marketplaceItems = {
         {
             "name": "Aberration: Bar",
             "price": 106250,
+            "keyword": "Aberration"
+        },
+        {
+            "name": "Aberration: Boa",
+            "price": 72250,
             "keyword": "Aberration"
         },
         {
@@ -635,6 +655,11 @@ window.marketplaceItems = {
         {
             "name": "Aether: Bar",
             "price": 106250,
+            "keyword": "Aether"
+        },
+        {
+            "name": "Aether: Boa",
+            "price": 72250,
             "keyword": "Aether"
         },
         {
@@ -878,6 +903,11 @@ window.marketplaceItems = {
             "keyword": "Modern"
         },
         {
+            "name": "Secondary: Saddle",
+            "price": 127500,
+            "keyword": "Modern"
+        },
+        {
             "name": "Secondary: Safari",
             "price": 83300,
             "keyword": "Modern"
@@ -1079,6 +1109,11 @@ window.marketplaceItems = {
             "keyword": "Banescale"
         },
         {
+            "name": "Banescale: Saddle",
+            "price": 63750,
+            "keyword": "Banescale"
+        },
+        {
             "name": "Banescale: Safari",
             "price": 41650,
             "keyword": "Banescale"
@@ -1162,6 +1197,11 @@ window.marketplaceItems = {
             "keyword": "Veilspun"
         },
         {
+            "name": "Veilspun: Saddle",
+            "price": 63750,
+            "keyword": "Veilspun"
+        },
+        {
             "name": "Veilspun: Saturn",
             "price": 68000,
             "keyword": "Veilspun"
@@ -1241,6 +1281,11 @@ window.marketplaceItems = {
         {
             "name": "Aberration: Rosette",
             "price": 42500,
+            "keyword": "Aberration"
+        },
+        {
+            "name": "Aberration: Saddle",
+            "price": 63750,
             "keyword": "Aberration"
         },
         {
@@ -1381,6 +1426,11 @@ window.marketplaceItems = {
         {
             "name": "Aether: Rosette",
             "price": 42500,
+            "keyword": "Aether"
+        },
+        {
+            "name": "Aether: Saddle",
+            "price": 63750,
             "keyword": "Aether"
         },
         {

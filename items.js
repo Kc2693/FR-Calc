@@ -84,6 +84,12 @@ window.marketplaceItems = {
             "item-type": "Breed Change",
             "keyword": "Ancient"        
         },
+        {
+            "name": "Ancient: Auraboa",
+            "price": 233750 ,
+            "item-type": "Breed Change",
+            "keyword": "Ancient"        
+        },
     ],
     "primary": [
         {
@@ -828,7 +834,99 @@ window.marketplaceItems = {
             "name": "Sandsurge: Wrought",
             "price": 59500,
             "keyword": "Sandsurge"
-        },          
+        },
+        
+        // AURABOA PRIMARY
+        {
+            "name": "Auraboa: Bar",
+            "price": 106250,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Boa",
+            "price": 72250,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Caterpillar",
+            "price": 89250,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Fade",
+            "price": 53125,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Falcon",
+            "price": 72250,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Flaunt",
+            "price": 85000,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Giraffe",
+            "price": 95625,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Jaguar",
+            "price": 59500,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Laced",
+            "price": 59500,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Mochlus",
+            "price": 99875,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Mosaic",
+            "price": 127500,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Piebald",
+            "price": 99875,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Rattlesnake",
+            "price": 102000,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Ripple",
+            "price": 106250,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Tapir",
+            "price": 78625,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Tiger",
+            "price": 57375,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Varnish",
+            "price": 85000,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Vipera",
+            "price": 99875,
+            "keyword": "Auraboa"
+        },    
 
     ],
     "secondary": [
@@ -1574,7 +1672,99 @@ window.marketplaceItems = {
             "name": "Sandsurge: Stripes",
             "price": 38250,
             "keyword": "Sandsurge"
-        },          
+        },
+        
+        // AURABOA SECONDARY
+        {
+            "name": "Auraboa: Blend",
+            "price": 42500,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Breakup",
+            "price": 85000,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Current",
+            "price": 70125,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Daub",
+            "price": 70125,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Diamondback",
+            "price": 80750,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Edged",
+            "price": 51000,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Flair",
+            "price": 70125,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Hex",
+            "price": 68000,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Hypnotic",
+            "price": 78625,
+            "keyword": "Auraboa"
+        }, 
+        {
+            "name": "Auraboa: Lacquer",
+            "price": 72250,
+            "keyword": "Auraboa"
+        }, 
+        {
+            "name": "Auraboa: Larvae",
+            "price": 76500,
+            "keyword": "Auraboa"
+        }, 
+        {
+            "name": "Auraboa: Paint",
+            "price": 70125,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Peregrine",
+            "price": 59500,
+            "keyword": "Auraboa"
+        },  
+        {
+            "name": "Auraboa: Riopa",
+            "price": 78625,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Rosette",
+            "price": 42500,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Saddle",
+            "price": 63750,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Striation",
+            "price": 51000,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Stripes",
+            "price": 38250,
+            "keyword": "Auraboa"
+        },
     
     ],
     "tertiary": [
@@ -2044,7 +2234,80 @@ window.marketplaceItems = {
             "name": "Sandsurge: Underbelly",
             "price": 63750,
             "keyword": "Sandsurge"
-        }          
+        },    
+        
+        // AURABOA TERTIARY
+
+        {
+            "name": "Auraboa: Contour",
+            "price": 63750,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Crackle",
+            "price": 80750,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Crest",
+            "price": 80750,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Fishbone",
+            "price": 80750,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Paradise",
+            "price": 80750,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Peacock",
+            "price": 63750,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Smoke",
+            "price": 80750,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Spines",
+            "price": 80750,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Stinger",
+            "price": 93500,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Terracotta",
+            "price": 76500,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Thorns",
+            "price": 76500,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Topcoat",
+            "price": 70125,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Underbelly",
+            "price": 63750,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Willow",
+            "price": 78625,
+            "keyword": "Auraboa"
+        },    
     ],
     "specialty" : [
         {

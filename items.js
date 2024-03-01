@@ -1427,7 +1427,7 @@ window.marketplaceItems = {
             "keyword": "Aberration"
         },
         {
-            "name": "Aberration: Eye Spots",
+            "name": "Aberration: Seraph",
             "price": 53125,
             "keyword": "Aberration"
         },

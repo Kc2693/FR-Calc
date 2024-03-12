@@ -627,6 +627,11 @@ window.marketplaceItems = {
             "keyword": "Undertide"
         },
         {
+            "name": "Undertide: Clown",
+            "price": 74375,
+            "keyword": "Undertide"
+        },
+        {
             "name": "Undertide: Fade",
             "price": 53125,
             "keyword": "Undertide"
@@ -637,6 +642,11 @@ window.marketplaceItems = {
             "keyword": "Undertide"
         },
         {
+            "name": "Undertide: Flaunt",
+            "price": 85000,
+            "keyword": "Undertide"
+        },
+        {
             "name": "Undertide: Giraffe",
             "price": 95625,
             "keyword": "Undertide"
@@ -644,6 +654,21 @@ window.marketplaceItems = {
         {
             "name": "Undertide: Lionfish",
             "price": 106250,
+            "keyword": "Undertide"
+        },
+        {
+            "name": "Undertide: Jaguar",
+            "price": 59500,
+            "keyword": "Undertide"
+        },
+        {
+            "name": "Undertide: Jupiter",
+            "price": 97750,
+            "keyword": "Undertide"
+        },
+        {
+            "name": "Undertide: Piebald",
+            "price": 99875,
             "keyword": "Undertide"
         },
         {
@@ -672,10 +697,30 @@ window.marketplaceItems = {
             "keyword": "Undertide"
         },
         {
+            "name": "Undertide: Tapir",
+            "price": 78625,
+            "keyword": "Undertide"
+        },
+        {
+            "name": "Undertide: Tiger",
+            "price": 57375,
+            "keyword": "Undertide"
+        },
+        {
+            "name": "Undertide: Varnish",
+            "price": 85000,
+            "keyword": "Undertide"
+        },
+        {
             "name": "Undertide: Wolf",
             "price": 68000,
             "keyword": "Undertide"
-        },          
+        },
+        {
+            "name": "Undertide: Wrought",
+            "price": 59500,
+            "keyword": "Undertide"
+        },            
 
         // AETHER PRIMARY
         {
@@ -1470,6 +1515,16 @@ window.marketplaceItems = {
             "keyword": "Undertide"
         },
         {
+            "name": "Undertide: Eye Spots",
+            "price": 70125,
+            "keyword": "Undertide"
+        },
+        {
+            "name": "Undertide: Flair",
+            "price": 70125,
+            "keyword": "Undertide"
+        },
+        {
             "name": "Undertide: Freckle",
             "price": 38250,
             "keyword": "Undertide"
@@ -1477,6 +1532,11 @@ window.marketplaceItems = {
         {
             "name": "Undertide: Hex",
             "price": 68000,
+            "keyword": "Undertide"
+        },
+        {
+            "name": "Undertide: Lacquer",
+            "price": 72250,
             "keyword": "Undertide"
         },
         {
@@ -1495,8 +1555,18 @@ window.marketplaceItems = {
             "keyword": "Undertide"
         },
         {
+            "name": "Undertide: Paint",
+            "price": 70125,
+            "keyword": "Undertide"
+        },
+        {
             "name": "Undertide: Peregrine",
             "price": 59500,
+            "keyword": "Undertide"
+        },
+        {
+            "name": "Undertide: Rosette",
+            "price": 42500,
             "keyword": "Undertide"
         },
         {
@@ -1510,10 +1580,30 @@ window.marketplaceItems = {
             "keyword": "Undertide"
         },
         {
+            "name": "Undertide: Saturn",
+            "price": 68000,
+            "keyword": "Undertide"
+        },
+        {
             "name": "Undertide: Seraph",
             "price": 53125,
             "keyword": "Undertide"
-        },          
+        },
+        {
+            "name": "Undertide: Spire",
+            "price": 46750,
+            "keyword": "Undertide"
+        }, 
+        {
+            "name": "Undertide: Striation",
+            "price": 51000,
+            "keyword": "Undertide"
+        },
+        {
+            "name": "Undertide: Stripes",
+            "price": 38250,
+            "keyword": "Undertide"
+        },        
 
         // AETHER SECONDARY
         {
@@ -2056,6 +2146,16 @@ window.marketplaceItems = {
 
         // UNDERTIDE TERTIARY
         {
+            "name": "Undertide: Contour",
+            "price": 63750,
+            "keyword": "Undertide"
+        },
+        {
+            "name": "Undertide: Crest",
+            "price": 80750,
+            "keyword": "Undertide"
+        },
+        {
             "name": "Undertide: Crackle",
             "price": 80750,
             "keyword": "Undertide"
@@ -2068,6 +2168,11 @@ window.marketplaceItems = {
         {
             "name": "Undertide: Ghost",
             "price": 68000,
+            "keyword": "Undertide"
+        },
+        {
+            "name": "Undertide: Jellyfish",
+            "price": 85000,
             "keyword": "Undertide"
         },
         {
@@ -2096,8 +2201,33 @@ window.marketplaceItems = {
             "keyword": "Undertide"
         },
         {
+            "name": "Undertide: Smoke",
+            "price": 80750,
+            "keyword": "Undertide"
+        },
+        {
             "name": "Undertide: Sparkle",
             "price": 63750,
+            "keyword": "Undertide"
+        },
+        {
+            "name": "Undertide: Spines",
+            "price": 80750,
+            "keyword": "Undertide"
+        },
+        {
+            "name": "Undertide: Stinger",
+            "price": 93500,
+            "keyword": "Undertide"
+        },
+        {
+            "name": "Undertide: Thorns",
+            "price": 76500,
+            "keyword": "Undertide"
+        },
+        {
+            "name": "Undertide: Topcoat",
+            "price": 70125,
             "keyword": "Undertide"
         },
         {

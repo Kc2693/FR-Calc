@@ -2490,5 +2490,15 @@ window.marketplaceItems = {
             "price": 425000,
             "keyword": "Eye Vial"
         },
+        {
+            "name": "Vial of Umbral Sight",
+            "price": 127500,
+            "keyword": "Eye Vial"
+        },
+        {
+            "name": "Vial of Faded Sight",
+            "price": 127500,
+            "keyword": "Eye Vial"
+        },
     ]
 }

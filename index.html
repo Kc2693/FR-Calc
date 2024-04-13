@@ -3,27 +3,48 @@
 <html lang="en" data-light-mode="false">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv='cache-control' content='no-cache'> 
+  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='pragma' content='no-cache'>
   <title>FR Dom Calc</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.css" integrity="sha512-PZ83szWxZ41zcHUPd7NSgLfQ3Plzd7YmN0CHwYMmbR7puc6V/ac5Mm0t8QcXLD7sV/0AuKXectoLvjkQUdIz9g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VZEGDMT14F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-VZEGDMT14F');
+  </script>
 </head>
 
 <body onload="fillPage()">
   <header>
     <h1>DOM-Discount Calc</h1>
     <aside class="info">
-      <span>version 4.9 | <a href="https://www1.flightrising.com/forums/gde/2639390/1#post_2639390">Rowdy#277339</a></span><br>
+      <span>version 6.0.5 | <a href="https://www1.flightrising.com/forums/gde/2639390/1#post_2639390">Rowdy#277339</a></span><br>
       <div class="card" style="width: 12rem;">
         <div class="card-body">
           <h6 class="card-title">Display Options:</h6>
           <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="lightmode-switch">
-            <label class="custom-control-label" for="lightmode-switch">light mode</label>
+            <label class="custom-control-label noselect" for="lightmode-switch">light mode</label>
           </div>
           <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="comma-switch">
-            <label class="custom-control-label" for="comma-switch">commas in total</label>
+            <label class="custom-control-label noselect" for="comma-switch">commas in total</label>
+          </div>
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="gotop-switch">
+            <label class="custom-control-label noselect" for="gotop-switch">go to top button</label>
+          </div>
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="festival-switch">
+            <label class="custom-control-label noselect" for="festival-switch">festival skins</label>
           </div>
           <div class="custom-control custom-switch">
             Calc Mode:
@@ -39,38 +60,66 @@
       <span class="tooltiptext">Copied!</span>
       <span>Total:</span>
       <span class="order-total">0</span>
-      <button class="calc-btn"><a href="#">Calculate</a></button>
-      <button class="clear-totals"><a href="#">Clear</a></button>
+      <button class="btn-styling calc-btn"><a href="#">Calculate</a></button>
+      <button class="btn-styling clear-totals"><a href="#">Clear</a></button>
     </div>
-    <div class="new-sorting-options">
-      Sort by:
-      <select class="sort-select">
-        <option disabled selected value> - select an option - </option>
-        <option value="price-low">Price (low to high)</option>
-        <option value="price-high">Price (high to low)</option>
-        <option value="alphabet">Alphabetically</option>
-      </select>
-    </div>
-    <div class="sorting-options">
-      Show only:
-      <select class="show-specific-select">
-        <option value="All">All</option>
-        <option value="Breed Primary Secondary Tertiary">Modern</option>
-        <option value="Gaoler Banescale Veilspun">Ancient (all)</option>
-        <option value="Gaoler">Gaoler</option>
-        <option value="Banescale">Banescale</option>
-        <option value="Veilspun">Veilspun</option>
-      </select>
+      <div class="shop-order-container">
+        <button class="btn-styling btn-order-form-toggle"><a href="#">Order Form</a></button>
+        <div class="form-toggle-box">
+          <section class="trackedOrderBox">
+            <span class="instructions">The calculator is empty. Add items then press calculate to receive an order form.</span>
+          </section>
+          <button class="btn-styling btn-copy-order-to-clipboard" disabled aria-disabled="true"><a href="#">Copy Order Form</a></button>
+        </div>
+      </div>
+    <section class="sort-and-show">
+      <div class="sorting-options">
+        Sort by:
+        <select class="sort-select">
+          <option disabled selected value> - select an option - </option>
+          <option value="price-low">Price (low to high)</option>
+          <option value="price-high">Price (high to low)</option>
+          <option value="alphabet">Alphabetically</option>
+        </select>
+      </div>
+      <div class="show-options">
+        Show only:
+        <select class="show-specific-select">
+          <option value="All">All</option>
+          <option value="Breed Primary Secondary Tertiary">Modern</option>
+          <option value="Gaoler Banescale Veilspun Undertide Aether Sandsurge Auraboa">Ancient (all)</option>
+          <option value="Gaoler">Gaoler</option>
+          <option value="Banescale">Banescale</option>
+          <option value="Veilspun">Veilspun</option>
+          <option value="Aberration">Aberration</option>
+          <option value="Undertide">Undertide</option>
+          <option value="Aether">Aether</option>
+          <option value="Sandsurge">Sandsurge</option>
+          <option value="Auraboa">Auraboa</option>
+        </select>
+      </div>
+    </section>
+    <div class="festival-skin-box rainbow-box item-boxes">
+      <span class="fest-title">Festival Skin(s):</span>
+      <span class="item-price">29750</span>
+      <input class="festival-quantity" type="number" inputMode="numeric" pattern="[0-9]*" maxlength="3"/>
+      <div style="font-size: 14px"><i>hint: a full set is 14 skins</i></div>
     </div>
 </header>
 <div class="outer-container container-fluid">
   <div class="row justify-content-center" id="columns-container">
-    <div id="breed" class="col-md-3 breed"></div>
-    <div id="primary" class="col-md-3 primary"></div>
-    <div id="secondary" class="col-md-3 secondary"></div>
-    <div id="tertiary" class="col-md-3 tertiary"></div>
+    <div id="breed" class="breed item-boxes"></div>
+    <div id="primary" class="primary item-boxes"></div>
+    <div id="secondary" class="secondary item-boxes"></div>
+    <div id="tertiary" class="tertiary item-boxes"></div>
+    <div id="specialty" class="specialty item-boxes">
+      <div class="rainbow-text-container">
+        <h6 class="alert-new-text">Sight Vials:</h6>
+      </div>
+    </div>
   </div>
 </div>
+<button class="btn-styling" id="go-top-btn" title="Go to top">Go To Top</button>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js"></script>

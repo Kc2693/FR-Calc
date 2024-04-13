@@ -100,7 +100,7 @@ function fillPage() {
   }
 
   trackedOrder = Object.assign({}, JSON.parse(JSON.stringify(trackedOrderDefault)))
-}
+};
 
 (function() {
   let toggled = false;
@@ -117,7 +117,7 @@ function fillPage() {
     toggled = !toggled;
     $(htmlElement).attr("data-light-mode", toggled ? "true" : "false");
     localStorage.setItem('lightModeToggle', toggled)
-  });
+  })
 
 })();
 
@@ -125,7 +125,6 @@ function fillPage() {
   let toggled = false;
   let localPreference = localStorage.getItem('commaToggle') 
 
-  console.log('what the fuck ' + localPreference)
   if (localPreference === "true") {
     toggled = true;
     $('#comma-switch').prop('checked', true);
@@ -137,7 +136,7 @@ function fillPage() {
     commasTotal = toggled;
 
     localStorage.setItem('commaToggle', toggled)
-  });
+  })
 
 })();
 
@@ -158,7 +157,7 @@ function fillPage() {
     localStorage.setItem('festivalToggle', toggled);
     $('.festival-quantity').val(0);
     toggleDisplayOptionBox(toggled, '.festival-skin-box');
-  });
+  })
 
 })();
 
@@ -178,12 +177,12 @@ function fillPage() {
 
     localStorage.setItem('gotopToggle', toggled)
     toggleDisplayOptionBox(toggled, '#go-top-btn')
-  });
+  })
 })();
 
 $('#go-top-btn').click(function() {
   $("html, body").animate({ scrollTop: "0" }, 700);
-})
+});
 
 function toggleDisplayOptionBox(bool, boxName) {
   if (bool) {
@@ -199,12 +198,13 @@ function inputMaxLengthHelper(input) {
       return value.slice(0,3)
     })
   }
-}
+};
 
 // listeners for all maxlength inputs
 $('body').on('input', 'input[maxlength]', function() {
   inputMaxLengthHelper($(this))
 });
+
 $('body').on("click", 'input[maxlength]', function () {
   $(this).select();
 });
@@ -230,11 +230,11 @@ $(".calc-btn").click(function() {
     $('.trackedOrderBox').html(resetOrderFormInstructions())
     toggleDisableOnCopyBtn(true)
   }
-})
+});
 
 function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
+};
 
 $('.btn-order-form-toggle').click(function(){
   $(this).toggleClass('order-form-close');
@@ -255,7 +255,7 @@ $(".clear-totals").click(function() {
     $('.entry-item-list').html(`<h2>Items:</h2>`);
     $('#autocomplete').val('');
   }
-})
+});
 
 $('.show-specific-select').change(function() {
   resetTrackedOrder();
@@ -273,8 +273,9 @@ $('.show-specific-select').change(function() {
     $('.order-total').text('0')
     $('.item').toggleClass('show-specific-select-hide-toggle', true)
 
+    // specialty exception for show-only lives here for now. think of a better method later.
     rawVal.forEach(word => {
-      $(`span:contains("${word}")`).parent().toggleClass('show-specific-select-hide-toggle', false)
+      $(`span:contains("${word}"), span:contains("Vial")`).parent().toggleClass('show-specific-select-hide-toggle', false)
     });
 
     // specialty exception for show-only lives here for now. think of a better method later.
@@ -345,7 +346,6 @@ $('.order-total').click(function() {
     document.execCommand('copy'); 
     selection.removeAllRanges();
   
-
     showTooltip($(this), 2)
   }
 })
@@ -432,7 +432,7 @@ function alphabetHelper(text) {
   const found = text.match(regex).join().trim();
 
   return found
-}
+};
 
 function sortByPrice(type) {
   let parentColumn;
@@ -460,29 +460,76 @@ function sortByPrice(type) {
 
     }).appendTo(parentColumn)
   });
-}
-
-function gatherItemTotals() {
-  let calculated = $('.quantity').map((i, item) => {
-	  let quantity = $(item).val();
-    let itemPrice = parseInt($(item).siblings(".item-price").text()); 
-
-    return quantity * itemPrice;
-  })
-   
-	return calculated.get();
 };
 
-function reduceOrderTotal(itemTotals) { 
-  if (itemTotals.length == 0) {return 0}
+$('#go-top-btn').click(function() {
+  $("html, body").animate({ scrollTop: "0" }, 700);
+})
+
+function orderFormHelper() {
+  if (!$('.trackedOrderBox').is(':has(span.instructions)')){
+    let warningTemplate = `<span>Recalculate total to get updated form`
+    $('.trackedOrderBox').html(warningTemplate)
+  }
+}
+
+function formatTrackedOrder() {
+  let itemArray = [];
+  let formattedTotal = numberWithCommas($('.order-total').text());
+  const textAfterColon = /:(.*)/;
+  let orderKeys = Object.keys(trackedOrder)
+  let festivalSkinsAddon = addFestivalSkins()
+
+  orderKeys.forEach((key) => {
+    trackedOrder[key].forEach((order) => {
+
+      let matchedGeneName = order.title.match(textAfterColon) || order.title;
+      
+      if (typeof matchedGeneName === 'object') {
+        matchedGeneName = matchedGeneName[1].trim()
+      }
   
+      let geneType = order.keyword
+      let formattedCategoryName = order.categ.charAt(0).toUpperCase() + order.categ.slice(1);
+  
+      let template =
+      `<div class="col-12 item-special-tracked">
+        <span class="order-form-quant">${order.orderQuant}x</span>
+        <span>${formattedCategoryName}: ${matchedGeneName} (${geneType})</span>
+      </div>`
+  
+      itemArray.push(template)
+  
+    })
+  })
+
+  if (festivalSkinsAddon > 0) {
+    let skinsAddonTemplate = 
+    `<div class="col-12 item-special-tracked">
+      <span class="stuff2">${$('.festival-quantity').val()}x</span>
+      <span>Festival Skins</span>
+    </div>`
+
+    itemArray.push(skinsAddonTemplate)
+  }
+
+  $('.trackedOrderBox').html(itemArray).append( `<span><b>Total:</b> ${formattedTotal}</span>`);
+  toggleDisplayOptionBox(true, '.shop-order-container');
+};
+
+function reduceOrderTotal(itemTotals) {  
 	let orderTotal = itemTotals.reduce((currentTotal, item) => {
-  	let newTotal = currentTotal + item;
+    let newTotal = currentTotal + item;
 
     return newTotal;
   });
   return orderTotal;
 };
+
+function resetOrderFormInstructions() {
+  const instructions = 
+  `<span class="instructions">The calculator is empty. Add items then press calculate to receive an order form.</span>`
+}
 
 function addFestivalSkins() {
   if ($('.festival-skin-box').is(":hidden")) {
@@ -493,6 +540,7 @@ function addFestivalSkins() {
     return quantity * 29750;
   }
 }
+
 
 function orderFormHelper() {
   if (!$('.trackedOrderBox').is(':has(span.instructions)')){

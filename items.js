@@ -90,6 +90,12 @@ window.marketplaceItems = {
             "item-type": "Breed Change",
             "keyword": "Ancient"        
         },
+        {
+            "name": "Ancient: Dusthide",
+            "price": 233750 ,
+            "item-type": "Breed Change",
+            "keyword": "Ancient"        
+        },
     ],
     "primary": [
         {
@@ -973,6 +979,89 @@ window.marketplaceItems = {
             "keyword": "Auraboa"
         },    
 
+        // DUSTHIDE PRIMARY
+
+        {
+            "name": "Dusthide: Bar",
+            "price": 106250,
+            "keyword": "Dusthide"
+        }, 
+        {
+            "name": "Dusthide: Checkers",
+            "price": 68000,
+            "keyword": "Dusthide"
+        }, 
+        {
+            "name": "Dusthide: Cinder",
+            "price": 85000,
+            "keyword": "Dusthide"
+        }, 
+        {
+            "name": "Dusthide: Fade",
+            "price": 53125,
+            "keyword": "Dusthide"
+        }, 
+        {
+            "name": "Dusthide: Falcon",
+            "price": 72250,
+            "keyword": "Dusthide"
+        }, 
+        {
+            "name": "Dusthide: Giraffe",
+            "price": 95625,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Jupiter",
+            "price": 97750,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Laced",
+            "price": 59500,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Piebald",
+            "price": 99875,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Ribbon",
+            "price": 80750,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Ripple",
+            "price": 106250,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Savannah",
+            "price": 59500,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Speckle",
+            "price": 53125,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Strike",
+            "price": 93500,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Varnish",
+            "price": 85000,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Wrought",
+            "price": 59500,
+            "keyword": "Dusthide"
+        },
+
     ],
     "secondary": [
         {
@@ -1855,6 +1944,94 @@ window.marketplaceItems = {
             "price": 38250,
             "keyword": "Auraboa"
         },
+
+        // DUSTHIDE SECONDARY
+
+        {
+            "name": "Dusthide: Blaze",
+            "price": 68000,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Blend",
+            "price": 42500,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Blend",
+            "price": 42500,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Chess",
+            "price": 68000,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Coil",
+            "price": 85000,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Current",
+            "price": 70125,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Daub",
+            "price": 70125,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Edged",
+            "price": 51000,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Eel",
+            "price": 65875,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Freckle",
+            "price": 38250,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Hex",
+            "price": 68000,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Lacquer",
+            "price": 72250,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Paint",
+            "price": 70125,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Peregrine",
+            "price": 59500,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Safari",
+            "price": 41650,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Saturn",
+            "price": 68000,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Spire",
+            "price": 46750,
+            "keyword": "Dusthide"
+        },
     
     ],
     "tertiary": [
@@ -2438,6 +2615,69 @@ window.marketplaceItems = {
             "price": 78625,
             "keyword": "Auraboa"
         },    
+
+        // DUSTHIDE TERTIARY
+
+        {
+            "name": "Dusthide: Antlers",
+            "price": 59500,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Fishbone",
+            "price": 80750,
+            "keyword": "Dusthide"
+        },   
+        {
+            "name": "Dusthide: Gembond",
+            "price": 85000,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Ghost",
+            "price": 68000,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Okapi",
+            "price": 80750,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Ringlets",
+            "price": 65875,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Smoke",
+            "price": 80750,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Sparkle",
+            "price": 63750,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Spines",
+            "price": 80750,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Topcoat",
+            "price": 70125,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Underbelly",
+            "price": 63750,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Whiskers",
+            "price": 93500,
+            "keyword": "Dusthide"
+        },
     ],
     "specialty" : [
         {

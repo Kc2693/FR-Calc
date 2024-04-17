@@ -2,6 +2,10 @@ let commasTotal;
 let trackedOrderDefault = {specialty: [], breed: [], primary: [], secondary: [], tertiary: []};
 let trackedOrder = {};
 
+$('.item-boxes2').on('click', function() {
+  console.log('whats happenin')
+})
+
 function fillPage() {
   let itemObj = window.marketplaceItems;
   let modePreference = localStorage.getItem('viewModeToggle');
@@ -42,10 +46,12 @@ function fillPage() {
         <span>Enter an item:</span>
         <input id="autocomplete" onclick="this.value=''" onblur="this.value=''"></input>
       </div>
-      <div class="entry-item-list row">
-        <h2>Items:</h2>
+      <div class="entry-item-list row item-boxes item-boxes2">
+        
       </div>
     </div>`
+
+    //<h2>Items:</h2>
 
     $('#columns-container').children().css('display', 'none');
 
@@ -67,7 +73,7 @@ function fillPage() {
             <button type="button" class="btn btn-sm btn-danger entry-item-cancel" onclick="deleteEntry(this)">X</button>
             <span class="item-name">${chosen.name}</span>
             <span class="item-price">${chosen.price}</span>
-            <input class="quantity" type="text" maxlength="3" value=1 onfocusin="highlight(this)" onfocusout="unlight(this)"/>
+            <input class="quantity" type="number" inputmode="numeric" maxlength="3" value=1 oninput="trackHandler(this)" onfocusin="highlight(this)" onfocusout="unlight(this)"/>
           </div>`
 
           let existing = $(".item span.item-name:contains(" + `${chosen.name}` + ")")
@@ -299,6 +305,7 @@ $('.sort-select').change(function() {
   }
 });
 
+// DELETING THIS?
 $('.item-boxes').on('focusin','.quantity', function() {
   $(this).parent().addClass('highlight')
 
@@ -308,6 +315,14 @@ $('.item-boxes').on('focusin','.quantity', function() {
 $('.item-boxes').on('focusout','.quantity', function() {
   $(this).parent().removeClass('highlight')
 })
+
+// CONSOLIDATE THIS LATER ENTRY MODE
+function highlight(e) {
+  $(e).parent().addClass('highlight');
+}
+function unlight(e) {
+  $(e).parent().removeClass('highlight');
+}
 
 $('.item-boxes').on('input','.quantity', function() {
   let trackItemCategory = $(this).parent().parent().attr('id')
@@ -334,6 +349,35 @@ $('.item-boxes').on('input','.quantity', function() {
     })
   }
 })
+
+function trackHandler(currentItem) {
+  let trackItemCategory = $(currentItem).parent().parent().attr('id')
+  let trackItemTitle = $(currentItem).siblings('span:first').text()
+  let trackItemPrice = $(currentItem).siblings('.item-price').text()
+  let currentItemVal = $(currentItem).val()
+  let currentItemKeyword = $(currentItem).siblings('span:first').data('keyword')
+
+  console.log("FUCK")
+  console.log(trackItemTitle)
+  let indexExists = 1
+  // trackedOrder[trackItemCategory].findIndex(item => item.title === trackItemTitle)
+
+  if (indexExists != -1) {
+    if (currentItemVal > 0) {
+      trackedOrder[trackItemCategory][indexExists].orderQuant = currentItemVal
+    } else {
+      trackedOrder[trackItemCategory].splice(indexExists, 1)
+    }
+  } else {
+    trackedOrder[trackItemCategory].push({
+      categ: trackItemCategory, 
+      keyword: currentItemKeyword,
+      title: trackItemTitle, 
+      itemPrice: trackItemPrice, 
+      orderQuant: currentItemVal
+    })
+  }
+}
 
 $('.order-total').click(function() {
   if (parseInt($(this).text()) > 0) {
@@ -515,6 +559,18 @@ function formatTrackedOrder() {
 
   $('.trackedOrderBox').html(itemArray).append( `<span><b>Total:</b> ${formattedTotal}</span>`);
   toggleDisplayOptionBox(true, '.shop-order-container');
+};
+
+function gatherItemTotals() {
+  let calculated = $('.quantity').map((i, item) => {
+
+	  let quantity = $(item).val();
+    let itemPrice = parseInt($(item).siblings(".item-price").text()); 
+
+    return quantity * itemPrice;
+  })
+   
+	return calculated.get();
 };
 
 function reduceOrderTotal(itemTotals) {  

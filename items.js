@@ -1958,11 +1958,6 @@ window.marketplaceItems = {
             "keyword": "Dusthide"
         },
         {
-            "name": "Dusthide: Blend",
-            "price": 42500,
-            "keyword": "Dusthide"
-        },
-        {
             "name": "Dusthide: Chess",
             "price": 68000,
             "keyword": "Dusthide"

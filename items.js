@@ -1507,7 +1507,7 @@ window.marketplaceItems = {
         },
         {
             "name": "Aberration: Eye Spots",
-            "price": 70125,
+            "price": 46750,
             "keyword": "Aberration"
         },
         {
@@ -1605,7 +1605,7 @@ window.marketplaceItems = {
         },
         {
             "name": "Undertide: Eye Spots",
-            "price": 70125,
+            "price": 46750,
             "keyword": "Undertide"
         },
         {

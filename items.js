@@ -740,6 +740,11 @@ window.marketplaceItems = {
             "keyword": "Aether"
         },
         {
+            "name": "Aether: Checkers",
+            "price": 68000,
+            "keyword": "Aether"
+        },
+        {
             "name": "Aether: Cinder",
             "price": 85000,
             "keyword": "Aether"
@@ -755,8 +760,18 @@ window.marketplaceItems = {
             "keyword": "Aether"
         },
         {
+            "name": "Aether: Falcon",
+            "price": 72250,
+            "keyword": "Aether"
+        },
+        {
             "name": "Aether: Flaunt",
             "price": 85000,
+            "keyword": "Aether"
+        },
+        {
+            "name": "Aether: Giraffe",
+            "price": 95625,
             "keyword": "Aether"
         },
         {
@@ -790,10 +805,50 @@ window.marketplaceItems = {
             "keyword": "Aether"
         },
         {
+            "name": "Aether: Ribbon",
+            "price": 80750,
+            "keyword": "Aether"
+        },
+        {
+            "name": "Aether: Ripple",
+            "price": 106250,
+            "keyword": "Aether"
+        },
+        {
+            "name": "Aether: Savanna",
+            "price": 59500,
+            "keyword": "Aether"
+        },
+        {
             "name": "Aether: Spool",
             "price": 85000,
             "keyword": "Aether"
-        },          
+        },
+        {
+            "name": "Aether: Tapir",
+            "price": 78625,
+            "keyword": "Aether"
+        },
+        {
+            "name": "Aether: Tiger",
+            "price": 57375,
+            "keyword": "Aether"
+        },
+        {
+            "name": "Aether: Varnish",
+            "price": 85000,
+            "keyword": "Aether"
+        },    
+        {
+            "name": "Aether: Vipera",
+            "price": 99875,
+            "keyword": "Aether"
+        },
+        {
+            "name": "Aether: Wrought",
+            "price": 59500,
+            "keyword": "Aether"
+        },
 
         // SANDSURGE PRIMARY
         {
@@ -1711,6 +1766,16 @@ window.marketplaceItems = {
             "keyword": "Aether"
         },
         {
+            "name": "Aether: Chess",
+            "price": 68000,
+            "keyword": "Aether"
+        },
+        {
+            "name": "Aether: Current",
+            "price": 70125,
+            "keyword": "Aether"
+        },
+        {
             "name": "Aether: Daub",
             "price": 70125,
             "keyword": "Aether"
@@ -1718,6 +1783,11 @@ window.marketplaceItems = {
         {
             "name": "Aether: Edged",
             "price": 51000,
+            "keyword": "Aether"
+        },
+        {
+            "name": "Aether: Eel",
+            "price": 65875,
             "keyword": "Aether"
         },
         {
@@ -1731,6 +1801,21 @@ window.marketplaceItems = {
             "keyword": "Aether"
         },
         {
+            "name": "Aether: Hex",
+            "price": 68000,
+            "keyword": "Aether"
+        },
+        {
+            "name": "Aether: Hypnotic",
+            "price": 78625,
+            "keyword": "Aether"
+        },
+        {
+            "name": "Aether: Lacquer",
+            "price": 72250,
+            "keyword": "Aether"
+        },
+        {
             "name": "Aether: Noxtide",
             "price": 72250,
             "keyword": "Aether"
@@ -1738,6 +1823,11 @@ window.marketplaceItems = {
         {
             "name": "Aether: Paint",
             "price": 70125,
+            "keyword": "Aether"
+        },
+        {
+            "name": "Aether: Peregrine",
+            "price": 59500,
             "keyword": "Aether"
         },
         {
@@ -1751,8 +1841,28 @@ window.marketplaceItems = {
             "keyword": "Aether"
         },
         {
+            "name": "Aether: Safari",
+            "price": 41650,
+            "keyword": "Aether"
+        },
+        {
             "name": "Aether: Saturn",
             "price": 68000,
+            "keyword": "Aether"
+        },
+        {
+            "name": "Aether: Spire",
+            "price": 46750,
+            "keyword": "Aether"
+        },
+        {
+            "name": "Aether: Striation",
+            "price": 51000,
+            "keyword": "Aether"
+        },
+        {
+            "name": "Aether: Stripes",
+            "price": 38250,
             "keyword": "Aether"
         },
         {
@@ -2411,13 +2521,33 @@ window.marketplaceItems = {
         // AETHER TERTIARY
 
         {
+            "name": "Aether: Braids",
+            "price": 72250,
+            "keyword": "Aether"
+        },
+        {
+            "name": "Aether: Crackle",
+            "price": 80750,
+            "keyword": "Aether"
+        },
+        {
             "name": "Aether: Contour",
             "price": 63750,
             "keyword": "Aether"
         },
         {
+            "name": "Aether: Fishbone",
+            "price": 80750,
+            "keyword": "Aether"
+        },,
+        {
             "name": "Aether: Gembond",
             "price": 85000,
+            "keyword": "Aether"
+        },
+        {
+            "name": "Aether: Ghost",
+            "price": 68000,
             "keyword": "Aether"
         },
         {
@@ -2450,6 +2580,16 @@ window.marketplaceItems = {
             "price": 93500,
             "keyword": "Aether"
         },
+        {
+            "name": "Aether: Thorns",
+            "price": 76500,
+            "keyword": "Aether"
+        }, 
+        {
+            "name": "Aether: Thylacine",
+            "price": 65875,
+            "keyword": "Aether"
+        }, 
         {
             "name": "Aether: Underbelly",
             "price": 63750,

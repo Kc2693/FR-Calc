@@ -240,7 +240,7 @@ button:focus {
   padding: 10px;
 }
 
-.festival-quantity {
+.festival-quantity, .festival-quantity-hatchling {
   background-color: var(--quantity);
   border-radius: 5px;
   border: none;

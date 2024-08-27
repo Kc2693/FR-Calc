@@ -438,7 +438,6 @@ function formatTrackedOrder() {
     })
   })
 
-  // kat change this here
   if ($('.festival-quantity').val() > 0) {
     let skinsAddonTemplate = 
     `<div class="col-12 item-special-tracked">
@@ -448,7 +447,7 @@ function formatTrackedOrder() {
 
     itemArray.push(skinsAddonTemplate)
   } 
-  
+
   if ($('.festival-quantity-hatchling').val() > 0) {
     let hatchlingSkinsAddonTemplate = 
     `<div class="col-12 item-special-tracked">
@@ -456,7 +455,7 @@ function formatTrackedOrder() {
       <span>Hatchling Festival Skins</span>
     </div>`
 
-  itemArray.push(hatchlingSkinsAddonTemplate)
+    itemArray.push(hatchlingSkinsAddonTemplate)
   }
 
   $('.trackedOrderBox').html(itemArray).append( `<span><b>Total:</b> ${formattedTotal}</span>`);

@@ -178,8 +178,9 @@ function addFestivalSkins() {
     return 0;
   } else {
     let quantity = $('.festival-quantity').val();
+    let hatchlingQuantity = $('.festival-quantity-hatchling').val();
 
-    return quantity * 29750;
+    return ((quantity * 29750) + (hatchlingQuantity * 21250));
   }
 }
 
@@ -195,6 +196,7 @@ $('.btn-order-form-toggle').click(function(){
 $(".clear-totals").click(function() {
   $(".quantity").val('');
   $(".festival-quantity").val('');
+  $(".festival-quantity-hatchling").val('');
   $('.order-total').text('0');
   resetTrackedOrder();
   $('.trackedOrderBox').html(resetOrderFormInstructions());
@@ -411,7 +413,7 @@ function formatTrackedOrder() {
   let formattedTotal = numberWithCommas($('.order-total').text());
   const textAfterColon = /:(.*)/;
   let orderKeys = Object.keys(trackedOrder)
-  let festivalSkinsAddon = addFestivalSkins()
+  // let festivalSkinsAddon = addFestivalSkins()
 
   orderKeys.forEach((key) => {
     trackedOrder[key].forEach((order) => {
@@ -436,7 +438,8 @@ function formatTrackedOrder() {
     })
   })
 
-  if (festivalSkinsAddon > 0) {
+  // kat change this here
+  if ($('.festival-quantity').val() > 0) {
     let skinsAddonTemplate = 
     `<div class="col-12 item-special-tracked">
       <span class="stuff2">${$('.festival-quantity').val()}x</span>
@@ -444,6 +447,16 @@ function formatTrackedOrder() {
     </div>`
 
     itemArray.push(skinsAddonTemplate)
+  } 
+  
+  if ($('.festival-quantity-hatchling').val() > 0) {
+    let hatchlingSkinsAddonTemplate = 
+    `<div class="col-12 item-special-tracked">
+      <span class="stuff2">${$('.festival-quantity-hatchling').val()}x</span>
+      <span>Hatchling Festival Skins</span>
+    </div>`
+
+  itemArray.push(hatchlingSkinsAddonTemplate)
   }
 
   $('.trackedOrderBox').html(itemArray).append( `<span><b>Total:</b> ${formattedTotal}</span>`);

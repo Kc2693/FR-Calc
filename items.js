@@ -114,6 +114,11 @@ window.marketplaceItems = {
             "keyword": "Modern"
         },
         {
+            "name": "Primary: Chorus",
+            "price": 178500,
+            "keyword": "Modern"
+        },
+        {
             "name": "Primary: Cinder",
             "price": 170000,
             "keyword": "Modern"
@@ -390,6 +395,11 @@ window.marketplaceItems = {
             "keyword": "Banescale"
         },
         {
+            "name": "Banescale: Mosaic",
+            "price": 127500,
+            "keyword": "Banescale"
+        },
+        {
             "name": "Banescale: Ragged",
             "price": 85000,
             "keyword": "Banescale"
@@ -442,6 +452,16 @@ window.marketplaceItems = {
             "keyword": "Veilspun"
         },
         {
+            "name": "Veilspun: Cherub",
+            "price": 78625,
+            "keyword": "Veilspun"
+        },
+        {
+            "name": "Veilspun: Chorus",
+            "price": 89250,
+            "keyword": "Veilspun"
+        },
+        {
             "name": "Veilspun: Cinder",
             "price": 85000,
             "keyword": "Veilspun"
@@ -479,6 +499,11 @@ window.marketplaceItems = {
         {
             "name": "Veilspun: Leopard",
             "price": 59500,
+            "keyword": "Veilspun"
+        },
+        {
+            "name": "Veilspun: Mosaic",
+            "price": 127500,
             "keyword": "Veilspun"
         },
         {
@@ -566,6 +591,11 @@ window.marketplaceItems = {
         {
             "name": "Aberration: Lionfish",
             "price": 106250,
+            "keyword": "Aberration"
+        },
+        {
+            "name": "Aberration: Mosaic",
+            "price": 127500,
             "keyword": "Aberration"
         },
         {
@@ -1045,7 +1075,12 @@ window.marketplaceItems = {
             "name": "Dusthide: Checkers",
             "price": 68000,
             "keyword": "Dusthide"
-        }, 
+        },
+        {
+            "name": "Dusthide: Cherub",
+            "price": 78625,
+            "keyword": "Dusthide"
+        },
         {
             "name": "Dusthide: Cinder",
             "price": 85000,
@@ -1074,6 +1109,11 @@ window.marketplaceItems = {
         {
             "name": "Dusthide: Laced",
             "price": 59500,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Mosaic",
+            "price": 127500,
             "keyword": "Dusthide"
         },
         {
@@ -1132,6 +1172,11 @@ window.marketplaceItems = {
         {
             "name": "Secondary: Breakup",
             "price": 170000,
+            "keyword": "Modern"
+        },
+        {
+            "name": "Secondary: Choir",
+            "price": 153000,
             "keyword": "Modern"
         },
         {
@@ -1361,6 +1406,11 @@ window.marketplaceItems = {
             "keyword": "Banescale"
         },
         {
+            "name": "Banescale: Breakup",
+            "price": 85000,
+            "keyword": "Banescale"
+        },
+        {
             "name": "Banescale: Clouded",
             "price": 51000,
             "keyword": "Banescale"
@@ -1459,6 +1509,16 @@ window.marketplaceItems = {
             "keyword": "Veilspun"
         },
         {
+            "name": "Veilspun: Breakup",
+            "price": 85000,
+            "keyword": "Veilspun"
+        },
+        {
+            "name": "Veilspun: Choir",
+            "price": 76500,
+            "keyword": "Veilspun"
+        },
+        {
             "name": "Veilspun: Clouded",
             "price": 51000,
             "keyword": "Veilspun"
@@ -1514,6 +1574,11 @@ window.marketplaceItems = {
             "keyword": "Veilspun"
         },
         {
+            "name": "Veilspun: Seraph",
+            "price": 53125,
+            "keyword": "Veilspun"
+        },
+        {
             "name": "Veilspun: Striation",
             "price": 51000,
             "keyword": "Veilspun"
@@ -1538,6 +1603,11 @@ window.marketplaceItems = {
         {
             "name": "Aberration: Blend",
             "price": 42500,
+            "keyword": "Aberration"
+        },
+        {
+            "name": "Aberration: Breakup",
+            "price": 85000,
             "keyword": "Aberration"
         },
         {
@@ -2068,6 +2138,11 @@ window.marketplaceItems = {
             "keyword": "Dusthide"
         },
         {
+            "name": "Dusthide: Breakup",
+            "price": 85000,
+            "keyword": "Dusthide"
+        },
+        {
             "name": "Dusthide: Chess",
             "price": 68000,
             "keyword": "Dusthide"
@@ -2130,6 +2205,11 @@ window.marketplaceItems = {
         {
             "name": "Dusthide: Saturn",
             "price": 68000,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Seraph",
+            "price": 53125,
             "keyword": "Dusthide"
         },
         {
@@ -2258,6 +2338,11 @@ window.marketplaceItems = {
             "keyword": "Gaoler"
         },
         {
+            "name": "Gaoler: Thorns",
+            "price": 76500,
+            "keyword": "Gaoler"
+        },
+        {
             "name": "Gaoler: Thylacine",
             "price": 65875,
             "keyword": "Gaoler"
@@ -2313,6 +2398,11 @@ window.marketplaceItems = {
         {
             "name": "Banescale: Spines",
             "price": 80750,
+            "keyword": "Banescale"
+        },
+        {
+            "name": "Banescale: Thorns",
+            "price": 76500,
             "keyword": "Banescale"
         },
         {
@@ -2668,6 +2758,11 @@ window.marketplaceItems = {
             "keyword": "Sandsurge"
         },
         {
+            "name": "Sandsurge: Thorns",
+            "price": 76500,
+            "keyword": "Sandsurge"
+        },
+        {
             "name": "Sandsurge: Thylacine",
             "price": 65875,
             "keyword": "Sandsurge"
@@ -2796,6 +2891,11 @@ window.marketplaceItems = {
         {
             "name": "Dusthide: Spines",
             "price": 80750,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Thorns",
+            "price": 76500,
             "keyword": "Dusthide"
         },
         {

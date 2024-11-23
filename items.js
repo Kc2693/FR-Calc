@@ -96,6 +96,12 @@ window.marketplaceItems = {
             "item-type": "Breed Change",
             "keyword": "Ancient"        
         },
+        {
+            "name": "Ancient: Everlux",
+            "price": 233750 ,
+            "item-type": "Breed Change",
+            "keyword": "Ancient"        
+        },
     ],
     "primary": [
         {
@@ -1155,6 +1161,93 @@ window.marketplaceItems = {
             "name": "Dusthide: Wrought",
             "price": 59500,
             "keyword": "Dusthide"
+        },
+
+        // EVERLUX PRIMARY
+        {
+            "name": "Everlux: Arapaima",
+            "price": 78625,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Bar",
+            "price": 106250,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Caterpillar",
+            "price": 89250,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Cherub",
+            "price": 78625,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Criculaworm",
+            "price": 85000,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Fade",
+            "price": 53125,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Flaunt",
+            "price": 85000,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Jupiter",
+            "price": 97750,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Laced",
+            "price": 59500,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Lionfish",
+            "price": 106250,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Marble",
+            "price": 76500,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Piebald",
+            "price": 99875,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Ripple",
+            "price": 106250,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Sphinxmoth",
+            "price": 89250,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Strike",
+            "price": 93500,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Tiger",
+            "price": 57375,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Varnish",
+            "price": 85000,
+            "keyword": "Everlux"
         },
 
     ],
@@ -2217,7 +2310,98 @@ window.marketplaceItems = {
             "price": 46750,
             "keyword": "Dusthide"
         },
-    
+
+        // EVERLUX SECONDARY
+        {
+            "name": "Everlux: Arowana",
+            "price": 59500,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Blend",
+            "price": 42500,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Coil",
+            "price": 85000,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Current",
+            "price": 70125,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Daub",
+            "price": 70125,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Edged",
+            "price": 51000,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Flair",
+            "price": 70125,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Flair",
+            "price": 70125,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Hawkmoth",
+            "price": 76500,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Lacquer",
+            "price": 72250,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Larvae",
+            "price": 76500,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Mottle",
+            "price": 51000,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Noxtide",
+            "price": 72250,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Paint",
+            "price": 70125,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Saturn",
+            "price": 68000,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Seraph",
+            "price": 53125,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Stripes",
+            "price": 38250,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Flair",
+            "price": 70125,
+            "keyword": "Everlux"
+        },
     ],
     "tertiary": [
         {
@@ -2912,6 +3096,103 @@ window.marketplaceItems = {
             "name": "Dusthide: Whiskers",
             "price": 93500,
             "keyword": "Dusthide"
+        },
+
+        // EVERLUX TERTIARY
+        {
+            "name": "Everlux: Chitin",
+            "price": 76500,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Fishbone",
+            "price": 80750,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Gecko",
+            "price": 72250,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Gembond",
+            "price": 85000,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Jellyfish",
+            "price": 85000,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Kumo",
+            "price": 59500,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Paradise",
+            "price": 80750,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Peacock",
+            "price": 63750,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Points",
+            "price": 55250,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Rift",
+            "price": 68000,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Runes",
+            "price": 80750,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Smoke",
+            "price": 80750,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Sparkle",
+            "price": 63750,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Spines",
+            "price": 80750,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Sunsail",
+            "price": 76500,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Thorns",
+            "price": 76500,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Underbelly",
+            "price": 63750,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Whiskers",
+            "price": 93500,
+            "keyword": "Everlux"
+        },
+        {
+            "name": "Everlux: Wool",
+            "price": 63750,
+            "keyword": "Everlux"
         },
     ],
     "specialty" : [

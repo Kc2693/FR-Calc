@@ -2378,11 +2378,6 @@ window.marketplaceItems = {
             "keyword": "Everlux"
         },
         {
-            "name": "Everlux: Flair",
-            "price": 70125,
-            "keyword": "Everlux"
-        },
-        {
             "name": "Everlux: Hawkmoth",
             "price": 76500,
             "keyword": "Everlux"
@@ -2428,8 +2423,8 @@ window.marketplaceItems = {
             "keyword": "Everlux"
         },
         {
-            "name": "Everlux: Flair",
-            "price": 70125,
+            "name": "Everlux: Silkspot",
+            "price": 68000,
             "keyword": "Everlux"
         },
     ],

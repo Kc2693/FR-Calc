@@ -243,6 +243,11 @@ window.marketplaceItems = {
             "keyword": "Gaoler"
         },
         {
+            "name": "Gaoler: Checkers",
+            "price": 68000,
+            "keyword": "Gaoler"
+        },
+        {
             "name": "Gaoler: Cinder",
             "price": 85000,
             "keyword": "Gaoler"
@@ -288,6 +293,11 @@ window.marketplaceItems = {
             "keyword": "Gaoler"
         },
         {
+            "name": "Gaoler: Lionfish",
+            "price": 106250,
+            "keyword": "Gaoler"
+        },
+        {
             "name": "Gaoler: Mosaic",
             "price": 127500,
             "keyword": "Gaoler"
@@ -330,6 +340,11 @@ window.marketplaceItems = {
         {
             "name": "Gaoler: Tiger",
             "price": 57375,
+            "keyword": "Gaoler"
+        },
+        {
+            "name": "Gaoler: Varnish",
+            "price": 85000,
             "keyword": "Gaoler"
         },
           
@@ -1396,6 +1411,11 @@ window.marketplaceItems = {
             "keyword": "Gaoler"
         },
         {
+            "name": "Gaoler: Chess",
+            "price": 68000,
+            "keyword": "Gaoler"
+        },
+        {
             "name": "Gaoler: Clouded",
             "price": 59500,
             "keyword": "Gaoler"
@@ -1436,8 +1456,18 @@ window.marketplaceItems = {
             "keyword": "Gaoler"
         },
         {
+            "name": "Gaoler: Lacquer",
+            "price": 72250,
+            "keyword": "Gaoler"
+        },
+        {
             "name": "Gaoler: Marbled",
             "price": 55250,
+            "keyword": "Gaoler"
+        },
+        {
+            "name": "Gaoler: Noxtide",
+            "price": 72250,
             "keyword": "Gaoler"
         },
         {
@@ -2537,10 +2567,15 @@ window.marketplaceItems = {
             "keyword": "Gaoler"
         },
         {
+            "name": "Gaoler: Whiskers",
+            "price": 93500,
+            "keyword": "Gaoler"
+        },
+        {
             "name": "Gaoler: Wintercoat",
             "price": 80750,
             "keyword": "Gaoler"
-        },          
+        },       
 
         
         // BANESCALE TERTIARY

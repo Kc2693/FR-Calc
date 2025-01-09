@@ -508,6 +508,11 @@ window.marketplaceItems = {
             "keyword": "Veilspun"
         },
         {
+            "name": "Veilspun: Jaguar",
+            "price": 59500,
+            "keyword": "Veilspun"
+        },
+        {
             "name": "Veilspun: Jupiter",
             "price": 97750,
             "keyword": "Veilspun"
@@ -550,6 +555,11 @@ window.marketplaceItems = {
         {
             "name": "Veilspun: Vipera",
             "price": 99875,
+            "keyword": "Veilspun"
+        },
+        {
+            "name": "Veilspun: Wrought",
+            "price": 59500,
             "keyword": "Veilspun"
         },
           
@@ -1687,6 +1697,11 @@ window.marketplaceItems = {
             "keyword": "Veilspun"
         },
         {
+            "name": "Veilspun: Rosette",
+            "price": 42500,
+            "keyword": "Veilspun"
+        },
+        {
             "name": "Veilspun: Saddle",
             "price": 63750,
             "keyword": "Veilspun"
@@ -1698,6 +1713,11 @@ window.marketplaceItems = {
         },
         {
             "name": "Veilspun: Seraph",
+            "price": 53125,
+            "keyword": "Veilspun"
+        },
+        {
+            "name": "Veilspun: Spire",
             "price": 53125,
             "keyword": "Veilspun"
         },
@@ -2632,6 +2652,11 @@ window.marketplaceItems = {
 
 
         // VEILSPUN TERTIARY
+        {
+            "name": "Veilspun: Contour",
+            "price": 63750,
+            "keyword": "Veilspun"
+        },
         {
             "name": "Veilspun: Crackle",
             "price": 80750,

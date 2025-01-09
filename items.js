@@ -105,7 +105,8 @@ window.marketplaceItems = {
         {
             "name": "Primary: Cherub",
             "price": 157250,
-            "keyword": "Modern"
+            "keyword": "Modern",
+            "category": "Primary"
         },
         {
             "name": "Primary: Cinder",

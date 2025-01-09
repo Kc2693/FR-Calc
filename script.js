@@ -9,13 +9,13 @@ $('.item-boxes2').on('click', function() {
 function fillPage() {
   let itemObj = window.marketplaceItems;
   let modePreference = localStorage.getItem('viewModeToggle');
+  let categories = Object.keys(itemObj);
 
   if (!modePreference) {
     modePreference = localStorage.setItem('viewModeToggle', 'sheet-style')
   }
 
   if (modePreference == 'sheet-sty3le') {
-    let categories = Object.keys(itemObj);
 
     categories.forEach((category) => {
       let itemArray = []
@@ -58,8 +58,33 @@ function fillPage() {
     $('#columns-container').append(template);
 
     var options = {
-      data: Object.values(itemObj).flat(),
+      placeholder: "Start typing here",
+      // data: Object.values(itemObj).flat(),
+      data: itemObj,
       getValue: "name",
+
+      categories: [
+        {
+          listLocation: "breed",
+          header: "-- Breed Change --"
+        },
+        {
+          listLocation: "primary",
+          header: "-- Primary Genes --"
+        },
+        {
+          listLocation: "secondary",
+          header: "-- Secondary Genes --"
+        },
+        {
+          listLocation: "tertiary",
+          header: "-- Tertiary Genes --"
+        },
+        {
+          listLocation: "specialty",
+          header: "-- Specialty Genes --"
+        },
+      ],
       
       list: {
         maxNumberOfElements: 10,
@@ -68,10 +93,15 @@ function fillPage() {
         },
         onChooseEvent: function() {
           let chosen = $("#autocomplete").getSelectedItemData();
+
+          let categoryTest = $("#autocomplete").getItemData()
+          console.log("hey")
+          console.log(categoryTest)
+
           let chosenItem = 
           `<div class="col-12 item">
             <button type="button" class="btn btn-sm btn-danger entry-item-cancel" onclick="deleteEntry(this)">X</button>
-            <span class="item-name">${chosen.name}</span>
+            <span class="item-name" id="${chosen.category}">${chosen.name}</span>
             <span class="item-price">${chosen.price}</span>
             <input class="quantity" type="number" inputmode="numeric" maxlength="3" value=1 oninput="trackHandler(this)" onfocusin="highlight(this)" onfocusout="unlight(this)"/>
           </div>`
@@ -351,32 +381,34 @@ $('.item-boxes').on('input','.quantity', function() {
 })
 
 function trackHandler(currentItem) {
-  let trackItemCategory = $(currentItem).parent().parent().attr('id')
+  let trackItemCategory = $(currentItem).parent().parent().attr('id') || "random_entry"
   let trackItemTitle = $(currentItem).siblings('span:first').text()
   let trackItemPrice = $(currentItem).siblings('.item-price').text()
   let currentItemVal = $(currentItem).val()
   let currentItemKeyword = $(currentItem).siblings('span:first').data('keyword')
 
-  console.log("FUCK")
-  console.log(trackItemTitle)
+
   let indexExists = 1
   // trackedOrder[trackItemCategory].findIndex(item => item.title === trackItemTitle)
 
-  if (indexExists != -1) {
-    if (currentItemVal > 0) {
-      trackedOrder[trackItemCategory][indexExists].orderQuant = currentItemVal
-    } else {
-      trackedOrder[trackItemCategory].splice(indexExists, 1)
-    }
-  } else {
-    trackedOrder[trackItemCategory].push({
-      categ: trackItemCategory, 
-      keyword: currentItemKeyword,
-      title: trackItemTitle, 
-      itemPrice: trackItemPrice, 
-      orderQuant: currentItemVal
-    })
-  }
+  // if (indexExists != -1) {
+  //   if (currentItemVal > 0) {
+      // console.log(trackItemCategory)
+  //     console.log(indexExists)
+      
+  //     trackedOrder[trackItemCategory][indexExists].orderQuant = currentItemVal
+  //   } else {
+  //     trackedOrder[trackItemCategory].splice(indexExists, 1)
+  //   }
+  // } else {
+  //   trackedOrder[trackItemCategory].push({
+  //     categ: trackItemCategory, 
+  //     keyword: currentItemKeyword,
+  //     title: trackItemTitle, 
+  //     itemPrice: trackItemPrice, 
+  //     orderQuant: currentItemVal
+  //   })
+  // }
 }
 
 $('.order-total').click(function() {

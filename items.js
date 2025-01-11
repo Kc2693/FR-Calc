@@ -2465,6 +2465,11 @@ window.marketplaceItems = {
             "keyword": "Modern"
         },
         {
+            "name": "Tertiary: Gecko",
+            "price": 144500,
+            "keyword": "Modern"
+        },
+        {
             "name": "Tertiary: Ghost",
             "price": 136000,
             "keyword": "Modern"
@@ -2537,6 +2542,11 @@ window.marketplaceItems = {
             "keyword": "Gaoler"
         },
         {
+            "name": "Gaoler: Gecko",
+            "price": 72250,
+            "keyword": "Gaoler"
+        },
+        {
             "name": "Gaoler: Ghost",
             "price": 68000,
             "keyword": "Gaoler"
@@ -2605,6 +2615,11 @@ window.marketplaceItems = {
             "keyword": "Banescale"
         },
         {
+            "name": "Banescale: Gecko",
+            "price": 72250,
+            "keyword": "Banescale"
+        },
+        {
             "name": "Banescale: Ghost",
             "price": 68000,
             "keyword": "Banescale"
@@ -2663,6 +2678,11 @@ window.marketplaceItems = {
             "keyword": "Veilspun"
         },
         {
+            "name": "Veilspun: Gecko",
+            "price": 72250,
+            "keyword": "Veilspun"
+        },
+        {
             "name": "Veilspun: Ghost",
             "price": 68000,
             "keyword": "Veilspun"
@@ -2712,6 +2732,11 @@ window.marketplaceItems = {
         {
             "name": "Aberration: Fangs",
             "price": 63750,
+            "keyword": "Aberration"
+        },
+        {
+            "name": "Aberration: Gecko",
+            "price": 72250,
             "keyword": "Aberration"
         },
         {
@@ -2769,6 +2794,11 @@ window.marketplaceItems = {
         {
             "name": "Undertide: Crackle",
             "price": 80750,
+            "keyword": "Undertide"
+        },
+        {
+            "name": "Undertide: Gecko",
+            "price": 72250,
             "keyword": "Undertide"
         },
         {
@@ -2868,7 +2898,12 @@ window.marketplaceItems = {
             "name": "Aether: Fishbone",
             "price": 80750,
             "keyword": "Aether"
-        },,
+        },
+        {
+            "name": "Aether: Gecko",
+            "price": 72250,
+            "keyword": "Aether"
+        },
         {
             "name": "Aether: Gembond",
             "price": 85000,
@@ -2957,6 +2992,11 @@ window.marketplaceItems = {
             "keyword": "Sandsurge"
         },
         {
+            "name": "Sandsurge: Gecko",
+            "price": 72250,
+            "keyword": "Sandsurge"
+        },
+        {
             "name": "Sandsurge: Gembond",
             "price": 85000,
             "keyword": "Sandsurge"
@@ -3035,6 +3075,11 @@ window.marketplaceItems = {
             "keyword": "Auraboa"
         },
         {
+            "name": "Auraboa: Gecko",
+            "price": 72250,
+            "keyword": "Auraboa"
+        },
+        {
             "name": "Auraboa: Paradise",
             "price": 80750,
             "keyword": "Auraboa"
@@ -3096,7 +3141,12 @@ window.marketplaceItems = {
             "name": "Dusthide: Fishbone",
             "price": 80750,
             "keyword": "Dusthide"
-        },   
+        },
+        {
+            "name": "Dusthide: Gecko",
+            "price": 72250,
+            "keyword": "Dusthide"
+        },
         {
             "name": "Dusthide: Gembond",
             "price": 85000,

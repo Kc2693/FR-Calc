@@ -86,6 +86,7 @@ function fillPage() {
 
     localStorage.setItem('festivalToggle', toggled);
     $('.festival-quantity').val(0);
+    $('.festival-quantity-hatchling').val(0);
     toggleDisplayOptionBox(toggled, '.festival-skin-box');
   });
 

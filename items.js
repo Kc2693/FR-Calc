@@ -115,6 +115,11 @@ window.marketplaceItems = {
             "keyword": "Modern"
         },
         {
+            "name": "Primary: Checkers",
+            "price": 136000,
+            "keyword": "Modern"
+        },
+        {
             "name": "Primary: Cherub",
             "price": 157250,
             "keyword": "Modern"
@@ -1290,6 +1295,11 @@ window.marketplaceItems = {
         {
             "name": "Secondary: Breakup",
             "price": 170000,
+            "keyword": "Modern"
+        },
+        {
+            "name": "Secondary: Chess",
+            "price": 136000,
             "keyword": "Modern"
         },
         {

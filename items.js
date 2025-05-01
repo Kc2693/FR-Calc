@@ -248,6 +248,11 @@ window.marketplaceItems = {
             "keyword": "Gaoler"
         },
         {
+            "name": "Gaoler: Caterpillar",
+            "price": 89250,
+            "keyword": "Gaoler"
+        },
+        {
             "name": "Gaoler: Checkers",
             "price": 68000,
             "keyword": "Gaoler"
@@ -363,6 +368,11 @@ window.marketplaceItems = {
         {
             "name": "Banescale: Boa",
             "price": 72250,
+            "keyword": "Banescale"
+        },
+        {
+            "name": "Banescale: Caterpillar",
+            "price": 89250,
             "keyword": "Banescale"
         },
         {
@@ -580,6 +590,11 @@ window.marketplaceItems = {
             "keyword": "Aberration"
         },
         {
+            "name": "Aberration: Caterpillar",
+            "price": 89250,
+            "keyword": "Aberration"
+        },
+        {
             "name": "Aberration: Cherub",
             "price": 78625,
             "keyword": "Aberration"
@@ -681,6 +696,11 @@ window.marketplaceItems = {
         {
             "name": "Undertide: Boa",
             "price": 72250,
+            "keyword": "Undertide"
+        },
+        {
+            "name": "Undertide: Caterpillar",
+            "price": 89250,
             "keyword": "Undertide"
         },
         {
@@ -806,6 +826,11 @@ window.marketplaceItems = {
             "keyword": "Aether"
         },
         {
+            "name": "Aether: Caterpillar",
+            "price": 89250,
+            "keyword": "Aether"
+        },
+        {
             "name": "Aether: Checkers",
             "price": 68000,
             "keyword": "Aether"
@@ -925,6 +950,11 @@ window.marketplaceItems = {
         {
             "name": "Sandsurge: Boa",
             "price": 72250,
+            "keyword": "Sandsurge"
+        },
+        {
+            "name": "Sandsurge: Caterpillar",
+            "price": 89250,
             "keyword": "Sandsurge"
         },
         {
@@ -1106,7 +1136,12 @@ window.marketplaceItems = {
             "name": "Dusthide: Bar",
             "price": 106250,
             "keyword": "Dusthide"
-        }, 
+        },
+        {
+            "name": "Dusthide: Caterpillar",
+            "price": 89250,
+            "keyword": "Dusthide"
+        },
         {
             "name": "Dusthide: Checkers",
             "price": 68000,
@@ -1481,6 +1516,11 @@ window.marketplaceItems = {
             "keyword": "Gaoler"
         },
         {
+            "name": "Gaoler: Larvae",
+            "price": 76500,
+            "keyword": "Gaoler"
+        },
+        {
             "name": "Gaoler: Marbled",
             "price": 55250,
             "keyword": "Gaoler"
@@ -1591,6 +1631,11 @@ window.marketplaceItems = {
         {
             "name": "Banescale: Hex",
             "price": 68000,
+            "keyword": "Banescale"
+        },
+        {
+            "name": "Banescale: Larvae",
+            "price": 76500,
             "keyword": "Banescale"
         },
         {
@@ -1809,6 +1854,11 @@ window.marketplaceItems = {
             "keyword": "Aberration"
         },
         {
+            "name": "Aberration: Larvae",
+            "price": 76500,
+            "keyword": "Aberration"
+        },
+        {
             "name": "Aberration: Marbled",
             "price": 55250,
             "keyword": "Aberration"
@@ -1904,6 +1954,11 @@ window.marketplaceItems = {
         {
             "name": "Undertide: Lacquer",
             "price": 72250,
+            "keyword": "Undertide"
+        },
+        {
+            "name": "Undertide: Larvae",
+            "price": 76500,
             "keyword": "Undertide"
         },
         {
@@ -2039,6 +2094,11 @@ window.marketplaceItems = {
             "keyword": "Aether"
         },
         {
+            "name": "Aether: Larvae",
+            "price": 76500,
+            "keyword": "Aether"
+        },
+        {
             "name": "Aether: Noxtide",
             "price": 72250,
             "keyword": "Aether"
@@ -2128,6 +2188,11 @@ window.marketplaceItems = {
         {
             "name": "Sandsurge: Flair",
             "price": 70125,
+            "keyword": "Sandsurge"
+        },
+        {
+            "name": "Sandsurge: Larvae",
+            "price": 76500,
             "keyword": "Sandsurge"
         },
         {
@@ -2338,6 +2403,11 @@ window.marketplaceItems = {
         {
             "name": "Dusthide: Lacquer",
             "price": 72250,
+            "keyword": "Dusthide"
+        },
+        {
+            "name": "Dusthide: Larvae",
+            "price": 76500,
             "keyword": "Dusthide"
         },
         {

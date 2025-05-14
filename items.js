@@ -357,6 +357,11 @@ window.marketplaceItems = {
             "price": 85000,
             "keyword": "Gaoler"
         },
+        {
+            "name": "Gaoler: Vipera",
+            "price": 99875,
+            "keyword": "Gaoler"
+        },
           
 
         // BANESCALE PRIMARY
@@ -468,6 +473,11 @@ window.marketplaceItems = {
         {
             "name": "Banescale: Tiger",
             "price": 57375,
+            "keyword": "Banescale"
+        },
+        {
+            "name": "Banescale: Vipera",
+            "price": 99875,
             "keyword": "Banescale"
         },
 
@@ -804,6 +814,11 @@ window.marketplaceItems = {
             "keyword": "Undertide"
         },
         {
+            "name": "Undertide: Vipera",
+            "price": 99875,
+            "keyword": "Undertide"
+        },
+        {
             "name": "Undertide: Wolf",
             "price": 68000,
             "keyword": "Undertide"
@@ -1030,6 +1045,11 @@ window.marketplaceItems = {
         {
             "name": "Sandsurge: Tiger",
             "price": 57375,
+            "keyword": "Sandsurge"
+        },
+        {
+            "name": "Sandsurge: Vipera",
+            "price": 99875,
             "keyword": "Sandsurge"
         },
         {
@@ -1511,6 +1531,11 @@ window.marketplaceItems = {
             "keyword": "Gaoler"
         },
         {
+            "name": "Gaoler: Hypnotic",
+            "price": 78625,
+            "keyword": "Gaoler"
+        },
+        {
             "name": "Gaoler: Lacquer",
             "price": 72250,
             "keyword": "Gaoler"
@@ -1631,6 +1656,11 @@ window.marketplaceItems = {
         {
             "name": "Banescale: Hex",
             "price": 68000,
+            "keyword": "Banescale"
+        },
+        {
+            "name": "Banescale: Hypnotic",
+            "price": 78625,
             "keyword": "Banescale"
         },
         {
@@ -1952,6 +1982,11 @@ window.marketplaceItems = {
             "keyword": "Undertide"
         },
         {
+            "name": "Undertide: Hypnotic",
+            "price": 78625,
+            "keyword": "Undertide"
+        },
+        {
             "name": "Undertide: Lacquer",
             "price": 72250,
             "keyword": "Undertide"
@@ -2188,6 +2223,11 @@ window.marketplaceItems = {
         {
             "name": "Sandsurge: Flair",
             "price": 70125,
+            "keyword": "Sandsurge"
+        },
+        {
+            "name": "Sandsurge: Hypnotic",
+            "price": 78625,
             "keyword": "Sandsurge"
         },
         {

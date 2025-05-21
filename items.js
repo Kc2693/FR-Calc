@@ -2658,6 +2658,100 @@ window.marketplaceItems = {
             "price": 68000,
             "keyword": "Everlux"
         },
+
+        // CIRRUS SECONDARY
+
+        {
+            "name": "Cirrus: Blaze",
+            "price": 68000,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Blend",
+            "price": 42500,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Carousel",
+            "price": 76500,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Choir",
+            "price": 76500,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Current",
+            "price": 70125,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Daub",
+            "price": 70125,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Dye",
+            "price": 68000,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Flair",
+            "price": 70125,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Hypnotic",
+            "price": 78625,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Lacquer",
+            "price": 72250,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Mottle",
+            "price": 51000,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Paint",
+            "price": 70125,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Roan",
+            "price": 56950,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Safari",
+            "price": 41650,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Seraph",
+            "price": 53125,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Silkspot",
+            "price": 68000,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Stripes",
+            "price": 38250,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Tear",
+            "price": 85000,
+            "keyword": "Cirrus"
+        },
+
     ],
     "tertiary": [
         {
@@ -3509,6 +3603,19 @@ window.marketplaceItems = {
             "name": "Everlux: Wool",
             "price": 63750,
             "keyword": "Everlux"
+        },
+
+
+        // CIRRUS TERTIARY
+        {
+            "name": "Cirrus: Braids",
+            "price": 72250,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Quagga",
+            "price": 59500,
+            "keyword": "Cirrus"
         },
     ],
     "specialty" : [

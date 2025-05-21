@@ -3613,8 +3613,68 @@ window.marketplaceItems = {
             "keyword": "Cirrus"
         },
         {
+            "name": "Cirrus: Crackle",
+            "price": 80750,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Ghost",
+            "price": 68000,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Kumo",
+            "price": 59500,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Okapi",
+            "price": 80750,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Paradise",
+            "price": 80750,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Peacock",
+            "price": 63750,
+            "keyword": "Cirrus"
+        },
+        {
             "name": "Cirrus: Quagga",
             "price": 59500,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Runes",
+            "price": 80750,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Spark",
+            "price": 63750,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Thorns",
+            "price": 76500,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Underbelly",
+            "price": 63750,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Willow",
+            "price": 78625,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Wool",
+            "price": 63750,
             "keyword": "Cirrus"
         },
     ],

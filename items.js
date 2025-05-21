@@ -1335,6 +1335,97 @@ window.marketplaceItems = {
             "keyword": "Everlux"
         },
 
+        // CIRRUS PRIMARY
+        {
+            "name": "Cirrus: Bar",
+            "price": 106250,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Cherub",
+            "price": 78625,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Chorus",
+            "price": 89250,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Cinder",
+            "price": 85000,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Criculaworm",
+            "price": 85000,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Fade",
+            "price": 53125,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Faire",
+            "price": 102000,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Flaunt",
+            "price": 85000,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Ink",
+            "price": 99875,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Marble",
+            "price": 76500,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Piebald",
+            "price": 99875,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Rabicano",
+            "price": 72250,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Ragged",
+            "price": 85000,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Ripple",
+            "price": 106250,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Savanna",
+            "price": 59500,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Tiger",
+            "price": 57375,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Varnish",
+            "price": 85000,
+            "keyword": "Cirrus"
+        },
+        {
+            "name": "Cirrus: Vipera",
+            "price": 99875,
+            "keyword": "Cirrus"
+        },
     ],
     "secondary": [
         {

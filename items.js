@@ -2818,7 +2818,7 @@ window.marketplaceItems = {
         },
         {
             "name": "Cirrus: Tear",
-            "price": 85000,
+            "price": 68000,
             "keyword": "Cirrus"
         },
 

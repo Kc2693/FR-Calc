@@ -963,6 +963,11 @@ window.marketplaceItems = {
             "keyword": "Sandsurge"
         },
         {
+            "name": "Sandsurge: Bar",
+            "price": 106250,
+            "keyword": "Sandsurge"
+        },
+        {
             "name": "Sandsurge: Boa",
             "price": 72250,
             "keyword": "Sandsurge"
@@ -970,6 +975,11 @@ window.marketplaceItems = {
         {
             "name": "Sandsurge: Caterpillar",
             "price": 89250,
+            "keyword": "Sandsurge"
+        },
+        {
+            "name": "Sandsurge: Checkers",
+            "price": 68000,
             "keyword": "Sandsurge"
         },
         {
@@ -990,6 +1000,11 @@ window.marketplaceItems = {
         {
             "name": "Sandsurge: Fade",
             "price": 53125,
+            "keyword": "Sandsurge"
+        },
+        {
+            "name": "Sandsurge: Falcon",
+            "price": 72250,
             "keyword": "Sandsurge"
         },
         {
@@ -1023,13 +1038,28 @@ window.marketplaceItems = {
             "keyword": "Sandsurge"
         },
         {
+            "name": "Sandsurge: Ragged",
+            "price": 85000,
+            "keyword": "Sandsurge"
+        },
+        {
             "name": "Sandsurge: Rattlesnake",
             "price": 102000,
             "keyword": "Sandsurge"
         },
         {
+            "name": "Sandsurge: Ribbon",
+            "price": 80750,
+            "keyword": "Sandsurge"
+        },
+        {
             "name": "Sandsurge: Savannah",
             "price": 59500,
+            "keyword": "Sandsurge"
+        },
+        {
+            "name": "Sandsurge: Sphinxmoth",
+            "price": 89250,
             "keyword": "Sandsurge"
         },
         {
@@ -1045,6 +1075,11 @@ window.marketplaceItems = {
         {
             "name": "Sandsurge: Tiger",
             "price": 57375,
+            "keyword": "Sandsurge"
+        },
+        {
+            "name": "Sandsurge: Varnish",
+            "price": 85000,
             "keyword": "Sandsurge"
         },
         {
@@ -2302,8 +2337,23 @@ window.marketplaceItems = {
             "keyword": "Sandsurge"
         },
         {
+            "name": "Sandsurge: Daub",
+            "price": 70125,
+            "keyword": "Sandsurge"
+        },
+        {
+            "name": "Sandsurge: Chess",
+            "price": 68000,
+            "keyword": "Sandsurge"
+        },
+        {
             "name": "Sandsurge: Diamondback",
             "price": 80750,
+            "keyword": "Sandsurge"
+        },
+        {
+            "name": "Sandsurge: Eel",
+            "price": 65875,
             "keyword": "Sandsurge"
         },
         {
@@ -2317,8 +2367,18 @@ window.marketplaceItems = {
             "keyword": "Sandsurge"
         },
         {
+            "name": "Sandsurge: Hawkmoth",
+            "price": 76500,
+            "keyword": "Sandsurge"
+        },
+        {
             "name": "Sandsurge: Hypnotic",
             "price": 78625,
+            "keyword": "Sandsurge"
+        },
+        {
+            "name": "Sandsurge: Lacquer",
+            "price": 72250,
             "keyword": "Sandsurge"
         },
         {
@@ -2339,6 +2399,11 @@ window.marketplaceItems = {
         {
             "name": "Sandsurge: Paint",
             "price": 70125,
+            "keyword": "Sandsurge"
+        },
+        {
+            "name": "Sandsurge: Peregrine",
+            "price": 59500,
             "keyword": "Sandsurge"
         },
         {
@@ -2379,6 +2444,11 @@ window.marketplaceItems = {
         {
             "name": "Sandsurge: Stripes",
             "price": 38250,
+            "keyword": "Sandsurge"
+        },
+        {
+            "name": "Sandsurge: Tear",
+            "price": 68000,
             "keyword": "Sandsurge"
         },
         
@@ -2748,7 +2818,7 @@ window.marketplaceItems = {
         },
         {
             "name": "Cirrus: Tear",
-            "price": 85000,
+            "price": 68000,
             "keyword": "Cirrus"
         },
 
@@ -3332,6 +3402,11 @@ window.marketplaceItems = {
             "keyword": "Sandsurge"
         },
         {
+            "name": "Sandsurge: Smoke",
+            "price": 80750,
+            "keyword": "Sandsurge"
+        },
+        {
             "name": "Sandsurge: Sparkle",
             "price": 63750,
             "keyword": "Sandsurge"
@@ -3355,7 +3430,12 @@ window.marketplaceItems = {
             "name": "Sandsurge: Underbelly",
             "price": 63750,
             "keyword": "Sandsurge"
-        },    
+        },
+        {
+            "name": "Sandsurge: Whiskers",
+            "price": 93500,
+            "keyword": "Sandsurge"
+        },  
         
         // AURABOA TERTIARY
 

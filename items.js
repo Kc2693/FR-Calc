@@ -230,6 +230,11 @@ window.marketplaceItems = {
             "keyword": "Modern"
         },
         {
+            "name": "Primary: Varnish",
+            "price": 170000,
+            "keyword": "Modern"
+        },
+        {
             "name": "Primary: Vipera",
             "price": 199750,
             "keyword": "Modern"
@@ -476,6 +481,11 @@ window.marketplaceItems = {
             "keyword": "Banescale"
         },
         {
+            "name": "Banescale: Varnish",
+            "price": 85000,
+            "keyword": "Banescale"
+        },
+        {
             "name": "Banescale: Vipera",
             "price": 99875,
             "keyword": "Banescale"
@@ -575,6 +585,11 @@ window.marketplaceItems = {
         {
             "name": "Veilspun: Tapir",
             "price": 78625,
+            "keyword": "Veilspun"
+        },
+        {
+            "name": "Veilspun: Varnish",
+            "price": 85000,
             "keyword": "Veilspun"
         },
         {
@@ -687,6 +702,11 @@ window.marketplaceItems = {
         {
             "name": "Aberration: Tapir",
             "price": 78625,
+            "keyword": "Aberration"
+        },
+        {
+            "name": "Aberration: Varnish",
+            "price": 85000,
             "keyword": "Aberration"
         },
         {
@@ -1539,6 +1559,11 @@ window.marketplaceItems = {
             "keyword": "Modern"
         },
         {
+            "name": "Secondary: Lacquer",
+            "price": 144500,
+            "keyword": "Modern"
+        },
+        {
             "name": "Secondary: Marbled",
             "price": 110500,
             "keyword": "Modern"
@@ -1790,6 +1815,11 @@ window.marketplaceItems = {
             "keyword": "Banescale"
         },
         {
+            "name": "Banescale: Lacquer",
+            "price": 72250,
+            "keyword": "Banescale"
+        },
+        {
             "name": "Banescale: Larvae",
             "price": 76500,
             "keyword": "Banescale"
@@ -1903,6 +1933,11 @@ window.marketplaceItems = {
             "keyword": "Veilspun"
         },
         {
+            "name": "Veilspun: Lacquer",
+            "price": 72250,
+            "keyword": "Veilspun"
+        },
+        {
             "name": "Veilspun: Peregrine",
             "price": 59500,
             "keyword": "Veilspun"
@@ -2007,6 +2042,11 @@ window.marketplaceItems = {
         {
             "name": "Aberration: Hypnotic",
             "price": 78625,
+            "keyword": "Aberration"
+        },
+        {
+            "name": "Aberration: Lacquer",
+            "price": 72250,
             "keyword": "Aberration"
         },
         {

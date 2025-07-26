@@ -3,91 +3,91 @@ window.marketplaceItems = {
         {
             "name": "Breed: Fae",
             "price": 42500,
-            "item-type": "Breed Change",
+            "itemType": "breed",
             "keyword": "Modern"
         },
         {
             "name": "Breed: Guardian",
             "price": 42500,
-            "item-type": "Breed Change",
-            "keyword": "Modern"
+            "itemType": "breed",
+            "keyword": "Modern",
         },
         {
             "name": "Breed: Mirror",
             "price": 42500,
-            "item-type": "Breed Change",
+            "itemType": "breed",
             "keyword": "Modern"
         },
         {
             "name": "Breed: Tundra",
             "price": 42500,
-            "item-type": "Breed Change",
+            "itemType": "breed",
             "keyword": "Modern"
         },
         {
             "name": "Breed: Pearlcatcher",
             "price": 212500,
-            "item-type": "Breed Change",
+            "itemType": "breed",
             "keyword": "Modern"
         },
         {
             "name": "Breed: Ridgeback",
             "price": 212500,
-            "item-type": "Breed Change",
+            "itemType": "breed",
             "keyword": "Modern"
         },
         {
             "name": "Breed: Snapper",
             "price": 276250,
-            "item-type": "Breed Change",
+            "itemType": "breed",
             "keyword": "Modern"           
         },
         {
             "name": "Breed: Spiral",
             "price": 276250,
-            "item-type": "Breed Change",
+            "itemType": "breed",
             "keyword": "Modern"          
         },
         {
             "name": "Breed: Skydancer",
             "price": 340000,
-            "item-type": "Breed Change",
+            "itemType": "breed",
             "keyword": "Modern"          
         },
         {
             "name": "Breed: Obelisk",
             "price": 340000,
-            "item-type": "Breed Change",
+            "itemType": "breed",
             "keyword": "Modern"          
         },
         {
             "name": "Ancient: Gaoler",
             "price": 233750,
-            "item-type": "Breed Change",
+            "itemType": "breed",
             "keyword": "Ancient"        
         },
         {
             "name": "Ancient: Banescale",
             "price": 233750 ,
-            "item-type": "Breed Change",
+            "itemType": "breed",
             "keyword": "Ancient" 
         },
         {
             "name": "Ancient: Aberration",
             "price": 233750,
-            "item-type": "Breed Change"  ,
+            "itemType": "breed"  ,
             "keyword": "Ancient"       
         },
         {
             "name": "Ancient: Aether",
             "price": 233750 ,
-            "item-type": "Breed Change",
+            "itemType": "breed",
             "keyword": "Ancient"        
         },
         {
             "name": "Ancient: Auraboa",
             "price": 233750 ,
-            "item-type": "Breed Change",
+            "itemType": "breed",
             "keyword": "Ancient"        
         },
     ],

@@ -2,10 +2,6 @@ let commasTotal;
 let trackedOrderDefault = {specialty: [], breed: [], primary: [], secondary: [], tertiary: []};
 let trackedOrder = {};
 
-$('.item-boxes2').on('click', function() {
-  console.log('whats happenin')
-})
-
 function fillPage() {
   let itemObj = window.marketplaceItems;
   let modePreference = localStorage.getItem('viewModeToggle');
@@ -40,18 +36,7 @@ function fillPage() {
   } else {
     // if (modePrefrence == 'entry-style')
 
-    let template = `
-    <div class="autocomplete-container">
-      <div class="autocomplete-input-container">
-        <span>Enter an item:</span>
-        <input id="autocomplete" onclick="this.value=''" onblur="this.value=''"></input>
-      </div>
-      <div class="entry-item-list row item-boxes item-boxes2">
-        
-      </div>
-    </div>`
-
-    //<h2>Items:</h2>
+    let template = ``
 
     $('#columns-container').children().css('display', 'none');
 
@@ -94,16 +79,14 @@ function fillPage() {
         onChooseEvent: function() {
           let chosen = $("#autocomplete").getSelectedItemData();
 
-          let categoryTest = $("#autocomplete").getItemData()
-          console.log("hey")
-          console.log(categoryTest)
+          // let categoryTest = $("#autocomplete").getItemData()
 
           let chosenItem = 
           `<div class="col-12 item">
             <button type="button" class="btn btn-sm btn-danger entry-item-cancel" onclick="deleteEntry(this)">X</button>
-            <span class="item-name" id="${chosen.category}">${chosen.name}</span>
+            <span class="item-name" id="${chosen.itemType}" data-keyword="${chosen.keyword}">${chosen.name}</span>
             <span class="item-price">${chosen.price}</span>
-            <input class="quantity" type="number" inputmode="numeric" maxlength="3" value=1 oninput="trackHandler(this)" onfocusin="highlight(this)" onfocusout="unlight(this)"/>
+            <input class="quantity" type="number" inputmode="numeric" maxlength="3" value=1 onfocusin="highlight(this)" onfocusout="unlight(this)"/>
           </div>`
 
           let existing = $(".item span.item-name:contains(" + `${chosen.name}` + ")")
@@ -122,6 +105,7 @@ function fillPage() {
           }
 
           $("#autocomplete").select()
+          orderFormHelper()
         }
       },
       template: {
@@ -313,11 +297,6 @@ $('.show-specific-select').change(function() {
     rawVal.forEach(word => {
       $(`span:contains("${word}"), span:contains("Vial")`).parent().toggleClass('show-specific-select-hide-toggle', false)
     });
-
-    // specialty exception for show-only lives here for now. think of a better method later.
-    rawVal.forEach(word => {
-      $(`span:contains("${word}"), span:contains("Vial")`).parent().toggleClass('show-specific-select-hide-toggle', false)
-    });
   }
 });
 
@@ -336,15 +315,15 @@ $('.sort-select').change(function() {
 });
 
 // DELETING THIS?
-$('.item-boxes').on('focusin','.quantity', function() {
-  $(this).parent().addClass('highlight')
+// $('.item-boxes').on('focusin','.quantity', function() {
+//   $(this).parent().addClass('highlight')
 
-  orderFormHelper()
-})
+//   orderFormHelper()
+// })
 
-$('.item-boxes').on('focusout','.quantity', function() {
-  $(this).parent().removeClass('highlight')
-})
+// $('.item-boxes').on('focusout','.quantity', function() {
+//   $(this).parent().removeClass('highlight')
+// })
 
 // CONSOLIDATE THIS LATER ENTRY MODE
 function highlight(e) {
@@ -355,7 +334,7 @@ function unlight(e) {
 }
 
 $('.item-boxes').on('input','.quantity', function() {
-  let trackItemCategory = $(this).parent().parent().attr('id')
+  let trackItemCategory = $(this).siblings('.item-name').attr('id')
   let trackItemTitle = $(this).siblings('span:first').text()
   let trackItemPrice = $(this).siblings('.item-price').text()
   let currentItemVal = $(this).val()
@@ -378,38 +357,40 @@ $('.item-boxes').on('input','.quantity', function() {
       orderQuant: currentItemVal
     })
   }
+
+  orderFormHelper()
 })
 
-function trackHandler(currentItem) {
-  let trackItemCategory = $(currentItem).parent().parent().attr('id') || "random_entry"
-  let trackItemTitle = $(currentItem).siblings('span:first').text()
-  let trackItemPrice = $(currentItem).siblings('.item-price').text()
-  let currentItemVal = $(currentItem).val()
-  let currentItemKeyword = $(currentItem).siblings('span:first').data('keyword')
+// function trackHandler(currentItem) {
+//   let trackItemCategory = $(currentItem).parent().parent().attr('id') || "random_entry"
+//   let trackItemTitle = $(currentItem).siblings('span:first').text()
+//   let trackItemPrice = $(currentItem).siblings('.item-price').text()
+//   let currentItemVal = $(currentItem).val()
+//   let currentItemKeyword = $(currentItem).siblings('span:first').data('keyword')
 
 
-  let indexExists = 1
-  // trackedOrder[trackItemCategory].findIndex(item => item.title === trackItemTitle)
+//   let indexExists = 1
+//   // trackedOrder[trackItemCategory].findIndex(item => item.title === trackItemTitle)
 
-  // if (indexExists != -1) {
-  //   if (currentItemVal > 0) {
-      // console.log(trackItemCategory)
-  //     console.log(indexExists)
+//   // if (indexExists != -1) {
+//   //   if (currentItemVal > 0) {
+//       // console.log(trackItemCategory)
+//   //     console.log(indexExists)
       
-  //     trackedOrder[trackItemCategory][indexExists].orderQuant = currentItemVal
-  //   } else {
-  //     trackedOrder[trackItemCategory].splice(indexExists, 1)
-  //   }
-  // } else {
-  //   trackedOrder[trackItemCategory].push({
-  //     categ: trackItemCategory, 
-  //     keyword: currentItemKeyword,
-  //     title: trackItemTitle, 
-  //     itemPrice: trackItemPrice, 
-  //     orderQuant: currentItemVal
-  //   })
-  // }
-}
+//   //     trackedOrder[trackItemCategory][indexExists].orderQuant = currentItemVal
+//   //   } else {
+//   //     trackedOrder[trackItemCategory].splice(indexExists, 1)
+//   //   }
+//   // } else {
+//   //   trackedOrder[trackItemCategory].push({
+//   //     categ: trackItemCategory, 
+//   //     keyword: currentItemKeyword,
+//   //     title: trackItemTitle, 
+//   //     itemPrice: trackItemPrice, 
+//   //     orderQuant: currentItemVal
+//   //   })
+//   // }
+// }
 
 $('.order-total').click(function() {
   if (parseInt($(this).text()) > 0) {
@@ -475,6 +456,7 @@ function selectEntry() {
 }
 
 function deleteEntry(button) {
+  orderFormHelper();
   $(button).parent().remove();
 }
 
@@ -541,13 +523,6 @@ function sortByPrice(type) {
 $('#go-top-btn').click(function() {
   $("html, body").animate({ scrollTop: "0" }, 700);
 })
-
-function orderFormHelper() {
-  if (!$('.trackedOrderBox').is(':has(span.instructions)')){
-    let warningTemplate = `<span>Recalculate total to get updated form`
-    $('.trackedOrderBox').html(warningTemplate)
-  }
-}
 
 function formatTrackedOrder() {
   let itemArray = [];
@@ -635,6 +610,7 @@ function orderFormHelper() {
     let warningTemplate = `<span>Recalculate total to get updated form`
     $('.trackedOrderBox').html(warningTemplate)
   }
+  $('.order-total').text('0');
 }
 
 function formatTrackedOrder() {

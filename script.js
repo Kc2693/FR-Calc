@@ -36,11 +36,10 @@ function fillPage() {
   } else {
     // if (modePrefrence == 'entry-style')
 
-    let template = ``
-
     $('#columns-container').children().css('display', 'none');
-
-    $('#columns-container').append(template);
+    $('.sorting-options').css('display', 'none');
+    $('.show-options').css('display', 'none');
+    // $('#columns-container').append(template);
 
     var options = {
       placeholder: "Start typing here",
@@ -67,7 +66,7 @@ function fillPage() {
         },
         {
           listLocation: "specialty",
-          header: "-- Specialty Genes --"
+          header: "-- Specialty Items --"
         },
       ],
       
@@ -78,8 +77,6 @@ function fillPage() {
         },
         onChooseEvent: function() {
           let chosen = $("#autocomplete").getSelectedItemData();
-
-          // let categoryTest = $("#autocomplete").getItemData()
 
           let chosenItem = 
           `<div class="col-12 item">

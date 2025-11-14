@@ -131,7 +131,7 @@ $('body').on("click", 'input[maxlength]', function () {
 
 $(".calc-btn").click(function() {
 	let itemTotals = gatherItemTotals()
-  let orderTotal = reduceOrderTotal(itemTotals) + addFestivalSkins();
+  let orderTotal = reduceOrderTotal(itemTotals) + addFestivalSkins() + addLimitedEdition();
 
   let formattedTotal;
   
@@ -185,6 +185,12 @@ function addFestivalSkins() {
   }
 }
 
+function addLimitedEdition() {
+    let quantity = $('.lmtedit-quantity').val();
+
+    return (quantity * 233750);
+}
+
 function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
@@ -198,6 +204,7 @@ $(".clear-totals").click(function() {
   $(".quantity").val('');
   $(".festival-quantity").val('');
   $(".festival-quantity-hatchling").val('');
+  $(".lmtedit-quantity").val('');
   $('.order-total').text('0');
   resetTrackedOrder();
   $('.trackedOrderBox').html(resetOrderFormInstructions());
@@ -414,7 +421,6 @@ function formatTrackedOrder() {
   let formattedTotal = numberWithCommas($('.order-total').text());
   const textAfterColon = /:(.*)/;
   let orderKeys = Object.keys(trackedOrder)
-  // let festivalSkinsAddon = addFestivalSkins()
 
   orderKeys.forEach((key) => {
     trackedOrder[key].forEach((order) => {
@@ -457,6 +463,16 @@ function formatTrackedOrder() {
     </div>`
 
     itemArray.push(hatchlingSkinsAddonTemplate)
+  }
+
+  if ($('.lmtedit-quantity').val() > 0) {
+    let limitedEditionAddonTemplate = 
+    `<div class="col-12 item-special-tracked">
+      <span class="stuff2">${$('.lmtedit-quantity').val()}x</span>
+      <span>Thorntail Cache</span>
+    </div>`
+
+    itemArray.push(limitedEditionAddonTemplate)
   }
 
   $('.trackedOrderBox').html(itemArray).append( `<span><b>Total:</b> ${formattedTotal}</span>`);

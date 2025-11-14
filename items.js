@@ -2969,6 +2969,112 @@ window.marketplaceItems = {
             "keyword": "Cirrus"
         },
 
+        // THORNTAIL SECONDARY
+        {
+            "name": "Thorntail: Arowana",
+            "price": 59500,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Blaze",
+            "price": 68000,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Blend",
+            "price": 42500,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Choir",
+            "price": 76500,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Croc",
+            "price": 70125,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Current",
+            "price": 70125,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Daub",
+            "price": 70125,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Diamondback",
+            "price": 80750,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Drip",
+            "price": 70125,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Dye",
+            "price": 68000,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Hypnotic",
+            "price": 78625,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Lacquer",
+            "price": 72250,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Mottle",
+            "price": 51000,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Paint",
+            "price": 70125,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Rosette",
+            "price": 42500,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Saddle",
+            "price": 63750,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Seraph",
+            "price": 53125,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Signal",
+            "price": 63750,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Silkspot",
+            "price": 68000,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Striation",
+            "price": 51000,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Tear",
+            "price": 68000,
+            "keyword": "Thorntail"
+        },
     ],
     "tertiary": [
         {
@@ -3903,6 +4009,65 @@ window.marketplaceItems = {
             "name": "Cirrus: Wool",
             "price": 63750,
             "keyword": "Cirrus"
+        },
+
+        
+
+            // THORNTAIL TERTIARY
+        {
+            "name": "Thorntail: Crackle",
+            "price": 80750,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Fishbone",
+            "price": 80750,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Gecko",
+            "price": 72250,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Ghost",
+            "price": 68000,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Kumo",
+            "price": 59500,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Paradise",
+            "price": 80750,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Peacock",
+            "price": 63750,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Runes",
+            "price": 80750,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Spines",
+            "price": 80750,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Underbelly",
+            "price": 63750,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Wool",
+            "price": 63750,
+            "keyword": "Thorntail"
         },
     ],
     "specialty" : [

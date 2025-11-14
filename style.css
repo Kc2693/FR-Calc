@@ -240,7 +240,20 @@ button:focus {
   padding: 10px;
 }
 
-.festival-quantity, .festival-quantity-hatchling {
+.limited-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto 20px auto;
+  width: 320px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to bottom right, #9ceca7 0%, #2c90fc 25%, #0d5a0d 50%, #ccec3d 75%, #54b19d 100%);
+  border-image-slice: 1;
+  margin: 20px auto;
+}
+
+.festival-quantity, .festival-quantity-hatchling, .lmtedit-quantity {
   background-color: var(--quantity);
   border-radius: 5px;
   border: none;

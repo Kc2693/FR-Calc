@@ -386,6 +386,11 @@ window.marketplaceItems = {
             "keyword": "Banescale"
         },
         {
+            "name": "Banescale: Checkers",
+            "price": 68000,
+            "keyword": "Banescale"
+        },
+        {
             "name": "Banescale: Cherub",
             "price": 78625,
             "keyword": "Banescale"
@@ -508,6 +513,11 @@ window.marketplaceItems = {
             "keyword": "Veilspun"
         },
         {
+            "name": "Veilspun: Checkers",
+            "price": 68000,
+            "keyword": "Veilspun"
+        },
+        {
             "name": "Veilspun: Cherub",
             "price": 78625,
             "keyword": "Veilspun"
@@ -617,6 +627,11 @@ window.marketplaceItems = {
         {
             "name": "Aberration: Caterpillar",
             "price": 89250,
+            "keyword": "Aberration"
+        },
+        {
+            "name": "Aberration: Checkers",
+            "price": 68000,
             "keyword": "Aberration"
         },
         {
@@ -1127,6 +1142,11 @@ window.marketplaceItems = {
         {
             "name": "Auraboa: Caterpillar",
             "price": 89250,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Checkers",
+            "price": 68000,
             "keyword": "Auraboa"
         },
         {
@@ -1877,6 +1897,11 @@ window.marketplaceItems = {
             "keyword": "Banescale"
         },
         {
+            "name": "Banescale: Chess",
+            "price": 68000,
+            "keyword": "Banescale"
+        },
+        {
             "name": "Banescale: Clouded",
             "price": 51000,
             "keyword": "Banescale"
@@ -1995,6 +2020,11 @@ window.marketplaceItems = {
             "keyword": "Veilspun"
         },
         {
+            "name": "Veilspun: Chess",
+            "price": 68000,
+            "keyword": "Veilspun"
+        },
+        {
             "name": "Veilspun: Choir",
             "price": 76500,
             "keyword": "Veilspun"
@@ -2104,6 +2134,11 @@ window.marketplaceItems = {
         {
             "name": "Aberration: Breakup",
             "price": 85000,
+            "keyword": "Aberration"
+        },
+        {
+            "name": "Aberration: Chess",
+            "price": 68000,
             "keyword": "Aberration"
         },
         {
@@ -2608,6 +2643,11 @@ window.marketplaceItems = {
         {
             "name": "Auraboa: Breakup",
             "price": 85000,
+            "keyword": "Auraboa"
+        },
+        {
+            "name": "Auraboa: Chess",
+            "price": 68000,
             "keyword": "Auraboa"
         },
         {
@@ -4011,7 +4051,7 @@ window.marketplaceItems = {
             "keyword": "Cirrus"
         },
 
-        
+
 
             // THORNTAIL TERTIARY
         {

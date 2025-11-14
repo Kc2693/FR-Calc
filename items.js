@@ -1481,6 +1481,113 @@ window.marketplaceItems = {
             "price": 99875,
             "keyword": "Cirrus"
         },
+
+        // THORNTAIL PRIMARY    
+        {
+            "name": "Thorntail: Arapaima",
+            "price": 78625,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Bar",
+            "price": 106250,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Boa",
+            "price": 72250,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Caiman",
+            "price": 78625,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Cherub",
+            "price": 78625,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Chorus",
+            "price": 89250,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Cinder",
+            "price": 85000,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Criculaworm",
+            "price": 85000,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Fade",
+            "price": 53125,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Ink",
+            "price": 99875,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Jaguar",
+            "price": 59000,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Marble",
+            "price": 76500,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Piebald",
+            "price": 99875,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Radio",
+            "price": 76500,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Ragged",
+            "price": 85000,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Rattlesnake",
+            "price": 102000,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Ripple",
+            "price": 106250,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Splatter",
+            "price": 80750,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Tapir",
+            "price": 57375,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Varnish",
+            "price": 85000,
+            "keyword": "Thorntail"
+        },
+        {
+            "name": "Thorntail: Vipera",
+            "price": 99875,
+            "keyword": "Thorntail"
+        },
     ],
     "secondary": [
         {

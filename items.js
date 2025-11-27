@@ -1104,7 +1104,7 @@ window.marketplaceItems = {
         },
         {
             "name": "Sandsurge: Tapir",
-            "price": 57375,
+            "price": 78625,
             "keyword": "Sandsurge"
         },
         {
@@ -1595,7 +1595,7 @@ window.marketplaceItems = {
         },
         {
             "name": "Thorntail: Tapir",
-            "price": 57375,
+            "price": 78625,
             "keyword": "Thorntail"
         },
         {
